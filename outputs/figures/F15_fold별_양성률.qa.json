@@ -1,0 +1,26 @@
+{
+  "fid": "F15",
+  "text_count": 15,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F15_fold별_양성률.png",
+  "sha256": "e856bb07d6af19b5ffd362b2167924067005ac86ee436bad0e967df67218f524",
+  "pixel_size": [
+    1829,
+    874
+  ],
+  "saved_size_pt": [
+    438.96,
+    209.76000000000002
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "fold별 양성률",
+  "section": "3.2",
+  "source": "s03_split.py"
+}

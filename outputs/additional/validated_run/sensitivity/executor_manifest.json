@@ -1,0 +1,364 @@
+{
+  "status": "complete",
+  "experiment": "sensitivity",
+  "fingerprint": "468d9c7c9eab856d6d6f624ad791468e712e2b6e44fd52f522c33283e4f24335",
+  "elapsed_seconds": 53.49644923210144,
+  "inputs": {
+    "experiment": "sensitivity",
+    "config": {
+      "schema_version": 1,
+      "protocol": "additional-experiments-2026-10-06",
+      "seed": 42,
+      "evaluation_note": "Retrospective analyses on already observed data; no new independent test claim.",
+      "bootstrap": {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "n_boot": 2000,
+        "sampling": "noncircular consecutive calendar-day blocks; truncate to 14 days"
+      },
+      "diagnostics": {
+        "n_boot": 2000,
+        "high_production_quantile": 0.75,
+        "sparse_hours": 20,
+        "sparse_days": 5,
+        "threshold_scope": "all_selected_OOF_descriptive_only"
+      },
+      "sensitivity": {
+        "atol": 1e-08,
+        "scenarios": [
+          {
+            "id": "C0",
+            "kind": "baseline"
+          },
+          {
+            "id": "P80",
+            "kind": "production_scale",
+            "production_factor": 0.8
+          },
+          {
+            "id": "P90",
+            "kind": "production_scale",
+            "production_factor": 0.9
+          },
+          {
+            "id": "P110",
+            "kind": "production_scale",
+            "production_factor": 1.1
+          },
+          {
+            "id": "P120",
+            "kind": "production_scale",
+            "production_factor": 1.2
+          },
+          {
+            "id": "H90",
+            "kind": "headcount_scale",
+            "headcount_factor": 0.9
+          },
+          {
+            "id": "H110",
+            "kind": "headcount_scale",
+            "headcount_factor": 1.1
+          },
+          {
+            "id": "T-2",
+            "kind": "temperature_shift",
+            "temperature_delta": -2
+          },
+          {
+            "id": "T-1",
+            "kind": "temperature_shift",
+            "temperature_delta": -1
+          },
+          {
+            "id": "T+1",
+            "kind": "temperature_shift",
+            "temperature_delta": 1
+          },
+          {
+            "id": "T+2",
+            "kind": "temperature_shift",
+            "temperature_delta": 2
+          },
+          {
+            "id": "P80T-2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P80T+2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": 2
+          },
+          {
+            "id": "P120T-2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P120T+2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": 2
+          },
+          {
+            "id": "S-1",
+            "kind": "production_time_shift",
+            "shift_hours": -1,
+            "supplementary": true
+          },
+          {
+            "id": "S+1",
+            "kind": "production_time_shift",
+            "shift_hours": 1,
+            "supplementary": true
+          }
+        ]
+      },
+      "controlled_regime": {
+        "profile": "full",
+        "seed": 42,
+        "n_estimators": 800,
+        "threads": 4,
+        "isolation": "serial_subprocess",
+        "candidate_models": [
+          "lgb",
+          "regime3"
+        ],
+        "same_regression_params": true,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "calibration_days": 14,
+        "gap_hours": 24,
+        "n_boot": 2000,
+        "regression_objective": "l1",
+        "design_note": "Identical core-calibration-outer partitions for both models; different from original full-development OOF; total model capacity not equalized"
+      },
+      "temporal_selection": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "trials_reg": 50,
+        "trials_clf": 50,
+        "gap_hours": 24,
+        "calibration_days": 14,
+        "inner_days": 14,
+        "max_inner_folds": 3,
+        "min_core_days": 14,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "candidates": [
+          "naive",
+          "rf",
+          "lgb",
+          "regime2",
+          "regime3"
+        ],
+        "weights": {
+          "mae": 0.3,
+          "peak_mae": 0.15,
+          "recall": 0.25,
+          "fold_std": 0.2,
+          "feasible": 0.1
+        },
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "calibration_fallback": "tau=theta; isotonic disabled",
+        "feasibility": "prespecified_all_candidates_eligible_resource_time_not_scored",
+        "resource_warning_seconds": 60,
+        "tie_break": "prespecified_candidate_order",
+        "undefined_metric_score": 0.0,
+        "search_space": {
+          "num_leaves": [
+            15,
+            127
+          ],
+          "learning_rate": [
+            0.01,
+            0.2
+          ],
+          "max_depth": [
+            3,
+            12
+          ],
+          "min_child_samples": [
+            5,
+            50
+          ],
+          "feature_fraction": [
+            0.6,
+            1.0
+          ],
+          "bagging_fraction": [
+            0.6,
+            1.0
+          ]
+        },
+        "isolation": "serial_subprocess"
+      },
+      "policy": {
+        "alpha": 0.2,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "shift_fraction": 0.2,
+        "receiving_hours": [
+          10,
+          11,
+          15,
+          16
+        ],
+        "start_hours": [
+          8,
+          13
+        ],
+        "receiving_capacity_quantile": 0.95,
+        "receiving_capacity_multiplier": 1.2,
+        "demand_rate_krw_per_kw_month": 8320,
+        "demand_rate_multipliers": [
+          0.7,
+          1,
+          1.3
+        ],
+        "action_cost_krw": [
+          0,
+          1000,
+          5000
+        ],
+        "shift_unit_cost_krw": [
+          0,
+          0.01,
+          0.1
+        ],
+        "interpretation": "Assumed operational constraints, effect and costs; retrospective policy simulation, not measured savings."
+      }
+    },
+    "source": {
+      "experiments\\bootstrap.py": "c24df1da377c7e74f2e5b89998f109be62775dcbbe22ed13c8faf072dd86af30",
+      "experiments\\common.py": "554d8aff9bc38398141992eb7d8b81812c2e92e7be9ed7b47a593377a0e4222a",
+      "experiments\\controlled_regime.py": "814c2c0ac82b0667679365191aeb4e5995a6871354f177bd195ec0a542813677",
+      "experiments\\diagnostics.py": "ac67da1322b4de02d79ba6a467b0209e8a44b57099483fba17b9efc7cab1a90c",
+      "experiments\\model_adapter.py": "72fdf0ecccb68afca5cef672f19917e6a9b96140756f50b649a31b33f0e91502",
+      "experiments\\policy.py": "e41f8f6ea9657f5cfe8410d562d47b7ca39c30f667dc6a1622bba4723f431c2f",
+      "experiments\\sensitivity.py": "220541922257a68bf6ece91c9247c4ccae53f6624a15f5a13132e4ffa58d4857",
+      "experiments\\temporal_selection.py": "b8891cf92bb033806158a1a4cfb13742d45cba6e30549992b937710112207f43",
+      "experiments\\__init__.py": "5687950aed86be87f915a6509d70d42159901c3ca0d904bd106b47facf9b25c6",
+      "run_experiments.py": "cf14c361d5c9cf39a4b7455b234ca014cef4aed3c711e73087acd3a569b001d9",
+      "data\\okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+      "outputs\\tables\\F18_src.csv": "ed8a0561195b91ff75ec793043bdbf92b3a827435c884c114b65a09a597fa12e",
+      "outputs\\analysis_snapshot\\metadata.json": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+      "src\\s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+      "src\\s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+      "src\\s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+      "src\\s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+      "src\\s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+      "src\\s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+      "src\\s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+      "src\\s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+      "src\\s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+      "src\\s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8",
+      "src\\s10_package.py": "277037b1b2b155d7ff84e135eb87a472a32662f3597bcf23f5d8ceb4597d259e",
+      "tools\\analysis_snapshot.py": "05fed35d8faa87bb9fa6cf5bfab3be82dbc32d8a9ec5d32b7f2d20c5cbd5e8a8",
+      "outputs\\models\\full\\eval\\calibrator_isotonic.json": "20e5f349291c2bda452756d87b7592400749dd910c3b9957311fa7544b48b252",
+      "outputs\\models\\full\\eval\\fallback_y_avg.lgb": "dab2818d8a05022bb0c12a7a72c7be001085137ad22e8a6d65f621624b568244",
+      "outputs\\models\\full\\eval\\fallback_y_peak.lgb": "31fd2604963aa16579b2c60ae4e913c93dda5ac3bb4b1772144b9b9f0c888ebd",
+      "outputs\\models\\full\\eval\\gate.lgb": "df9bc31eda0cf8c67751668e224d9e17d28a986388a79999ee62b256ad4518db",
+      "outputs\\models\\full\\eval\\golden.json": "53ea08a31b52e8afdde714cb4f24da965b688f4dc6fb5d5b34185191ddded4cd",
+      "outputs\\models\\full\\eval\\interval_q10.lgb": "27e403b940cc336378399a444d36175f8fe6ff141ac035a9e976a78da6524576",
+      "outputs\\models\\full\\eval\\interval_q50.lgb": "daf38f826035a4fa0f71b25fe91f5be4c6e11f7e2ac9f4945c3da043184c7a1c",
+      "outputs\\models\\full\\eval\\interval_q90.lgb": "8b66c52f0784298e49034609e2458dfdd53f92c382774c1721e5c9d03fdd5499",
+      "outputs\\models\\full\\eval\\manifest.json": "2d06f4e79f541ae5fd87b7e0614a26283ed9359ca9254325b07abb75bca06457",
+      "outputs\\models\\full\\eval\\peak_clf.lgb": "42deb53743d9a7b600760310063938ef926a74065e9f565b35cbe49355b84c78",
+      "outputs\\models\\full\\eval\\reg_y_avg_r0.lgb": "06795730fb51a535e7c7874e93d988464a24edebe7e81875660939f57e7c82b6",
+      "outputs\\models\\full\\eval\\reg_y_avg_r1.lgb": "571ef9b2e7ff102189d13060139ec84a53dfc5a4fdb265c826a61898b7c7c7e1",
+      "outputs\\models\\full\\eval\\reg_y_avg_r2.lgb": "d991885233603e5d6eaa9e18cd20958380d692be58d7fc9fbae2018cba2145a6",
+      "outputs\\models\\full\\eval\\reg_y_peak_r0.lgb": "18ac2707c9f97ef110278a576af05a6e7a55410c4c5488839c8bf9ce5741bbd0",
+      "outputs\\models\\full\\eval\\reg_y_peak_r1.lgb": "1a257ca9010a809c1f6fdabf3e8b46934b7136dda81592964e2390889a9399ce",
+      "outputs\\models\\full\\eval\\reg_y_peak_r2.lgb": "d39b42510091b73163340a222ec340e744e3d87112de7612315873b1e7a86e3a",
+      "serving\\api.py": "113e7aa0ab4a2d87b68840e71a7555c2c9df74b306ce53bb0b7e0234db600f81",
+      "serving\\bundle.py": "25b3a6268fb326970ab945c3ea6e964ecb3dbd97454e34e130d0fe70ee5c84b7",
+      "serving\\cli.py": "a6b87fd2dd9ac4da25e6831a27c770ae56d968ddf2ea1c921581b20c34eabfb0",
+      "serving\\contract.py": "7235e4aead51c75617148bb95e45c97ecab4f6fae9f04f7d9e6a3c10c9ff85f1",
+      "serving\\errors.py": "c6123bc43a4eb88a9bfc52287168368426cafdfba0a421f487def05efd6acef4",
+      "serving\\pipeline.py": "975f5aa096acedd92dba41da612436e7cfc3dbae8ac8cf8a534fcb0cd9e7e020",
+      "serving\\_core.py": "b6d3d86bffbe8e2eb8541393625b99b24172f87c25aeefab0ac43598dcf67e9b",
+      "serving\\__init__.py": "ffbeaa6ac1b363d923155b8ea1d28eca0a28a05b58b971a57ec6bb68212c4757",
+      "serving\\__main__.py": "907ca32ec543795d5122e46b0998854df76e647e00b51f095b9da907f7dd05b8"
+    },
+    "runtime": {
+      "python": "3.11.9",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.4.2",
+      "lightgbm": "4.5.0",
+      "optuna": "5.0.0"
+    }
+  },
+  "summary": {
+    "experiment": "sensitivity",
+    "status": "complete",
+    "n_scenarios": 17,
+    "basic_scenarios": 15,
+    "supplementary_scenarios": 2,
+    "bundle_id": "eval-full-236dd9888c33",
+    "bundle_manifest_sha256": "2d06f4e79f541ae5fd87b7e0614a26283ed9359ca9254325b07abb75bca06457",
+    "c0_max_absolute_difference": {
+      "pred_avg": 0.0,
+      "pred_peak": 0.0
+    },
+    "truth_sha256": "cd611d27640b5c03614af36a95d8baf688f109a67f9352ea2933a9ea69a1d385",
+    "raw_sha256": "9a9141ead0325cc4db21eef17f5e3da7003665d3a0268ae09d1ec7de8a1e9064",
+    "evaluation_role": "frozen_reference_input_stress",
+    "scenario_ids": [
+      "C0",
+      "P80",
+      "P90",
+      "P110",
+      "P120",
+      "H90",
+      "H110",
+      "T-2",
+      "T-1",
+      "T+1",
+      "T+2",
+      "P80T-2",
+      "P80T+2",
+      "P120T-2",
+      "P120T+2",
+      "S-1",
+      "S+1"
+    ],
+    "limitations": [
+      "Assumed input-error ranges, not observed operational forecast errors",
+      "Historical observations reset daily; no causal production intervention",
+      "Existing no-plan ablation is separate; zeroing production here is not a no-plan model"
+    ]
+  },
+  "files_sha256": {
+    "feature_consistency_audit.csv": "6ecf6a7bb9a2f946be7d5238efa42b0c14b3db4a2cc69b751ea0e198c8e35572",
+    "input_sensitivity_metrics.csv": "036c19f26c9e8ec7e68452f0f9315f56b0d3e8d51f3e3a14b995490dfb2dfb97",
+    "input_sensitivity_predictions.csv": "7456d457541cb37649a2a98c18edafa538a489cbecdf62887699386f2f00ecdc",
+    "scenario_protocol.json": "863652e8365731cf1f1d962b480378ee83ee84d3362c65f928bbf37a2aab19a6",
+    "summary.json": "51968b62d5b2f76a8c19d379dd9ddcd22f5e5c3d7ad037c7d2d81c715d5e323e"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "fid": "F05",
+  "text_count": 25,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F05_시간대별_부하_프로파일.png",
+  "sha256": "3afe319c46bf8a1d7d2609dd57b4c9541fa84f8908ea88db0755683f30fe38ab",
+  "pixel_size": [
+    2369,
+    963
+  ],
+  "saved_size_pt": [
+    568.56,
+    231.12
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F05.png",
+    "sha256": "707faf2f2f52e3ee26aa05687c12fbc65b8a71f36c493dc9e60dbf2bf20e63ce",
+    "minimum_effective_font_pt": 8.60028683056985,
+    "readability_pass": true
+  },
+  "title": "시간대별 부하 프로파일",
+  "section": "1.5",
+  "source": "s01_diagnose.py"
+}

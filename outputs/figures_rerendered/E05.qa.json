@@ -1,0 +1,32 @@
+{
+  "fid": "E05",
+  "text_count": 26,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E05.png",
+  "sha256": "e82198389679d670309ca9f5ce185a4b1e360c239641a32a74e3ac3a3763537c",
+  "pixel_size": [
+    2969,
+    1123
+  ],
+  "saved_size_pt": [
+    712.56,
+    269.52
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "시간순 후보선정 평가",
+  "source_table": "temporal_outer_metrics.csv",
+  "source_sha256": "1f0cfc1129af092703b0ea3ae7e2dc6a809bf0a1487f2601e03a6baa7cb94374",
+  "report_variant": {
+    "path": "report_variants/E05.png",
+    "sha256": "e485fcbec25d1ff071e7a3b38da313419d2dd171610ad5683684d328f2e1b567",
+    "minimum_effective_font_pt": 8.600673242523875,
+    "readability_pass": true
+  }
+}

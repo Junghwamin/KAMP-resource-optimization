@@ -1,0 +1,9 @@
+── LightGBM 회귀 Optuna 50회 탐색 ──
+  최적 fold평균 MAE = 13.7298
+  num_leaves: 50
+  learning_rate: 0.1441
+  max_depth: 6
+  min_child_samples: 34
+  feature_fraction: 0.8002
+  bagging_fraction: 0.6176
+  bagging_freq: 1

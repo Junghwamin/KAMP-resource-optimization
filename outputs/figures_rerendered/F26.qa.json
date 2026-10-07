@@ -1,0 +1,26 @@
+{
+  "fid": "F26",
+  "text_count": 31,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F26.png",
+  "sha256": "f02d5b5ae6016b51e1453c4fb970f215e5319745c6ef6a95befdaa6600ca8326",
+  "pixel_size": [
+    2849,
+    872
+  ],
+  "saved_size_pt": [
+    683.76,
+    209.28
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "Optuna 탐색 이력",
+  "section": "5.1",
+  "source": "s05_models.py"
+}

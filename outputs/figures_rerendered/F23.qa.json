@@ -1,0 +1,26 @@
+{
+  "fid": "F23",
+  "text_count": 9,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F23.png",
+  "sha256": "f33ed0e000c090457244e0c03e0bf86c288bf48cf1457e7a52c71a0802123538",
+  "pixel_size": [
+    1056,
+    988
+  ],
+  "saved_size_pt": [
+    253.44,
+    237.12
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "혼동행렬",
+  "section": "6.2",
+  "source": "s06_eval.py"
+}

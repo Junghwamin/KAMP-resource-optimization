@@ -1,0 +1,32 @@
+{
+  "fid": "F30",
+  "text_count": 22,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F30_FN_FP_시간대_분포.png",
+  "sha256": "7442a4c25b7d1be6c5b539f547f976a2a93e0d9c9ef324e5ccebd8c68ef5b9f5",
+  "pixel_size": [
+    2488,
+    872
+  ],
+  "saved_size_pt": [
+    597.12,
+    209.28
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F30.png",
+    "sha256": "8a062133c0f61f2204c19d29c9ec765261fd7842c90842a1d8c4c4278552edd6",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "FN FP 시간대 분포",
+  "section": "7.4",
+  "source": "s07_analysis.py"
+}

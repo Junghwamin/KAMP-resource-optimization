@@ -1,0 +1,14 @@
+$ python -X utf8 -B -m serving predict --bundle outputs/models/full/eval --history outputs/steps/serving_demo_history.csv --plan outputs/steps/serving_demo_plan.csv --out outputs/steps/serving_predict_eval_20210914.csv
+[OK] 2021-09-14 24시간 예측 · 번들 eval-full-236dd9888c33
+  → 종료코드 0
+$ python -X utf8 -B -m serving predict --bundle outputs/models/full/deploy --history outputs/steps/serving_demo_history.csv --plan outputs/steps/serving_demo_plan.csv --out outputs/steps/serving_predict_deploy_20210914.csv
+[OK] 2021-09-14 24시간 예측 · 번들 deploy-full-6efaf40b3875
+  → 종료코드 0
+  ※ 배포 번들은 09-14 까지 학습했다 — 이 09-14 예측은 학습 구간 안의 데모이고 성능 근거가 아니다
+$ python -X utf8 -B -m serving predict --bundle outputs/models/full/eval --history outputs/steps/serving_demo_history.csv --plan outputs/steps/serving_demo_plan_leak.csv --out outputs/steps/serving_predict_leak.csv
+[PLAN_HAS_POWER] 계획에 대상일 전력 컬럼이 있다(누수): ['평균'] — 계획은 생산·인원·기상만 받는다
+  → 종료코드 2
+  ✓ 평가 번들 predict: 종료코드 0 · 09-14 24행
+  ✓ 09-14 예측 == 제출 파일 (4·6자리 반올림 · 라벨)
+  ✓ 배포 번들 predict: 종료코드 0 · 24행 (데모)
+  ✓ 누수 차단: 종료코드 2 · PLAN_HAS_POWER · 출력 파일 없음

@@ -1,0 +1,2556 @@
+{
+ "schema": 1,
+ "tool": "run_all",
+ "mode": "FULL",
+ "status": "ok",
+ "started": "2026-10-06T23:34:33+09:00",
+ "finished": "2026-10-07T00:14:32+09:00",
+ "total_sec": 2398.61,
+ "current": null,
+ "flags": {
+  "fast": false,
+  "pause": "none",
+  "skip_serving": false,
+  "no_tests": false,
+  "skip_bundle": false,
+  "cpu": true,
+  "check_only": false
+ },
+ "python": "3.11.9",
+ "platform": "Windows-10-10.0.26100-SP0",
+ "versions": {
+  "python": "3.11.9",
+  "numpy": "1.26.4",
+  "pandas": "2.1.4",
+  "scipy": "1.11.4",
+  "scikit-learn": "1.4.2",
+  "matplotlib": "3.9.2",
+  "lightgbm": "4.5.0",
+  "optuna": "5.0.0",
+  "statsmodels": "0.14.2",
+  "shap": "0.49.1",
+  "joblib": "1.6.0",
+  "tensorflow": "2.17.0",
+  "keras": "3.15.1",
+  "pytest": "9.0.2"
+ },
+ "provenance": {
+  "files": {
+   "check_env.sh": "999faf8a91f8e076a7881721c5d64e149e85c63382fb6f0167a137c7d99f1abd",
+   "data/okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+   "pytest.ini": "cd468902a17703b65fe105cd739aa4f427d22087e0a439055036615690eaec31",
+   "requirements.txt": "94b398f7260b79ff631075efa4c1efb5e2511412a02e089b33393bb2b5a5bdc3",
+   "run_all.py": "f1ac24265efcc87d40ed15708122df07ede761ab5c8411669ce68749a5a5e18d",
+   "serving/__init__.py": "ffbeaa6ac1b363d923155b8ea1d28eca0a28a05b58b971a57ec6bb68212c4757",
+   "serving/__main__.py": "907ca32ec543795d5122e46b0998854df76e647e00b51f095b9da907f7dd05b8",
+   "serving/_core.py": "b6d3d86bffbe8e2eb8541393625b99b24172f87c25aeefab0ac43598dcf67e9b",
+   "serving/api.py": "113e7aa0ab4a2d87b68840e71a7555c2c9df74b306ce53bb0b7e0234db600f81",
+   "serving/bundle.py": "25b3a6268fb326970ab945c3ea6e964ecb3dbd97454e34e130d0fe70ee5c84b7",
+   "serving/cli.py": "a6b87fd2dd9ac4da25e6831a27c770ae56d968ddf2ea1c921581b20c34eabfb0",
+   "serving/config/holidays_kr.json": "d61addf7d4a4143cd0c112744f65cef6396347b8a0a74a70c7aee4d007b06d0d",
+   "serving/contract.py": "7235e4aead51c75617148bb95e45c97ecab4f6fae9f04f7d9e6a3c10c9ff85f1",
+   "serving/errors.py": "c6123bc43a4eb88a9bfc52287168368426cafdfba0a421f487def05efd6acef4",
+   "serving/pipeline.py": "975f5aa096acedd92dba41da612436e7cfc3dbae8ac8cf8a534fcb0cd9e7e020",
+   "setup_pod.sh": "3dc50c3abe9e6696e9c4156b182de598675ae8a3b4f58fc51e99048f195ad7ea",
+   "show_results.py": "6731e524bcaab69bf72344e26d833ab665cf6c0f4e52e64fbe8b50fd339f1d64",
+   "src/s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+   "src/s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+   "src/s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+   "src/s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+   "src/s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+   "src/s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+   "src/s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+   "src/s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+   "src/s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+   "src/s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8",
+   "src/s10_package.py": "277037b1b2b155d7ff84e135eb87a472a32662f3597bcf23f5d8ceb4597d259e",
+   "tests/conftest.py": "d3818b3f4e54e12ea8ea9093bd1c2825c73bc03e6aa96147ff03511b5959d73d",
+   "tests/serving_helpers.py": "08c0274b089304567829f104006887ea76ae9dc25b0e90fddaf378599ef26588",
+   "tests/test_additional_basic.py": "d3c49d01d0ce2982fb0222621c53cf5cac53427d3d3a6b1dead9f6b8fff64ed8",
+   "tests/test_additional_policy.py": "8551bb52f510d350c9a14039ec13c9abe53d0c39347f7e3f1ca7e3658467fd9b",
+   "tests/test_additional_temporal.py": "c99935097351aa75c81137dc70939bc3baa5dbf201bc4ac7dbcabfdaccab1c3c",
+   "tests/test_analysis_snapshot.py": "a6a04c0d508e6f99e2e84b00f7b5a089195fe3825ddf1b7b5f3e7b6ed6cc819e",
+   "tests/test_causal_updates.py": "374c2ba9bbbf62779e25ab2989ebf619a644ba632d2b7aeeaa51767aef5b4359",
+   "tests/test_figure_layout.py": "5532469fd7bf603f50d85fad24cb3a43689ad25b336895926a51d3a44037d721",
+   "tests/test_isolated_cv.py": "4cc951927dc28417f612f8fb67f04a5745c503949b7b859ecf78bc52f36b3b72",
+   "tests/test_model_training_updates.py": "012210677012d4fa706464e61c31dc2e3f46d1bf9de7ce9c5e59d789c76fadcf",
+   "tests/test_runner_import_boundary.py": "a606146c070a4e1a42d713bd23ccce55b6bd75dfebcd483c002788607b14ed87",
+   "tests/test_serving_unit.py": "99bd0d558c30bf309c690eb7a0ca5454ac8d690855d1cd2d2398fa7c61515d1c",
+   "tests/test_simulation_updates.py": "94fcc3de49b76a8fe3d593c6b2b4c9ea8c4c22a645b0ab55196e839c88898e0f",
+   "tests/test_statistics_updates.py": "90de95d79d2bf603d2e47fb01b1d1d6938253fa4775e3fec2c8d6993081c70eb",
+   "tools/__init__.py": "49daa20339d23851437446ed7dbc937027c4c874f5f109e29f1bcf0104148356",
+   "tools/analysis_snapshot.py": "294eec577cb02a5660d99f381b7d725d49f533e084241f00263fb7b044e83ac5",
+   "tools/build_serving_core.py": "c65186040622962dc700fad96cd46c20f46fd264fc4c08a2172d94396f38aea3",
+   "tools/figure_layout.py": "136dd480b3a5ed75009e2619bcf1c570e8dd198984b5a39eddebb1ad1210eb4f",
+   "tools/isolated_regime_cv.py": "019e3d2ce70c9eb8ed1bc6341d49c606f7ce080003beda4bf57a131e4b652e40",
+   "tools/model_persistence.py": "b70d4b2326a6bbfe0f19ef25fadd6edcf1af736b762e738c51ca31a86f01c36f",
+   "tools/render_figures.py": "6c048179fb880f2e9db143a0034a775f7df0d1168ba332b1dd08aad9fbff1fa2"
+  },
+  "code_sha256": "3f97505e7c5cfcd1e8c9931876b8dead4d9741a2a39ece8958dbb2dda0e17e6b"
+ },
+ "excluded": [
+  {
+   "file": "s06_eval.py",
+   "key": "6.7",
+   "title": "6.7 결과 해석 — 보고서 서술을 실측에 맞춘다",
+   "reason": "보고서 서술 교정 — 10.2절 문장 치환사전 입력용"
+  },
+  {
+   "file": "s08_simulation.py",
+   "key": "8.5",
+   "title": "8.5 보고서 4장 본문 초안 생성",
+   "reason": "보고서 4장 본문 초안(md) 생성"
+  },
+  {
+   "file": "s09_creativity.py",
+   "key": "*",
+   "title": "9. 창의성·차별성 근거 산출",
+   "reason": "창의성·차별성 근거 정리 + 보고서 5장 초안 — 실험이 아니라 보고서 재료"
+  },
+  {
+   "file": "s10_package.py",
+   "key": "10.2",
+   "title": "10.2 보고서 채움표 · 문장 치환사전 · 장별 PASS/FAIL",
+   "reason": "보고서 채움표 · 문장 치환사전 · 장별 PASS/FAIL"
+  },
+  {
+   "file": "s10_package.py",
+   "key": "10.3",
+   "title": "10.3 `report_tbd_filled.md` 생성 — 채움표 + 치환사전 + plan 대비 정정",
+   "reason": "report_tbd_filled.md 생성"
+  },
+  {
+   "file": "s10_package.py",
+   "key": "10.4",
+   "title": "10.4 requirements.txt · README(= 6장 본문)",
+   "reason": "requirements.txt · README(6장 본문) 생성"
+  },
+  {
+   "file": "s10_package.py",
+   "key": "10.6",
+   "title": "10.6 발표자료 골격 · 개인정보 스캔",
+   "reason": "발표자료 골격(pptx) · 개인정보 스캔"
+  },
+  {
+   "file": "s10_package.py",
+   "key": "최종 게이트 — 제출 준비 상태 점검",
+   "title": "최종 게이트 — 제출 준비 상태 점검",
+   "reason": "제출 준비 점검"
+  }
+ ],
+ "steps": [
+  {
+   "seq": 1,
+   "id": "0.1",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.1 환경변수·시드 설정",
+   "file": "src/s00_env.py",
+   "lines": [
+    42,
+    60
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "6장",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/01_0.1.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 2,
+   "id": "0.2",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.2 라이브러리 임포트·버전 출력",
+   "file": "src/s00_env.py",
+   "lines": [
+    68,
+    140
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "6장 (`requirements.txt` 와 대조 가능)",
+   "status": "ok",
+   "seconds": 3.77,
+   "log": "outputs/steps/02_0.2.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 3,
+   "id": "0.3",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.3 전역 설정 — 경로·한글폰트·표시옵션",
+   "file": "src/s00_env.py",
+   "lines": [
+    152,
+    206
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "6장",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/03_0.3.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 4,
+   "id": "0.4",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.4 출력 디렉터리 준비",
+   "file": "src/s00_env.py",
+   "lines": [
+    214,
+    248
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "6장",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/04_0.4.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 5,
+   "id": "0.5",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.5 시각화 유틸리티",
+   "file": "src/s00_env.py",
+   "lines": [
+    269,
+    368
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "전 장 (그림↔절 매핑표가 6장 README 로 들어간다)",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/05_0.5.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 6,
+   "id": "0.6",
+   "kind": "section",
+   "chapter": 0,
+   "title": "0.6 무음 실패 승격 — 조용히 반영되지 않는 코드를 즉시 중단시킨다",
+   "file": "src/s00_env.py",
+   "lines": [
+    381,
+    417
+   ],
+   "cells": 1,
+   "report": [
+    "6",
+    "2.2"
+   ],
+   "tag_raw": "2.2절 (원본 vs 보정)",
+   "status": "ok",
+   "seconds": 0.69,
+   "log": "outputs/steps/06_0.6.txt",
+   "log_lines": 18,
+   "files": {
+    "tables": [
+     "outputs/tables/env_versions.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 7,
+   "id": "1.1",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.1 데이터 적재 및 변수사전",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    39,
+    111
+   ],
+   "cells": 1,
+   "report": [
+    "1.2"
+   ],
+   "tag_raw": "1.2 데이터 구성 및 주요 변수",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/07_1.1.txt",
+   "log_lines": 21,
+   "files": {
+    "tables": [
+     "outputs/tables/ch1_variable_dict.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 8,
+   "id": "1.2",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.2 데이터 품질 진단 (가이드북 6기준)",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    127,
+    417
+   ],
+   "cells": 4,
+   "report": [
+    "1.4"
+   ],
+   "tag_raw": "1.4 데이터 품질 진단 및 처리",
+   "status": "ok",
+   "seconds": 0.78,
+   "log": "outputs/steps/08_1.2.txt",
+   "log_lines": 32,
+   "files": {
+    "tables": [
+     "outputs/tables/F02_src.csv",
+     "outputs/tables/F03_src.csv",
+     "outputs/tables/F12_src.csv",
+     "outputs/tables/ch1_profile_dup.csv",
+     "outputs/tables/ch1_quality.csv",
+     "outputs/tables/ch1_rowlayout.csv"
+    ],
+    "figures": [
+     "outputs/figures/F02_복제일_구조.png",
+     "outputs/figures/F03_행순서_복원_검증.png",
+     "outputs/figures/F12_품질_진단_요약.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F02_복제일_구조.qa.json",
+     "outputs/figures/F03_행순서_복원_검증.qa.json",
+     "outputs/figures/F12_품질_진단_요약.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 9,
+   "id": "1.3",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.3 데이터 정비",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    457,
+    626
+   ],
+   "cells": 2,
+   "report": [
+    "1.4"
+   ],
+   "tag_raw": "1.4 데이터 품질 진단 및 처리",
+   "status": "ok",
+   "seconds": 0.23,
+   "log": "outputs/steps/09_1.3.txt",
+   "log_lines": 15,
+   "files": {
+    "tables": [
+     "outputs/tables/F04_src.csv",
+     "outputs/tables/ch1_repair_log.csv"
+    ],
+    "figures": [
+     "outputs/figures/F04_양방향_결측_타임라인.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F04_양방향_결측_타임라인.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 10,
+   "id": "1.4",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.4 가동 캘린더 도출",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    652,
+    819
+   ],
+   "cells": 2,
+   "report": [
+    "1.5"
+   ],
+   "tag_raw": "1.5 전처리 및 파생변수 구성",
+   "status": "ok",
+   "seconds": 0.33,
+   "log": "outputs/steps/10_1.4.txt",
+   "log_lines": 20,
+   "files": {
+    "tables": [
+     "outputs/tables/F08_src.csv",
+     "outputs/tables/ch1_calendar.csv",
+     "outputs/tables/ch1_holiday_audit.csv",
+     "outputs/tables/ch1_long_shutdown.csv"
+    ],
+    "figures": [
+     "outputs/figures/F08_가동_캘린더.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F08_가동_캘린더.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 11,
+   "id": "1.5",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.5 탐색적 분석 (EDA)",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    831,
+    1041
+   ],
+   "cells": 2,
+   "report": [
+    "1.3"
+   ],
+   "tag_raw": "1.3 제조공정 상태 및 탐색적 분석",
+   "status": "ok",
+   "seconds": 1.98,
+   "log": "outputs/steps/11_1.5.txt",
+   "log_lines": 29,
+   "files": {
+    "tables": [
+     "outputs/tables/F01_src.csv",
+     "outputs/tables/F05_src.csv",
+     "outputs/tables/F07_src.csv",
+     "outputs/tables/F09_src.csv",
+     "outputs/tables/F10_src.csv",
+     "outputs/tables/F11_src.csv",
+     "outputs/tables/ch1_eda_dow.csv",
+     "outputs/tables/ch1_eda_hourly.csv",
+     "outputs/tables/ch1_eda_monthly_peak.csv",
+     "outputs/tables/ch1_eda_night_peaks.csv",
+     "outputs/tables/ch1_eda_peak_by_hour.csv"
+    ],
+    "figures": [
+     "outputs/figures/F01_전체기간_전력_시계열.png",
+     "outputs/figures/F05_시간대별_부하_프로파일.png",
+     "outputs/figures/F07_시간대_월_피크율_히트맵.png",
+     "outputs/figures/F09_일평균전력_3레짐.png",
+     "outputs/figures/F10_생산량_전력_산점도.png",
+     "outputs/figures/F11_상관행렬.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F01_전체기간_전력_시계열.qa.json",
+     "outputs/figures/F05_시간대별_부하_프로파일.qa.json",
+     "outputs/figures/F07_시간대_월_피크율_히트맵.qa.json",
+     "outputs/figures/F09_일평균전력_3레짐.qa.json",
+     "outputs/figures/F10_생산량_전력_산점도.qa.json",
+     "outputs/figures/F11_상관행렬.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 12,
+   "id": "1.6",
+   "kind": "section",
+   "chapter": 1,
+   "title": "1.6 피크 정의 및 임계값 확정",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    1060,
+    1148
+   ],
+   "cells": 2,
+   "report": [
+    "1.1",
+    "1.6"
+   ],
+   "tag_raw": "1.1 (피크 기준), 1.6 (학습·검증 구성)",
+   "status": "ok",
+   "seconds": 0.28,
+   "log": "outputs/steps/12_1.6.txt",
+   "log_lines": 15,
+   "files": {
+    "tables": [
+     "outputs/tables/F06_src.csv",
+     "outputs/tables/ch1_theta.csv"
+    ],
+    "figures": [
+     "outputs/figures/F06_peak15_분포와_임계값.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F06_peak15_분포와_임계값.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 13,
+   "id": "1.G",
+   "kind": "gate",
+   "chapter": 1,
+   "title": "1장 게이트 — 정비 결과 검증",
+   "file": "src/s01_diagnose.py",
+   "lines": [
+    1154,
+    1182
+   ],
+   "cells": 1,
+   "report": [
+    "1.4"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/13_1.G.txt",
+   "log_lines": 8,
+   "files": {
+    "tables": [
+     "outputs/tables/gate1_chapter1.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 14,
+   "id": "2.1",
+   "kind": "section",
+   "chapter": 2,
+   "title": "2.1 달력·공정상태 파생변수",
+   "file": "src/s02_features.py",
+   "lines": [
+    43,
+    122
+   ],
+   "cells": 1,
+   "report": [
+    "1.5",
+    "2.3"
+   ],
+   "tag_raw": "1.5 전처리 및 파생변수 구성, 2.3 입력변수 구성",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/14_2.1.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 15,
+   "id": "2.2",
+   "kind": "section",
+   "chapter": 2,
+   "title": "2.2 Day-ahead 예측 원점 규칙",
+   "file": "src/s02_features.py",
+   "lines": [
+    140,
+    214
+   ],
+   "cells": 1,
+   "report": [
+    "2.1",
+    "2.3"
+   ],
+   "tag_raw": "2.1 실험 설계, 2.3 입력변수 구성",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/15_2.2.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 16,
+   "id": "2.3",
+   "kind": "section",
+   "chapter": 2,
+   "title": "2.3 피처군 조립",
+   "file": "src/s02_features.py",
+   "lines": [
+    229,
+    381
+   ],
+   "cells": 2,
+   "report": [
+    "2.3"
+   ],
+   "tag_raw": "2.3 입력변수 구성",
+   "status": "ok",
+   "seconds": 0.3,
+   "log": "outputs/steps/16_2.3.txt",
+   "log_lines": 13,
+   "files": {
+    "tables": [
+     "outputs/tables/F13_src.csv",
+     "outputs/tables/ch2_feature_groups.csv",
+     "outputs/tables/ch2_feature_labels.csv"
+    ],
+    "figures": [
+     "outputs/figures/F13_Day_ahead_원점_경계.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F13_Day_ahead_원점_경계.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 17,
+   "id": "2.4",
+   "kind": "section",
+   "chapter": 2,
+   "title": "2.4 시간누수 자동검증",
+   "file": "src/s02_features.py",
+   "lines": [
+    401,
+    507
+   ],
+   "cells": 1,
+   "report": [
+    "1.5",
+    "2.1",
+    "2.3"
+   ],
+   "tag_raw": "1.5, 2.1, 2.3",
+   "status": "ok",
+   "seconds": 1.19,
+   "log": "outputs/steps/17_2.4.txt",
+   "log_lines": 43,
+   "files": {
+    "tables": [
+     "outputs/tables/ch2_leakage_blind.csv",
+     "outputs/tables/ch2_leakage_obs.csv",
+     "outputs/tables/gate2_leakage.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 18,
+   "id": "3.1",
+   "kind": "section",
+   "chapter": 3,
+   "title": "3.1 시간순 분할과 데이터 조건 2축",
+   "file": "src/s03_split.py",
+   "lines": [
+    47,
+    105
+   ],
+   "cells": 1,
+   "report": [
+    "1.6",
+    "2.1"
+   ],
+   "tag_raw": "1.6 학습·검증 데이터 구성, 2.1 실험 설계",
+   "status": "ok",
+   "seconds": 0.05,
+   "log": "outputs/steps/18_3.1.txt",
+   "log_lines": 4,
+   "files": {
+    "tables": [
+     "outputs/tables/ch3_data_conditions.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 19,
+   "id": "3.2",
+   "kind": "section",
+   "chapter": 3,
+   "title": "3.2 Rolling-origin 교차검증 (+ 복제 오염 검사)",
+   "file": "src/s03_split.py",
+   "lines": [
+    122,
+    308
+   ],
+   "cells": 2,
+   "report": [
+    "2.1"
+   ],
+   "tag_raw": "2.1 실험 설계",
+   "status": "ok",
+   "seconds": 0.39,
+   "log": "outputs/steps/19_3.2.txt",
+   "log_lines": 26,
+   "files": {
+    "tables": [
+     "outputs/tables/F14_src.csv",
+     "outputs/tables/F15_src.csv",
+     "outputs/tables/ch3_contamination.csv",
+     "outputs/tables/ch3_folds.csv",
+     "outputs/tables/gate3_split.csv"
+    ],
+    "figures": [
+     "outputs/figures/F14_Rolling_origin_fold_배치도.png",
+     "outputs/figures/F15_fold별_양성률.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F14_Rolling_origin_fold_배치도.qa.json",
+     "outputs/figures/F15_fold별_양성률.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 20,
+   "id": "3.3",
+   "kind": "section",
+   "chapter": 3,
+   "title": "3.3 평가지표 정의",
+   "file": "src/s03_split.py",
+   "lines": [
+    330,
+    515
+   ],
+   "cells": 1,
+   "report": [
+    "2.1",
+    "2.6",
+    "2.7"
+   ],
+   "tag_raw": "2.1 실험 설계, 2.6~2.7 성능표",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/20_3.3.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 21,
+   "id": "3.4",
+   "kind": "section",
+   "chapter": 3,
+   "title": "3.4 달력규칙 기준선 — Task B의 진짜 하한",
+   "file": "src/s03_split.py",
+   "lines": [
+    527,
+    562
+   ],
+   "cells": 1,
+   "report": [
+    "2.7"
+   ],
+   "tag_raw": "2.7 피크 위험 탐지 성능",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/21_3.4.txt",
+   "log_lines": 7,
+   "files": {
+    "tables": [
+     "outputs/tables/ch3_calendar_rule.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 22,
+   "id": "3.5",
+   "kind": "section",
+   "chapter": 3,
+   "title": "3.5 fold 데이터 준비 헬퍼",
+   "file": "src/s03_split.py",
+   "lines": [
+    578,
+    649
+   ],
+   "cells": 1,
+   "report": [
+    "2.1",
+    "2.3"
+   ],
+   "tag_raw": "2.1, 2.3",
+   "status": "ok",
+   "seconds": 0.12,
+   "log": "outputs/steps/22_3.5.txt",
+   "log_lines": 11,
+   "files": {
+    "tables": [
+     "outputs/tables/fold_matrix.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 23,
+   "id": "4.1",
+   "kind": "section",
+   "chapter": 4,
+   "title": "4.1 Seasonal Naive 기준선",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    53,
+    72
+   ],
+   "cells": 1,
+   "report": [
+    "2.2",
+    "2.6"
+   ],
+   "tag_raw": "2.2, 2.6",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/23_4.1.txt",
+   "log_lines": 2,
+   "files": {
+    "tables": [
+     "outputs/tables/ch4_naive.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 24,
+   "id": "4.2",
+   "kind": "section",
+   "chapter": 4,
+   "title": "4.2 Simple RNN — 원본 재현",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    91,
+    171
+   ],
+   "cells": 1,
+   "report": [
+    "2.2"
+   ],
+   "tag_raw": "2.2",
+   "status": "ok",
+   "seconds": 159.56,
+   "log": "outputs/steps/24_4.2.txt",
+   "log_lines": 2,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [
+     "outputs/models/baselines/full/rnn_original/manifest.json",
+     "outputs/models/baselines/full/rnn_original/model.joblib",
+     "outputs/models/baselines/full/rnn_original/network_0.keras"
+    ],
+    "other": []
+   },
+   "dev_sec": 149,
+   "error": null
+  },
+  {
+   "seq": 25,
+   "id": "4.3",
+   "kind": "section",
+   "chapter": 4,
+   "title": "4.3 Random Forest — 원본 재현 (`iloc[0]` 버그 포함)",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    192,
+    296
+   ],
+   "cells": 1,
+   "report": [
+    "2.2"
+   ],
+   "tag_raw": "2.2",
+   "status": "ok",
+   "seconds": 1.48,
+   "log": "outputs/steps/25_4.3.txt",
+   "log_lines": 10,
+   "files": {
+    "tables": [
+     "outputs/tables/F16_src.csv",
+     "outputs/tables/ch4_rf_original.csv"
+    ],
+    "figures": [
+     "outputs/figures/F16_베이스라인_RF_중요도_집중.png"
+    ],
+    "models": [
+     "outputs/models/baselines/full/rf_original/manifest.json",
+     "outputs/models/baselines/full/rf_original/model.joblib"
+    ],
+    "other": [
+     "outputs/figures/F16_베이스라인_RF_중요도_집중.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 26,
+   "id": "4.4",
+   "kind": "section",
+   "chapter": 4,
+   "title": "4.4 결함 진단 13건",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    307,
+    379
+   ],
+   "cells": 1,
+   "report": [
+    "2.2"
+   ],
+   "tag_raw": "2.2",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/26_4.4.txt",
+   "log_lines": 21,
+   "files": {
+    "tables": [
+     "outputs/tables/ch4_defects.csv",
+     "outputs/tables/ch4_silent_noop.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 27,
+   "id": "4.5",
+   "kind": "section",
+   "chapter": 4,
+   "title": "4.5 보정 재구성 — 운영 조건을 반영한 재실행",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    391,
+    493
+   ],
+   "cells": 1,
+   "report": [
+    "2.2",
+    "2.6"
+   ],
+   "tag_raw": "2.2, 2.6",
+   "status": "ok",
+   "seconds": 28.83,
+   "log": "outputs/steps/27_4.5.txt",
+   "log_lines": 7,
+   "files": {
+    "tables": [
+     "outputs/tables/ch4_corrected.csv"
+    ],
+    "figures": [],
+    "models": [
+     "outputs/models/baselines/full/D1/rf_corrected/manifest.json",
+     "outputs/models/baselines/full/D1/rf_corrected/model.joblib",
+     "outputs/models/baselines/full/D1/rnn_corrected/manifest.json",
+     "outputs/models/baselines/full/D1/rnn_corrected/model.joblib",
+     "outputs/models/baselines/full/D1/rnn_corrected/network_0.keras"
+    ],
+    "other": []
+   },
+   "dev_sec": 26,
+   "error": null
+  },
+  {
+   "seq": 28,
+   "id": "4.G",
+   "kind": "gate",
+   "chapter": 4,
+   "title": "4장 게이트 — 무음 미반영 탐지 및 버그 증명",
+   "file": "src/s04_baseline.py",
+   "lines": [
+    497,
+    520
+   ],
+   "cells": 1,
+   "report": [
+    "2.2"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/28_4.G.txt",
+   "log_lines": 8,
+   "files": {
+    "tables": [
+     "outputs/tables/gate4_baseline.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 29,
+   "id": "5.0",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.0 공통 실행 하네스",
+   "file": "src/s05_models.py",
+   "lines": [
+    69,
+    197
+   ],
+   "cells": 1,
+   "report": [
+    "2.1",
+    "2.6"
+   ],
+   "tag_raw": "2.1, 2.6",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/29_5.0.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 30,
+   "id": "5.1",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.1 LightGBM 회귀 (주력) + Optuna 하이퍼파라미터 탐색",
+   "file": "src/s05_models.py",
+   "lines": [
+    209,
+    285
+   ],
+   "cells": 1,
+   "report": [
+    "2.5",
+    "2.4"
+   ],
+   "tag_raw": "2.4-1), 2.5",
+   "status": "ok",
+   "seconds": 157.12,
+   "log": "outputs/steps/30_5.1.txt",
+   "log_lines": 9,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": 77,
+   "error": null
+  },
+  {
+   "seq": 31,
+   "id": "5.2",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.2 2단계 레짐 모델",
+   "file": "src/s05_models.py",
+   "lines": [
+    302,
+    391
+   ],
+   "cells": 1,
+   "report": [
+    "2.4"
+   ],
+   "tag_raw": "2.4-2)",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/31_5.2.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 32,
+   "id": "5.3",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.3 DNN (Dense 전용 MLP)",
+   "file": "src/s05_models.py",
+   "lines": [
+    404,
+    464
+   ],
+   "cells": 1,
+   "report": [
+    "2.2",
+    "2.4"
+   ],
+   "tag_raw": "2.2 표의 DNN 행, 2.4",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/32_5.3.txt",
+   "log_lines": 0,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 33,
+   "id": "5.4",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.4 피크 직접 분류모델",
+   "file": "src/s05_models.py",
+   "lines": [
+    475,
+    568
+   ],
+   "cells": 1,
+   "report": [
+    "2.4",
+    "2.5"
+   ],
+   "tag_raw": "2.4-3), 2.5",
+   "status": "ok",
+   "seconds": 73.64,
+   "log": "outputs/steps/33_5.4.txt",
+   "log_lines": 3,
+   "files": {
+    "tables": [
+     "outputs/tables/F26_src.csv",
+     "outputs/tables/hpo_trials.csv"
+    ],
+    "figures": [
+     "outputs/figures/F26_Optuna_탐색_이력.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F26_Optuna_탐색_이력.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": 72,
+   "error": null
+  },
+  {
+   "seq": 34,
+   "id": "5.5",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.5 모델 레지스트리 및 교차검증 실행",
+   "file": "src/s05_models.py",
+   "lines": [
+    578,
+    657
+   ],
+   "cells": 1,
+   "report": [
+    "2.4",
+    "2.6"
+   ],
+   "tag_raw": "2.4, 2.6",
+   "status": "ok",
+   "seconds": 316.06,
+   "log": "outputs/steps/34_5.5.txt",
+   "log_lines": 39,
+   "files": {
+    "tables": [
+     "outputs/tables/ch5_fold_mae_matrix.csv"
+    ],
+    "figures": [],
+    "models": [
+     "outputs/models/comparison/full/D1/2단계 레짐(2분류)/manifest.json",
+     "outputs/models/comparison/full/D1/2단계 레짐(2분류)/model.joblib",
+     "outputs/models/comparison/full/D1/2단계 레짐(3분류)/manifest.json",
+     "outputs/models/comparison/full/D1/2단계 레짐(3분류)/model.joblib",
+     "outputs/models/comparison/full/D1/DNN (MLP)/manifest.json",
+     "outputs/models/comparison/full/D1/DNN (MLP)/model.joblib",
+     "outputs/models/comparison/full/D1/DNN (MLP)/network_0.keras",
+     "outputs/models/comparison/full/D1/DNN (MLP)/network_1.keras",
+     "outputs/models/comparison/full/D1/LightGBM/manifest.json",
+     "outputs/models/comparison/full/D1/LightGBM/model.joblib",
+     "outputs/models/comparison/full/D1/Random Forest (보정)/manifest.json",
+     "outputs/models/comparison/full/D1/Random Forest (보정)/model.joblib",
+     "outputs/models/comparison/full/D1/Seasonal Naive/manifest.json",
+     "outputs/models/comparison/full/D1/Seasonal Naive/model.joblib",
+     "outputs/models/comparison/full/D1/피크 직접분류/manifest.json",
+     "outputs/models/comparison/full/D1/피크 직접분류/model.joblib"
+    ],
+    "other": []
+   },
+   "dev_sec": 271,
+   "error": null
+  },
+  {
+   "seq": 35,
+   "id": "5.6",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.6 앙상블 — **검증 성능이 실제로 개선될 때만** 채택",
+   "file": "src/s05_models.py",
+   "lines": [
+    668,
+    733
+   ],
+   "cells": 1,
+   "report": [
+    "2.4"
+   ],
+   "tag_raw": "2.4-4)",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/35_5.6.txt",
+   "log_lines": 8,
+   "files": {
+    "tables": [
+     "outputs/tables/ch5_ensemble.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 36,
+   "id": "5.7",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.7 확률 보정 (Isotonic)",
+   "file": "src/s05_models.py",
+   "lines": [
+    747,
+    847
+   ],
+   "cells": 1,
+   "report": [
+    "5"
+   ],
+   "tag_raw": "5장 창의성",
+   "status": "ok",
+   "seconds": 0.19,
+   "log": "outputs/steps/36_5.7.txt",
+   "log_lines": 5,
+   "files": {
+    "tables": [
+     "outputs/tables/F21_src.csv",
+     "outputs/tables/ch5_calibration.csv",
+     "outputs/tables/ch5_calibration_folds.csv",
+     "outputs/tables/ch5_calibration_forward_predictions.csv"
+    ],
+    "figures": [
+     "outputs/figures/F21_확률보정_Reliability.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F21_확률보정_Reliability.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 37,
+   "id": "5.8",
+   "kind": "section",
+   "chapter": 5,
+   "title": "5.8 예측 불확실성 — 분위회귀 + Split Conformal",
+   "file": "src/s05_models.py",
+   "lines": [
+    860,
+    984
+   ],
+   "cells": 1,
+   "report": [
+    "5"
+   ],
+   "tag_raw": "5장 창의성",
+   "status": "ok",
+   "seconds": 3.02,
+   "log": "outputs/steps/37_5.8.txt",
+   "log_lines": 7,
+   "files": {
+    "tables": [
+     "outputs/tables/F22_src.csv",
+     "outputs/tables/ch5_uncertainty.csv",
+     "outputs/tables/timing.csv"
+    ],
+    "figures": [
+     "outputs/figures/F22_예측구간_피복률.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F22_예측구간_피복률.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 38,
+   "id": "6.1",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.1 전력사용량 예측 성능 (Task A)",
+   "file": "src/s06_eval.py",
+   "lines": [
+    86,
+    288
+   ],
+   "cells": 2,
+   "report": [
+    "2.6"
+   ],
+   "tag_raw": "2.6 전력사용량 예측 성능",
+   "status": "ok",
+   "seconds": 0.39,
+   "log": "outputs/steps/38_6.1.txt",
+   "log_lines": 35,
+   "files": {
+    "tables": [
+     "outputs/tables/F17_src.csv",
+     "outputs/tables/ch2_regression.csv",
+     "outputs/tables/ch2_significance.csv"
+    ],
+    "figures": [
+     "outputs/figures/F17_모델별_MAE.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F17_모델별_MAE.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 39,
+   "id": "6.2",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.2 피크 위험 탐지 성능 (Task B)",
+   "file": "src/s06_eval.py",
+   "lines": [
+    300,
+    495
+   ],
+   "cells": 1,
+   "report": [
+    "2.7"
+   ],
+   "tag_raw": "2.7 피크 위험 탐지 성능",
+   "status": "ok",
+   "seconds": 2.39,
+   "log": "outputs/steps/39_6.2.txt",
+   "log_lines": 33,
+   "files": {
+    "tables": [
+     "outputs/tables/F19_src.csv",
+     "outputs/tables/F23_src.csv",
+     "outputs/tables/ch2_peak_detection.csv",
+     "outputs/tables/ch2_peak_detection_oof.csv",
+     "outputs/tables/ch2_peak_threshold_temporal.csv"
+    ],
+    "figures": [
+     "outputs/figures/F19_PR_곡선.png",
+     "outputs/figures/F23_혼동행렬.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F19_PR_곡선.qa.json",
+     "outputs/figures/F23_혼동행렬.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 40,
+   "id": "6.3",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.3 변수 제거 실험 (Ablation)",
+   "file": "src/s06_eval.py",
+   "lines": [
+    508,
+    662
+   ],
+   "cells": 1,
+   "report": [
+    "2.8"
+   ],
+   "tag_raw": "2.8 변수 제거 실험",
+   "status": "ok",
+   "seconds": 64.44,
+   "log": "outputs/steps/40_6.3.txt",
+   "log_lines": 15,
+   "files": {
+    "tables": [
+     "outputs/tables/F20_src.csv",
+     "outputs/tables/ch2_ablation.csv"
+    ],
+    "figures": [
+     "outputs/figures/F20_Ablation_효과.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F20_Ablation_효과.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": 60,
+   "error": null
+  },
+  {
+   "seq": 41,
+   "id": "6.4",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.4 최종모델 선정 스코어카드",
+   "file": "src/s06_eval.py",
+   "lines": [
+    677,
+    833
+   ],
+   "cells": 1,
+   "report": [
+    "2.9"
+   ],
+   "tag_raw": "2.9 최종모델 선정",
+   "status": "ok",
+   "seconds": 22.14,
+   "log": "outputs/steps/41_6.4.txt",
+   "log_lines": 25,
+   "files": {
+    "tables": [
+     "outputs/tables/F18_src.csv",
+     "outputs/tables/F24_src.csv",
+     "outputs/tables/F25_src.csv",
+     "outputs/tables/ch2_plan_information_ablation.csv",
+     "outputs/tables/ch2_scorecard.csv"
+    ],
+    "figures": [
+     "outputs/figures/F18_예측_vs_실측_시계열.png",
+     "outputs/figures/F24_모델_fold_성능_매트릭스.png",
+     "outputs/figures/F25_잔차_분포.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/additional/validated_run/bootstrap/bootstrap_block_sensitivity.csv",
+     "outputs/additional/validated_run/bootstrap/executor_manifest.json",
+     "outputs/additional/validated_run/bootstrap/paired_daily_errors.csv",
+     "outputs/additional/validated_run/bootstrap/summary.json",
+     "outputs/additional/validated_run/logs/bootstrap.log",
+     "outputs/additional/validated_run/protocol.json",
+     "outputs/additional/validated_run/run_status.json",
+     "outputs/figures/F18_예측_vs_실측_시계열.qa.json",
+     "outputs/figures/F24_모델_fold_성능_매트릭스.qa.json",
+     "outputs/figures/F25_잔차_분포.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": 48,
+   "error": null
+  },
+  {
+   "seq": 42,
+   "id": "6.5",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.5 데이터조건 D2 재실행 — 강건성 검증",
+   "file": "src/s06_eval.py",
+   "lines": [
+    847,
+    924
+   ],
+   "cells": 1,
+   "report": [
+    "2.6",
+    "2.7",
+    "2.9"
+   ],
+   "tag_raw": "2.6·2.7절 데이터조건 열, 2.9절 선정기준 3)",
+   "status": "ok",
+   "seconds": 133.03,
+   "log": "outputs/steps/42_6.5.txt",
+   "log_lines": 37,
+   "files": {
+    "tables": [
+     "outputs/tables/ch2_d1_vs_d2.csv",
+     "outputs/tables/ch6_rank_preservation.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/additional/validated_run/bootstrap/bootstrap_block_sensitivity.csv",
+     "outputs/additional/validated_run/bootstrap/executor_manifest.json",
+     "outputs/additional/validated_run/bootstrap/paired_daily_errors.csv",
+     "outputs/additional/validated_run/bootstrap/summary.json",
+     "outputs/additional/validated_run/logs/bootstrap.log",
+     "outputs/additional/validated_run/protocol.json",
+     "outputs/additional/validated_run/run_status.json"
+    ]
+   },
+   "dev_sec": 122,
+   "error": null
+  },
+  {
+   "seq": 43,
+   "id": "6.G",
+   "kind": "gate",
+   "chapter": 6,
+   "title": "6장 게이트 — 하한 통과 검증",
+   "file": "src/s06_eval.py",
+   "lines": [
+    928,
+    952
+   ],
+   "cells": 1,
+   "report": [
+    "2.9"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 0.02,
+   "log": "outputs/steps/43_6.G.txt",
+   "log_lines": 8,
+   "files": {
+    "tables": [
+     "outputs/tables/gate5_eval.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 44,
+   "id": "6.6",
+   "kind": "section",
+   "chapter": 6,
+   "title": "6.6 변수 제거 결과 검증 — 지연변수 제거 효과의 분해",
+   "file": "src/s06_eval.py",
+   "lines": [
+    982,
+    1296
+   ],
+   "cells": 1,
+   "report": [
+    "2.8",
+    "2.9",
+    "3.5"
+   ],
+   "tag_raw": "2.8, 2.9, 3.5",
+   "status": "ok",
+   "seconds": 1317.84,
+   "log": "outputs/steps/44_6.6.txt",
+   "log_lines": 114,
+   "files": {
+    "tables": [
+     "outputs/tables/ch2_gate_diagnosis.csv",
+     "outputs/tables/ch2_lag_d2.csv",
+     "outputs/tables/ch2_lag_decomposition.csv",
+     "outputs/tables/ch2_lag_variants.csv",
+     "outputs/tables/ch2_lofo.csv"
+    ],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/figure_preview/experiment_charts/E01.png",
+     "outputs/figure_preview/experiment_charts/E01.qa.json",
+     "outputs/figure_preview/experiment_charts/E01_src.csv",
+     "outputs/figure_preview/experiment_charts/E02.png",
+     "outputs/figure_preview/experiment_charts/E02.qa.json",
+     "outputs/figure_preview/experiment_charts/E02_src.csv",
+     "outputs/figure_preview/experiment_charts/E03.png",
+     "outputs/figure_preview/experiment_charts/E03.qa.json",
+     "outputs/figure_preview/experiment_charts/E03_src.csv",
+     "outputs/figure_preview/experiment_charts/E04.png",
+     "outputs/figure_preview/experiment_charts/E04.qa.json",
+     "outputs/figure_preview/experiment_charts/E04_src.csv",
+     "outputs/figure_preview/experiment_charts/E05.png",
+     "outputs/figure_preview/experiment_charts/E05.qa.json",
+     "outputs/figure_preview/experiment_charts/E05_src.csv",
+     "outputs/figure_preview/experiment_charts/E06.png",
+     "outputs/figure_preview/experiment_charts/E06.qa.json",
+     "outputs/figure_preview/experiment_charts/E06_src.csv",
+     "outputs/figure_preview/experiment_charts/experiment_render_manifest.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E01.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E01.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E02.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E02.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E03.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E03.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E04.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E04.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E05.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E05.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/E06.png",
+     "outputs/figure_preview/experiment_charts/report_variants/E06.qa.json",
+     "outputs/figure_preview/experiment_charts/report_variants/manifest.json",
+     "outputs/figure_preview/experiment_fixtures/bootstrap_block_sensitivity.csv",
+     "outputs/figure_preview/experiment_fixtures/condition_confusion_rates.csv",
+     "outputs/figure_preview/experiment_fixtures/controlled_regime_paired_ci.csv",
+     "outputs/figure_preview/experiment_fixtures/input_sensitivity_metrics.csv",
+     "outputs/figure_preview/experiment_fixtures/policy_cost_sensitivity.csv",
+     "outputs/figure_preview/experiment_fixtures/temporal_outer_metrics.csv",
+     "outputs/figure_preview/report_variants/F02.png",
+     "outputs/figure_preview/report_variants/F02.qa.json",
+     "outputs/figure_preview/report_variants/F05.png",
+     "outputs/figure_preview/report_variants/F05.qa.json",
+     "outputs/figure_preview/report_variants/F14.png",
+     "outputs/figure_preview/report_variants/F14.qa.json",
+     "outputs/figure_preview/report_variants/F18.png",
+     "outputs/figure_preview/report_variants/F18.qa.json",
+     "outputs/figure_preview/report_variants/F20.png",
+     "outputs/figure_preview/report_variants/F20.qa.json",
+     "outputs/figure_preview/report_variants/F24.png",
+     "outputs/figure_preview/report_variants/F24.qa.json",
+     "outputs/figure_preview/report_variants/F27.png",
+     "outputs/figure_preview/report_variants/F27.qa.json",
+     "outputs/figure_preview/report_variants/F29.png",
+     "outputs/figure_preview/report_variants/F29.qa.json",
+     "outputs/figure_preview/report_variants/F33.png",
+     "outputs/figure_preview/report_variants/F33.qa.json",
+     "outputs/figure_preview/report_variants/F35.png",
+     "outputs/figure_preview/report_variants/F35.qa.json"
+    ]
+   },
+   "dev_sec": 1108,
+   "error": null
+  },
+  {
+   "seq": 45,
+   "id": "7.0",
+   "kind": "intro",
+   "chapter": 7,
+   "title": "7.0 영향요인 및 오류분석 — 장 도입",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    53,
+    70
+   ],
+   "cells": 1,
+   "report": [
+    "3"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/45_7.0.txt",
+   "log_lines": 4,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 46,
+   "id": "7.1",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.1 주요 영향변수 분석 (Permutation + SHAP)",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    87,
+    262
+   ],
+   "cells": 1,
+   "report": [
+    "3.1"
+   ],
+   "tag_raw": "3.1 주요 영향변수 분석",
+   "status": "ok",
+   "seconds": 27.14,
+   "log": "outputs/steps/46_7.1.txt",
+   "log_lines": 29,
+   "files": {
+    "tables": [
+     "outputs/tables/F27_src.csv",
+     "outputs/tables/F28_src.csv",
+     "outputs/tables/ch3_importance.csv",
+     "outputs/tables/ch3_permutation.csv"
+    ],
+    "figures": [
+     "outputs/figures/F27_Permutation_importance.png",
+     "outputs/figures/F28_SHAP_summary.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F27_Permutation_importance.qa.json",
+     "outputs/figures/F28_SHAP_summary.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": 25,
+   "error": null
+  },
+  {
+   "seq": 47,
+   "id": "7.2",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.2 주요 변수의 상호작용",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    270,
+    374
+   ],
+   "cells": 1,
+   "report": [
+    "3.2"
+   ],
+   "tag_raw": "3.2 주요 변수의 상호작용",
+   "status": "ok",
+   "seconds": 0.34,
+   "log": "outputs/steps/47_7.2.txt",
+   "log_lines": 15,
+   "files": {
+    "tables": [
+     "outputs/tables/F32_src.csv",
+     "outputs/tables/ch3_interaction.csv"
+    ],
+    "figures": [
+     "outputs/figures/F32_상호작용_히트맵.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F32_상호작용_히트맵.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 48,
+   "id": "7.3",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.3 조건별 예측오차 분석",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    388,
+    496
+   ],
+   "cells": 1,
+   "report": [
+    "3.3"
+   ],
+   "tag_raw": "3.3 조건별 예측오차 분석 (표 7행 × 3열)",
+   "status": "ok",
+   "seconds": 0.23,
+   "log": "outputs/steps/48_7.3.txt",
+   "log_lines": 23,
+   "files": {
+    "tables": [
+     "outputs/tables/F29_src.csv",
+     "outputs/tables/ch3_condition_mae.csv"
+    ],
+    "figures": [
+     "outputs/figures/F29_조건별_MAE.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F29_조건별_MAE.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 49,
+   "id": "7.4",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.4 피크 미탐지·오경보 분석",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    507,
+    609
+   ],
+   "cells": 1,
+   "report": [
+    "3.4"
+   ],
+   "tag_raw": "3.4 피크 미탐지와 오경보 분석",
+   "status": "ok",
+   "seconds": 0.3,
+   "log": "outputs/steps/49_7.4.txt",
+   "log_lines": 10,
+   "files": {
+    "tables": [
+     "outputs/tables/F30_src.csv",
+     "outputs/tables/ch3_confusion.csv"
+    ],
+    "figures": [
+     "outputs/figures/F30_FN_FP_시간대_분포.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F30_FN_FP_시간대_분포.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 50,
+   "id": "7.5",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.5 대표 실패사례 분석",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    617,
+    694
+   ],
+   "cells": 1,
+   "report": [
+    "3.5"
+   ],
+   "tag_raw": "3.5 대표 실패사례 분석",
+   "status": "ok",
+   "seconds": 0.45,
+   "log": "outputs/steps/50_7.5.txt",
+   "log_lines": 11,
+   "files": {
+    "tables": [
+     "outputs/tables/F33_src.csv",
+     "outputs/tables/ch3_failures.csv"
+    ],
+    "figures": [
+     "outputs/figures/F33_대표_실패사례.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F33_대표_실패사례.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 51,
+   "id": "7.6",
+   "kind": "section",
+   "chapter": 7,
+   "title": "7.6 최대수요 피크 발생조건 도출 (깊이 3 규칙트리)",
+   "file": "src/s07_analysis.py",
+   "lines": [
+    705,
+    794
+   ],
+   "cells": 1,
+   "report": [
+    "3.6"
+   ],
+   "tag_raw": "3.6 최대수요 피크 발생조건 도출",
+   "status": "ok",
+   "seconds": 0.3,
+   "log": "outputs/steps/51_7.6.txt",
+   "log_lines": 16,
+   "files": {
+    "tables": [
+     "outputs/tables/F31_src.csv",
+     "outputs/tables/ch3_rules.csv"
+    ],
+    "figures": [
+     "outputs/figures/F31_깊이3_규칙_트리.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F31_깊이3_규칙_트리.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 52,
+   "id": "8.1",
+   "kind": "section",
+   "chapter": 8,
+   "title": "8.1 요금 모델링",
+   "file": "src/s08_simulation.py",
+   "lines": [
+    50,
+    150
+   ],
+   "cells": 1,
+   "report": [
+    "4"
+   ],
+   "tag_raw": "4장",
+   "status": "ok",
+   "seconds": 0.34,
+   "log": "outputs/steps/52_8.1.txt",
+   "log_lines": 17,
+   "files": {
+    "tables": [
+     "outputs/tables/F34_src.csv",
+     "outputs/tables/ch4_tariff.csv"
+    ],
+    "figures": [
+     "outputs/figures/F34_월별_최대수요와_청구기준.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F34_월별_최대수요와_청구기준.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 53,
+   "id": "8.2",
+   "kind": "section",
+   "chapter": 8,
+   "title": "8.2 저감 레버 L1~L4",
+   "file": "src/s08_simulation.py",
+   "lines": [
+    167,
+    495
+   ],
+   "cells": 1,
+   "report": [
+    "4"
+   ],
+   "tag_raw": "4장",
+   "status": "ok",
+   "seconds": 3.56,
+   "log": "outputs/steps/53_8.2.txt",
+   "log_lines": 49,
+   "files": {
+    "tables": [
+     "outputs/tables/F37_src.csv",
+     "outputs/tables/ch4_levers.csv"
+    ],
+    "figures": [
+     "outputs/figures/F37_L1_기동분산_전후_부하곡선.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F37_L1_기동분산_전후_부하곡선.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 54,
+   "id": "8.3",
+   "kind": "section",
+   "chapter": 8,
+   "title": "8.3 시나리오 비교와 민감도",
+   "file": "src/s08_simulation.py",
+   "lines": [
+    507,
+    661
+   ],
+   "cells": 1,
+   "report": [
+    "4"
+   ],
+   "tag_raw": "4장",
+   "status": "ok",
+   "seconds": 1.77,
+   "log": "outputs/steps/54_8.3.txt",
+   "log_lines": 27,
+   "files": {
+    "tables": [
+     "outputs/tables/F35_src.csv",
+     "outputs/tables/F36_src.csv",
+     "outputs/tables/F38_src.csv",
+     "outputs/tables/ch4_scenarios.csv",
+     "outputs/tables/ch4_sensitivity.csv"
+    ],
+    "figures": [
+     "outputs/figures/F35_레버별_최대수요_저감.png",
+     "outputs/figures/F36_시나리오별_순절감액.png",
+     "outputs/figures/F38_민감도_히트맵.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F35_레버별_최대수요_저감.qa.json",
+     "outputs/figures/F36_시나리오별_순절감액.qa.json",
+     "outputs/figures/F38_민감도_히트맵.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 55,
+   "id": "8.4",
+   "kind": "section",
+   "chapter": 8,
+   "title": "8.4 현장 운영 프로토콜",
+   "file": "src/s08_simulation.py",
+   "lines": [
+    669,
+    726
+   ],
+   "cells": 1,
+   "report": [
+    "4"
+   ],
+   "tag_raw": "4장",
+   "status": "ok",
+   "seconds": 0.25,
+   "log": "outputs/steps/55_8.4.txt",
+   "log_lines": 34,
+   "files": {
+    "tables": [
+     "outputs/tables/F39_src.csv",
+     "outputs/tables/ch4_priority.csv",
+     "outputs/tables/ch4_protocol.csv"
+    ],
+    "figures": [
+     "outputs/figures/F39_경보_운영_타임라인.png"
+    ],
+    "models": [],
+    "other": [
+     "outputs/figures/F39_경보_운영_타임라인.qa.json",
+     "outputs/figures/figure_index.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 56,
+   "id": "10.1",
+   "kind": "section",
+   "chapter": 10,
+   "title": "10.1 테스트 예측결과 파일",
+   "file": "src/s10_package.py",
+   "lines": [
+    105,
+    141
+   ],
+   "cells": 1,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "6장",
+   "status": "ok",
+   "seconds": 0.0,
+   "log": "outputs/steps/56_10.1.txt",
+   "log_lines": 6,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/predictions_test_336h.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 57,
+   "id": "10.5",
+   "kind": "section",
+   "chapter": 10,
+   "title": "10.5 모델 저장 — 서비스 번들 (평가 · 배포)",
+   "file": "src/s10_package.py",
+   "lines": [
+    544,
+    1099
+   ],
+   "cells": 2,
+   "report": [
+    "6",
+    "4"
+   ],
+   "tag_raw": "6장 (코드 구성 및 재현성)",
+   "status": "ok",
+   "seconds": 18.83,
+   "log": "outputs/steps/57_10.5.txt",
+   "log_lines": 13,
+   "files": {
+    "tables": [
+     "outputs/tables/ch6_model_bundles.csv"
+    ],
+    "figures": [],
+    "models": [
+     "outputs/models/full/deploy/calibrator_isotonic.json",
+     "outputs/models/full/deploy/fallback_y_avg.lgb",
+     "outputs/models/full/deploy/fallback_y_peak.lgb",
+     "outputs/models/full/deploy/gate.lgb",
+     "outputs/models/full/deploy/golden.json",
+     "outputs/models/full/deploy/interval_q10.lgb",
+     "outputs/models/full/deploy/interval_q50.lgb",
+     "outputs/models/full/deploy/interval_q90.lgb",
+     "outputs/models/full/deploy/manifest.json",
+     "outputs/models/full/deploy/peak_clf.lgb",
+     "outputs/models/full/deploy/reg_y_avg_r0.lgb",
+     "outputs/models/full/deploy/reg_y_avg_r1.lgb",
+     "outputs/models/full/deploy/reg_y_avg_r2.lgb",
+     "outputs/models/full/deploy/reg_y_peak_r0.lgb",
+     "outputs/models/full/deploy/reg_y_peak_r1.lgb",
+     "outputs/models/full/deploy/reg_y_peak_r2.lgb",
+     "outputs/models/full/eval/calibrator_isotonic.json",
+     "outputs/models/full/eval/fallback_y_avg.lgb",
+     "outputs/models/full/eval/fallback_y_peak.lgb",
+     "outputs/models/full/eval/gate.lgb",
+     "outputs/models/full/eval/golden.json",
+     "outputs/models/full/eval/interval_q10.lgb",
+     "outputs/models/full/eval/interval_q50.lgb",
+     "outputs/models/full/eval/interval_q90.lgb",
+     "outputs/models/full/eval/manifest.json",
+     "outputs/models/full/eval/peak_clf.lgb",
+     "outputs/models/full/eval/reg_y_avg_r0.lgb",
+     "outputs/models/full/eval/reg_y_avg_r1.lgb",
+     "outputs/models/full/eval/reg_y_avg_r2.lgb",
+     "outputs/models/full/eval/reg_y_peak_r0.lgb",
+     "outputs/models/full/eval/reg_y_peak_r1.lgb",
+     "outputs/models/full/eval/reg_y_peak_r2.lgb"
+    ],
+    "other": []
+   },
+   "dev_sec": 17,
+   "error": null
+  },
+  {
+   "seq": 58,
+   "id": "S.1",
+   "kind": "serving",
+   "chapter": "S",
+   "title": "S.1 번들 검증 — serving verify (eval · deploy)",
+   "file": "serving/cli.py",
+   "lines": null,
+   "cells": 0,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 3.44,
+   "log": "outputs/steps/58_S.1.txt",
+   "log_lines": 28,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/steps/serving_verify_eval.json",
+     "outputs/steps/serving_verify_deploy.json"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 59,
+   "id": "S.2",
+   "kind": "serving",
+   "chapter": "S",
+   "title": "S.2 리플레이 — 평가 번들로 09-01~09-14 재생, 테스트 예측과 비트 비교",
+   "file": "serving/cli.py",
+   "lines": null,
+   "cells": 0,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 1.28,
+   "log": "outputs/steps/59_S.2.txt",
+   "log_lines": 13,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/steps/serving_replay_eval.csv",
+     "outputs/steps/serving_replay_check.txt"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 60,
+   "id": "S.3",
+   "kind": "serving",
+   "chapter": "S",
+   "title": "S.3 CLI 익일 예측(09-14) · 누수 차단",
+   "file": "serving/cli.py",
+   "lines": null,
+   "cells": 0,
+   "report": [
+    "4",
+    "6"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 5.0,
+   "log": "outputs/steps/60_S.3.txt",
+   "log_lines": 14,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/steps/serving_demo_history.csv",
+     "outputs/steps/serving_demo_plan.csv",
+     "outputs/steps/serving_predict_eval_20210914.csv",
+     "outputs/steps/serving_predict_deploy_20210914.csv",
+     "outputs/steps/serving_demo_plan_leak.csv"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 61,
+   "id": "S.4",
+   "kind": "serving",
+   "chapter": "S",
+   "title": "S.4 단위·회귀테스트 (pytest)",
+   "file": "tests",
+   "lines": null,
+   "cells": 0,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 32.48,
+   "log": "outputs/steps/61_S.4.txt",
+   "log_lines": 9,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": [
+     "outputs/steps/serving_unit_tests.txt"
+    ]
+   },
+   "dev_sec": null,
+   "error": null
+  },
+  {
+   "seq": 62,
+   "id": "C",
+   "kind": "check",
+   "chapter": "C",
+   "title": "C 완료 점검 — 예측 · 평가표 · 그림 · 번들 · 서빙",
+   "file": "run_all.py",
+   "lines": null,
+   "cells": 0,
+   "report": [
+    "6"
+   ],
+   "tag_raw": "",
+   "status": "ok",
+   "seconds": 0.05,
+   "log": "outputs/steps/62_C.txt",
+   "log_lines": 23,
+   "files": {
+    "tables": [],
+    "figures": [],
+    "models": [],
+    "other": []
+   },
+   "dev_sec": null,
+   "error": null
+  }
+ ],
+ "checks": {
+  "hard": [
+   {
+    "name": "예측 파일 336행 × 9열 규격",
+    "ok": true,
+    "detail": "336행 × 9열"
+   },
+   {
+    "name": "예측 파일 결측 0",
+    "ok": true,
+    "detail": "결측 0"
+   },
+   {
+    "name": "2021-09-01 00:00 ~ 09-14 23:00 매시",
+    "ok": true,
+    "detail": "2021-09-01 00:00:00 ~ 2021-09-14 23:00:00"
+   },
+   {
+    "name": "model_name 이 모두 최종모델",
+    "ok": true,
+    "detail": "['2단계 레짐(3분류)'] · 최종모델 2단계 레짐(3분류)"
+   },
+   {
+    "name": "기대 표 110개 (이번 실행에서 씀)",
+    "ok": true,
+    "detail": "모두 있음 · 전체 110개"
+   },
+   {
+    "name": "그림 PNG 39장 · figure_index 고유 fid 39",
+    "ok": true,
+    "detail": "PNG 39 · fid 39"
+   },
+   {
+    "name": "번들 manifest.json (outputs/models/full/{eval,deploy})",
+    "ok": true,
+    "detail": "둘 다 있음"
+   },
+   {
+    "name": "S.1 번들 verify",
+    "ok": true,
+    "detail": "ok"
+   },
+   {
+    "name": "S.2 리플레이 비교",
+    "ok": true,
+    "detail": "ok"
+   },
+   {
+    "name": "S.3 CLI 예측·누수 차단",
+    "ok": true,
+    "detail": "ok"
+   },
+   {
+    "name": "S.4 단위·회귀테스트",
+    "ok": true,
+    "detail": "ok"
+   },
+   {
+    "name": "보고 MAE == 제출 CSV 재계산",
+    "ok": true,
+    "detail": "CSV 5.309871 / 표 5.310"
+   },
+   {
+    "name": "피크 회귀 평가 표본 == 실제 피크 라벨",
+    "ok": true,
+    "detail": "피크 28시간"
+   },
+   {
+    "name": "95% 주분석 및 90% 사후 보조구간",
+    "ok": true,
+    "detail": "구간 순서와 필수 열 확인"
+   },
+   {
+    "name": "비용 기간 통일 · 미검증 에너지 절감 제외",
+    "ok": true,
+    "detail": "같은 관측기간의 기본요금 차액에서 추가 인건비 차감"
+   }
+  ],
+  "warn": [
+   {
+    "name": "최종모델 == 2단계 레짐(3분류)",
+    "ok": true,
+    "detail": "2단계 레짐(3분류)"
+   },
+   {
+    "name": "hpo_trials 100행",
+    "ok": true,
+    "detail": "100행"
+   },
+   {
+    "name": "S.4 단위·회귀테스트",
+    "ok": true,
+    "detail": "304 passed in 30.97s"
+   },
+   {
+    "name": "데이터 sha256 == 정본",
+    "ok": true,
+    "detail": "일치"
+   }
+  ],
+  "info": [
+   {
+    "name": "결과 수치의 기준",
+    "ok": true,
+    "detail": "이번 실행의 평가표·예측파일·provenance를 기준으로 확인; 수정 전 수치를 강제하지 않음"
+   },
+   {
+    "name": "joblib 아카이브 (baselines·comparison, 기대 11)",
+    "ok": true,
+    "detail": "11개"
+   },
+   {
+    "name": "__pycache__ 정리",
+    "ok": true,
+    "detail": "5개 삭제"
+   }
+  ]
+ },
+ "serving": {
+  "S.1": {
+   "status": "ok",
+   "eval_bundle_id": "eval-full-236dd9888c33",
+   "tau": 173.82999999999998,
+   "tau_cls": 0.01,
+   "deploy_bundle_id": "deploy-full-6efaf40b3875"
+  },
+  "S.2": {
+   "status": "ok",
+   "compare": "메모리 비트 비교",
+   "rows": 336,
+   "mae": 5.3099,
+   "mismatch": []
+  },
+  "S.3": {
+   "status": "ok",
+   "eval_rows": 24,
+   "deploy_rows": 24,
+   "leak_exit": 2,
+   "deploy_note": "배포 번들 09-14 예측은 학습 구간 안의 데모"
+  },
+  "S.4": {
+   "status": "ok",
+   "summary": "304 passed in 30.97s"
+  }
+ },
+ "analysis_export": {
+  "status": "complete",
+  "fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b"
+ }
+}

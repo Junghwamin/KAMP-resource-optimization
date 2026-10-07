@@ -1,0 +1,37 @@
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+── D1 vs D2 대비 (하이퍼파라미터는 D1 값 고정) ──
+                   모델  D1 OOF MAE  D1 검증 n  D1 양성  D1 OOF Peak-MAE  D1 OOF Peak15-MAE  D1 OOF Peak-n  D2 OOF MAE  D2 OOF Peak-MAE  D2 OOF Peak15-MAE  \
+0        Seasonal Naive      28.372       1279      156        47.557692          50.852564            156      28.678           49.748             53.231   
+1  Random Forest (보정)      19.425       1279      156        31.915479          34.266598            156      22.118           25.775             26.093   
+2              LightGBM      14.019       1279      156        23.067296          25.392170            156      18.731           20.879             23.242   
+3     2단계 레짐(2분류)      11.665       1279      156        20.040113          21.115863            156      12.693           15.665             16.707   
+4     2단계 레짐(3분류)      11.044       1279      156        17.446631          17.784201            156      12.828           15.665             16.707   
+5             DNN (MLP)      35.545       1279      156        37.782371          44.047870            156      38.882           40.573             30.395   
+
+   D2 OOF Peak-n  D2 검증 n  D2 양성                                                          평가 성격  D1 순위  D2 순위  순위 보존  
+0            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        5        5       True  
+1            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        4        4       True  
+2            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        3        3       True  
+3            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        2        1      False  
+4            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        1        2      False  
+5            147       1255      147  HPO·변수선택·임계값 조정에 사용한 내부 검증(독립 평가 아님)......        6        6       True  
+
+── 순위 보존 검증 ──
+                           지표      값  p-value              해석
+0  Spearman 순위상관 (D1 vs D2)  0.9429   0.0048     순위가 보존됨
+1              최종모델 D2 순위  2.0000      NaN  D2에서 순위 하락

@@ -1,0 +1,32 @@
+{
+  "fid": "F31_landscape",
+  "text_count": 26,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.2,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F31_landscape.png",
+  "sha256": "8e8f7771b22e7fbb4fc09f516ba1b9267306a9d7d62d8a361570e8ecfdac2407",
+  "pixel_size": [
+    3254,
+    1600
+  ],
+  "saved_size_pt": [
+    780.9599999999999,
+    384.0
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    781,
+    384
+  ],
+  "minimum_effective_font_pt": 9.2,
+  "aspect_fit_scale": 1.0,
+  "layout_notes": [],
+  "readability_pass": true
+}

@@ -1,0 +1,430 @@
+{
+  "status": "complete",
+  "experiment": "controlled",
+  "fingerprint": "eeba7db30a090c5ce8487449b292a72bce19ce398058c01b949a18b3475a7be3",
+  "elapsed_seconds": 40.289891481399536,
+  "inputs": {
+    "experiment": "controlled",
+    "config": {
+      "schema_version": 1,
+      "protocol": "additional-experiments-2026-10-06",
+      "seed": 42,
+      "evaluation_note": "Retrospective analyses on already observed data; no new independent test claim.",
+      "bootstrap": {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "n_boot": 2000,
+        "sampling": "noncircular consecutive calendar-day blocks; truncate to 14 days"
+      },
+      "diagnostics": {
+        "n_boot": 2000,
+        "high_production_quantile": 0.75,
+        "sparse_hours": 20,
+        "sparse_days": 5,
+        "threshold_scope": "all_selected_OOF_descriptive_only"
+      },
+      "sensitivity": {
+        "atol": 1e-08,
+        "scenarios": [
+          {
+            "id": "C0",
+            "kind": "baseline"
+          },
+          {
+            "id": "P80",
+            "kind": "production_scale",
+            "production_factor": 0.8
+          },
+          {
+            "id": "P90",
+            "kind": "production_scale",
+            "production_factor": 0.9
+          },
+          {
+            "id": "P110",
+            "kind": "production_scale",
+            "production_factor": 1.1
+          },
+          {
+            "id": "P120",
+            "kind": "production_scale",
+            "production_factor": 1.2
+          },
+          {
+            "id": "H90",
+            "kind": "headcount_scale",
+            "headcount_factor": 0.9
+          },
+          {
+            "id": "H110",
+            "kind": "headcount_scale",
+            "headcount_factor": 1.1
+          },
+          {
+            "id": "T-2",
+            "kind": "temperature_shift",
+            "temperature_delta": -2
+          },
+          {
+            "id": "T-1",
+            "kind": "temperature_shift",
+            "temperature_delta": -1
+          },
+          {
+            "id": "T+1",
+            "kind": "temperature_shift",
+            "temperature_delta": 1
+          },
+          {
+            "id": "T+2",
+            "kind": "temperature_shift",
+            "temperature_delta": 2
+          },
+          {
+            "id": "P80T-2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P80T+2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": 2
+          },
+          {
+            "id": "P120T-2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P120T+2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": 2
+          },
+          {
+            "id": "S-1",
+            "kind": "production_time_shift",
+            "shift_hours": -1,
+            "supplementary": true
+          },
+          {
+            "id": "S+1",
+            "kind": "production_time_shift",
+            "shift_hours": 1,
+            "supplementary": true
+          }
+        ]
+      },
+      "controlled_regime": {
+        "profile": "full",
+        "seed": 42,
+        "n_estimators": 800,
+        "threads": 4,
+        "isolation": "serial_subprocess",
+        "candidate_models": [
+          "lgb",
+          "regime3"
+        ],
+        "same_regression_params": true,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "calibration_days": 14,
+        "gap_hours": 24,
+        "n_boot": 2000,
+        "regression_objective": "l1",
+        "design_note": "Identical core-calibration-outer partitions for both models; different from original full-development OOF; total model capacity not equalized"
+      },
+      "temporal_selection": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "trials_reg": 50,
+        "trials_clf": 50,
+        "gap_hours": 24,
+        "calibration_days": 14,
+        "inner_days": 14,
+        "max_inner_folds": 3,
+        "min_core_days": 14,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "candidates": [
+          "naive",
+          "rf",
+          "lgb",
+          "regime2",
+          "regime3"
+        ],
+        "weights": {
+          "mae": 0.3,
+          "peak_mae": 0.15,
+          "recall": 0.25,
+          "fold_std": 0.2,
+          "feasible": 0.1
+        },
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "calibration_fallback": "tau=theta; isotonic disabled",
+        "feasibility": "prespecified_all_candidates_eligible_resource_time_not_scored",
+        "resource_warning_seconds": 60,
+        "tie_break": "prespecified_candidate_order",
+        "undefined_metric_score": 0.0,
+        "search_space": {
+          "num_leaves": [
+            15,
+            127
+          ],
+          "learning_rate": [
+            0.01,
+            0.2
+          ],
+          "max_depth": [
+            3,
+            12
+          ],
+          "min_child_samples": [
+            5,
+            50
+          ],
+          "feature_fraction": [
+            0.6,
+            1.0
+          ],
+          "bagging_fraction": [
+            0.6,
+            1.0
+          ]
+        },
+        "isolation": "serial_subprocess"
+      },
+      "policy": {
+        "alpha": 0.2,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "shift_fraction": 0.2,
+        "receiving_hours": [
+          10,
+          11,
+          15,
+          16
+        ],
+        "start_hours": [
+          8,
+          13
+        ],
+        "receiving_capacity_quantile": 0.95,
+        "receiving_capacity_multiplier": 1.2,
+        "demand_rate_krw_per_kw_month": 8320,
+        "demand_rate_multipliers": [
+          0.7,
+          1,
+          1.3
+        ],
+        "action_cost_krw": [
+          0,
+          1000,
+          5000
+        ],
+        "shift_unit_cost_krw": [
+          0,
+          0.01,
+          0.1
+        ],
+        "interpretation": "Assumed operational constraints, effect and costs; retrospective policy simulation, not measured savings."
+      }
+    },
+    "source": {
+      "experiments\\bootstrap.py": "c24df1da377c7e74f2e5b89998f109be62775dcbbe22ed13c8faf072dd86af30",
+      "experiments\\common.py": "554d8aff9bc38398141992eb7d8b81812c2e92e7be9ed7b47a593377a0e4222a",
+      "experiments\\controlled_regime.py": "814c2c0ac82b0667679365191aeb4e5995a6871354f177bd195ec0a542813677",
+      "experiments\\diagnostics.py": "ac67da1322b4de02d79ba6a467b0209e8a44b57099483fba17b9efc7cab1a90c",
+      "experiments\\model_adapter.py": "72fdf0ecccb68afca5cef672f19917e6a9b96140756f50b649a31b33f0e91502",
+      "experiments\\policy.py": "e41f8f6ea9657f5cfe8410d562d47b7ca39c30f667dc6a1622bba4723f431c2f",
+      "experiments\\sensitivity.py": "220541922257a68bf6ece91c9247c4ccae53f6624a15f5a13132e4ffa58d4857",
+      "experiments\\temporal_selection.py": "b8891cf92bb033806158a1a4cfb13742d45cba6e30549992b937710112207f43",
+      "experiments\\__init__.py": "5687950aed86be87f915a6509d70d42159901c3ca0d904bd106b47facf9b25c6",
+      "run_experiments.py": "cf14c361d5c9cf39a4b7455b234ca014cef4aed3c711e73087acd3a569b001d9",
+      "data\\okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+      "outputs\\tables\\F18_src.csv": "ed8a0561195b91ff75ec793043bdbf92b3a827435c884c114b65a09a597fa12e",
+      "outputs\\analysis_snapshot\\metadata.json": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+      "src\\s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+      "src\\s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+      "src\\s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+      "src\\s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+      "src\\s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+      "src\\s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+      "src\\s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+      "src\\s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+      "src\\s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+      "src\\s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8",
+      "src\\s10_package.py": "277037b1b2b155d7ff84e135eb87a472a32662f3597bcf23f5d8ceb4597d259e",
+      "tools\\analysis_snapshot.py": "05fed35d8faa87bb9fa6cf5bfab3be82dbc32d8a9ec5d32b7f2d20c5cbd5e8a8"
+    },
+    "runtime": {
+      "python": "3.11.9",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.4.2",
+      "lightgbm": "4.5.0",
+      "optuna": "5.0.0"
+    }
+  },
+  "summary": {
+    "status": "complete",
+    "experiment": "controlled_regime",
+    "failures": [],
+    "completed_outer_count": 4,
+    "expected_outer_count": 4,
+    "seconds": 38.19636160007212,
+    "protocol": {
+      "experiment": "controlled_regime",
+      "config": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "calibration_days": 14,
+        "gap_hours": 24,
+        "candidate_models": [
+          "lgb",
+          "regime3"
+        ],
+        "lgb_base": {
+          "objective": "l1",
+          "verbosity": -1,
+          "deterministic": true,
+          "force_row_wise": true,
+          "num_threads": 4,
+          "seed": 42,
+          "bagging_seed": 42,
+          "feature_fraction_seed": 42,
+          "data_random_seed": 42
+        },
+        "n_boot": 2000,
+        "same_regression_params": true,
+        "regression_objective": "l1",
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "isolation": "serial_subprocess",
+        "design_note": "Identical core-calibration-outer partitions for both models; different from original full-development OOF; total model capacity not equalized"
+      },
+      "features": [
+        "y_avg_lag24",
+        "y_avg_lag48",
+        "y_avg_lag168",
+        "y_peak_lag24",
+        "y_peak_lag48",
+        "y_peak_lag168",
+        "roll24_avg_mean",
+        "roll24_avg_max",
+        "roll24_avg_std",
+        "roll24_peak_max",
+        "roll24_peak_cnt",
+        "roll168_avg_mean",
+        "roll168_avg_max",
+        "roll168_avg_std",
+        "roll168_peak_max",
+        "roll168_peak_cnt",
+        "hour",
+        "dow",
+        "month",
+        "is_sat",
+        "is_sun",
+        "is_holiday",
+        "hour_sin",
+        "hour_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_daytime",
+        "is_startup_08",
+        "is_restart_13",
+        "is_shutdown",
+        "shutdown_nth",
+        "is_first_day_back",
+        "prev_day_shutdown",
+        "is_state_switch",
+        "prod",
+        "headcount",
+        "prod_chg_ratio",
+        "prod_cum_day",
+        "temp",
+        "humid",
+        "wind",
+        "rain",
+        "cdd",
+        "hdd"
+      ],
+      "comparison": "Same core/calibration/outer rows, features, regression objective and 800-tree head settings",
+      "difference_from_original": "Core reserves a calibration tail; original full-development OOF is a separate reference",
+      "capacity_limit": "Regime gate, multiple heads and fallback increase total capacity; capacity is not equalized",
+      "evaluation_role": "retrospective_controlled_comparison",
+      "original_outputs_modified": false,
+      "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+      "full_protocol_guard": {
+        "matches_registered_full": true,
+        "deviations": [],
+        "registered_scientific_sha256": "3115477bec7020131eb6526cab3b268a59159e5d5fc4bab0b3989b377b852f71"
+      },
+      "plan_availability_assumption": "Calendar/ERP quality flags are retrospectively diagnosed; assumed prior plan confirmation, not timestamp-verified origin availability",
+      "fingerprint": "d9bc27b06959dac0043186cfbfa815471bbbd6f02aa1ee717c9abc945c40b7af"
+    },
+    "files": {
+      "controlled_regime_predictions.csv": "cf2d4ca39bb1cb68cc1dead317ba4f36909da30143905c413d21870387603170",
+      "controlled_regime_paired_ci.csv": "ccebf80de627143173f065ed49fa2efee18f5c14f19a7b97ccb37ddcc6df7758",
+      "controlled_regime_metrics.csv": "77f1595faef338869733deeb819e2edaf4a0b34a1dff4e9998e84dc2c3a70529",
+      "controlled_split_audit.csv": "5a1de5b411182549a0e5d225fb66cb247530a7644015ddc0c74e7e56919d1ed9",
+      "controlled_resources.csv": "b38f43d4ea0af9f6b025f440ae4846fcb986d504fed6dd68fe2cff456efd02a4",
+      "controlled_profile_novelty.csv": "8b026dee80f957f16b143233dc4ec075cb3653d3de83a2ee929599a7b3539db8"
+    }
+  },
+  "files_sha256": {
+    "controlled_profile_novelty.csv": "8b026dee80f957f16b143233dc4ec075cb3653d3de83a2ee929599a7b3539db8",
+    "controlled_protocol.json": "52fa2a29dd255a9044183443dc3f7dac2d3719d206c2fab0178c1d979b22f26f",
+    "controlled_regime_metrics.csv": "77f1595faef338869733deeb819e2edaf4a0b34a1dff4e9998e84dc2c3a70529",
+    "controlled_regime_paired_ci.csv": "ccebf80de627143173f065ed49fa2efee18f5c14f19a7b97ccb37ddcc6df7758",
+    "controlled_regime_predictions.csv": "cf2d4ca39bb1cb68cc1dead317ba4f36909da30143905c413d21870387603170",
+    "controlled_resources.csv": "b38f43d4ea0af9f6b025f440ae4846fcb986d504fed6dd68fe2cff456efd02a4",
+    "controlled_split_audit.csv": "5a1de5b411182549a0e5d225fb66cb247530a7644015ddc0c74e7e56919d1ed9",
+    "manifest.json": "14738dca916ad7b40a100c9648000e82181f1feb0f76ae1cabf21a75cb9034dc",
+    "O2_checkpoint.json": "87004cfbbbab29110e0cc44b380ef759da04c1cb3a0ab8b6b8ba50a3e2fe6570",
+    "O2_predictions.csv": "eb99b6b314722d696f033cd4865aa8e8bb4975c7472b7201be14899f528082ab",
+    "O2_split_audit.csv": "d582bd0691777eaf4fdbfaa31b2659424c8809d8146d0aa5900cac1fa1603ac5",
+    "O3_checkpoint.json": "76b7c725d200dc4615609147b65ad938ccdd21abad769ec54a255d008844ed19",
+    "O3_predictions.csv": "52acd9c04254dfe954673f504755864c258372641973650f032c0923c0f618e2",
+    "O3_split_audit.csv": "071d0ccadf2e85c27364413d60aa69f2db711f2f1a8ac9d216a48ee3b9727059",
+    "O4_checkpoint.json": "4e65a36319cd2c839cc54d5ea891141378b55d9760ce6d35e2333b079f26a67c",
+    "O4_predictions.csv": "7c33800048e8110886e08f164fd319811ee1daa23d90cca2da544a82a38cecf2",
+    "O4_split_audit.csv": "9590824ee50e2e0fe5997986d9feb69cfe8a1482a078f4547327250ec7c0156a",
+    "O5_checkpoint.json": "7c0dc8326b0b252840d5dc55e6c6c82f1491f27af1c1f9c75f70b7d71b591bf9",
+    "O5_predictions.csv": "a4108430de853b4015bef46be7c3e66d1343baca98ace97ba4efbe3a1cec9ea8",
+    "O5_split_audit.csv": "6506a6d06fef3b37583c475037b4727c0b3c7ee75622807b4369c38b19c41666",
+    "summary.json": "14738dca916ad7b40a100c9648000e82181f1feb0f76ae1cabf21a75cb9034dc"
+  }
+}

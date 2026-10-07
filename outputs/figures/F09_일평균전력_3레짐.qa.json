@@ -1,0 +1,26 @@
+{
+  "fid": "F09",
+  "text_count": 17,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F09_일평균전력_3레짐.png",
+  "sha256": "b6777a836fb48c4091b29c467e24531748b8b404529208269276b60fb82a9f46",
+  "pixel_size": [
+    2188,
+    932
+  ],
+  "saved_size_pt": [
+    525.12,
+    223.67999999999998
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "일평균전력 3레짐",
+  "section": "1.5",
+  "source": "s01_diagnose.py"
+}

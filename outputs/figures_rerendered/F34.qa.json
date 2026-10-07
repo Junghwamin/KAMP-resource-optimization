@@ -1,0 +1,26 @@
+{
+  "fid": "F34",
+  "text_count": 23,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F34.png",
+  "sha256": "a7771258d3b4f80873fdc64a5c476c395915d51ea7ac5949b9bdfa6903caa53e",
+  "pixel_size": [
+    2728,
+    927
+  ],
+  "saved_size_pt": [
+    654.72,
+    222.48
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "월별 최대수요와 청구기준",
+  "section": "8.1",
+  "source": "s08_simulation.py"
+}

@@ -1,0 +1,32 @@
+{
+  "fid": "E06",
+  "text_count": 24,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 7.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E06.png",
+  "sha256": "2d18f2701d3e6c7a63eb5ce76a698c189740d9628ba40dbb8835b56220e7e3fb",
+  "pixel_size": [
+    2670,
+    1139
+  ],
+  "saved_size_pt": [
+    640.8000000000001,
+    273.36
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "경보 기반 정책 가정 모의",
+  "source_table": "policy_cost_sensitivity.csv",
+  "source_sha256": "ffc1f11588f9d80bec4d98730a8a0e909e313da092e29dbd9214acf34ccadf5d",
+  "report_variant": {
+    "path": "report_variants/E06.png",
+    "sha256": "314fb71a30d237dd4bc4835e0150c0c8ed849229ee1b6e416d1b377e5e3bd110",
+    "minimum_effective_font_pt": 8.600673242523875,
+    "readability_pass": true
+  }
+}

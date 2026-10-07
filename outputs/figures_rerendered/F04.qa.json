@@ -1,0 +1,26 @@
+{
+  "fid": "F04",
+  "text_count": 15,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F04.png",
+  "sha256": "850279cfa4efa2c43f9c7955e6cea1c8d45a705ca8efccf24fa55c7ed6fb81e4",
+  "pixel_size": [
+    3269,
+    683
+  ],
+  "saved_size_pt": [
+    784.56,
+    163.92000000000002
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "양방향 결측 타임라인",
+  "section": "1.3",
+  "source": "s01_diagnose.py"
+}

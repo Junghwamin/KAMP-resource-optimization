@@ -1,0 +1,336 @@
+{
+ "bundle_id": "deploy-full-6efaf40b3875",
+ "caveats": [
+  "학습 데이터의 month 범위는 [1, 2, 3, 4, 5, 6, 7, 8, 9] 이다. 그 밖의 달은 외삽이다",
+  "공휴일표 HOLIDAYS_2021 은 2021-09-14 까지만 검증됐다. 이후 날짜는 운영 휴일표를 주입해야 한다",
+  "Isotonic 보정기는 fold 모델의 OOF 확률로 적합됐고, 보정 후 ECE 0 은 적합 데이터 위의 값이다",
+  "경보 라벨은 보정 전 확률과 tau_cls, 또는 y_peak 예측과 tau 로 정한다"
+ ],
+ "components": {
+  "calibrator": "calibrator_isotonic.json",
+  "fallbacks": {
+   "y_avg": "fallback_y_avg.lgb",
+   "y_peak": "fallback_y_peak.lgb"
+  },
+  "gate": {
+   "classes": [
+    0,
+    1,
+    2
+   ],
+   "features": [
+    "y_avg_lag24",
+    "y_avg_lag48",
+    "y_avg_lag168",
+    "y_peak_lag24",
+    "y_peak_lag48",
+    "y_peak_lag168",
+    "roll24_avg_mean",
+    "roll24_avg_max",
+    "roll24_avg_std",
+    "roll24_peak_max",
+    "roll24_peak_cnt",
+    "roll168_avg_mean",
+    "roll168_avg_max",
+    "roll168_avg_std",
+    "roll168_peak_max",
+    "roll168_peak_cnt",
+    "hour",
+    "dow",
+    "month",
+    "is_sat",
+    "is_sun",
+    "is_holiday",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "is_daytime",
+    "is_startup_08",
+    "is_restart_13",
+    "is_shutdown",
+    "shutdown_nth",
+    "is_first_day_back",
+    "prev_day_shutdown",
+    "is_state_switch",
+    "prod",
+    "headcount",
+    "prod_chg_ratio",
+    "prod_cum_day",
+    "temp",
+    "humid",
+    "wind",
+    "rain",
+    "cdd",
+    "hdd"
+   ],
+   "file": "gate.lgb",
+   "n_estimators": 400,
+   "regime_bins": [
+    30.0,
+    70.0
+   ]
+  },
+  "golden": "golden.json",
+  "peak_classifier": {
+   "effective_note": "탐색과 최종 적합 모두 bagging_freq=1을 유지하여 bagging_fraction을 적용",
+   "file": "peak_clf.lgb",
+   "n_estimators": 800,
+   "params": {
+    "bagging_fraction": 0.9262493836735974,
+    "bagging_freq": 1,
+    "bagging_seed": 42,
+    "data_random_seed": 42,
+    "deterministic": true,
+    "feature_fraction": 0.912920647295226,
+    "feature_fraction_seed": 42,
+    "force_row_wise": true,
+    "learning_rate": 0.03930633110628125,
+    "max_depth": 4,
+    "min_child_samples": 48,
+    "num_leaves": 78,
+    "num_threads": 4,
+    "objective": "binary",
+    "seed": 42,
+    "verbosity": -1
+   },
+   "scale_pos_weight": 17.841269841269842
+  },
+  "quantiles": {
+   "0.1": "interval_q10.lgb",
+   "0.5": "interval_q50.lgb",
+   "0.9": "interval_q90.lgb"
+  },
+  "regressors": {
+   "y_avg": {
+    "0": "reg_y_avg_r0.lgb",
+    "1": "reg_y_avg_r1.lgb",
+    "2": "reg_y_avg_r2.lgb"
+   },
+   "y_peak": {
+    "0": "reg_y_peak_r0.lgb",
+    "1": "reg_y_peak_r1.lgb",
+    "2": "reg_y_peak_r2.lgb"
+   }
+  }
+ },
+ "fast_mode": false,
+ "feature_contract": {
+  "columns": [
+   "y_avg_lag24",
+   "y_avg_lag48",
+   "y_avg_lag168",
+   "y_peak_lag24",
+   "y_peak_lag48",
+   "y_peak_lag168",
+   "roll24_avg_mean",
+   "roll24_avg_max",
+   "roll24_avg_std",
+   "roll24_peak_max",
+   "roll24_peak_cnt",
+   "roll168_avg_mean",
+   "roll168_avg_max",
+   "roll168_avg_std",
+   "roll168_peak_max",
+   "roll168_peak_cnt",
+   "hour",
+   "dow",
+   "month",
+   "is_sat",
+   "is_sun",
+   "is_holiday",
+   "hour_sin",
+   "hour_cos",
+   "dow_sin",
+   "dow_cos",
+   "is_daytime",
+   "is_startup_08",
+   "is_restart_13",
+   "is_shutdown",
+   "shutdown_nth",
+   "is_first_day_back",
+   "prev_day_shutdown",
+   "is_state_switch",
+   "prod",
+   "headcount",
+   "prod_chg_ratio",
+   "prod_cum_day",
+   "temp",
+   "humid",
+   "wind",
+   "rain",
+   "cdd",
+   "hdd"
+  ],
+  "dtype": "float64",
+  "history_columns": [
+   "날짜",
+   "시간",
+   "15분",
+   "30분",
+   "45분",
+   "60분",
+   "평균",
+   "생산량",
+   "공장인원",
+   "인건비",
+   "기온",
+   "풍속",
+   "습도",
+   "강수량"
+  ],
+  "history_days": {
+   "max": 62,
+   "min": 8,
+   "recommended": 14
+  },
+  "holiday_coverage_end": "2021-09-14",
+  "holiday_coverage_start": "2021-01-01",
+  "holidays": [
+   "2021-01-01",
+   "2021-02-11",
+   "2021-02-12",
+   "2021-02-13",
+   "2021-03-01",
+   "2021-05-05",
+   "2021-05-19",
+   "2021-06-06",
+   "2021-08-15",
+   "2021-08-16"
+  ],
+  "plan_columns": [
+   "날짜",
+   "시간",
+   "생산량",
+   "공장인원",
+   "기온",
+   "풍속",
+   "습도",
+   "강수량"
+  ],
+  "safe_lags": [
+   24,
+   48,
+   168
+  ],
+  "theta": 187.0,
+  "theta_note": "피크 정의 임계값(피처 roll*_peak_cnt 에도 쓰임). 서빙에서 다시 계산하지 않는다"
+ },
+ "files_sha256": {
+  "calibrator_isotonic.json": "20e5f349291c2bda452756d87b7592400749dd910c3b9957311fa7544b48b252",
+  "fallback_y_avg.lgb": "ff7512a20c08ecdc0abe3d8215e672e13d1ee1b8b4cad76e6ba9175fee1dca13",
+  "fallback_y_peak.lgb": "be0b76df6a38de70f6bcb942d35fd551b185e56900605bef21c46b301897f8ad",
+  "gate.lgb": "0fdcd2f78aae1b81fa0e1689bed5db08fb464c9e46aa92057bb61df1746fcaaf",
+  "golden.json": "420a0ddce3e574cc5763f14a4a498828cb53d07c02b8a89d7c5225eb29ef7570",
+  "interval_q10.lgb": "a6ad0a205fab394f12dc5fb96bf59fb8c27384bc2d23aa199e66ed5071c7933a",
+  "interval_q50.lgb": "de69130eccc40c96c5eb0710cee9abe6f3af6f0a505bdf8ff7a0f4384b7b561f",
+  "interval_q90.lgb": "af1c7f2c3c61c93e42c773791278cbec8777a199653d850d6431410a318c3810",
+  "peak_clf.lgb": "ec052916400e0875e256238ed4674f8a470d7c31a5ca10ae317b04cae6bbe410",
+  "reg_y_avg_r0.lgb": "5c5bea0f8a8056fa8040a0e086f3a1744885ea2a32c1b7406caa70d911e109ec",
+  "reg_y_avg_r1.lgb": "e0b2f6e0bc568fcba6d094a9ee6e9949f2987a90e32c48da4c383c46aeff0858",
+  "reg_y_avg_r2.lgb": "1ee860636118c43f6f69988dc13c67f3c04fcf121a3ea433da9c8cd4b6fb320a",
+  "reg_y_peak_r0.lgb": "9e1d18d1d6795ec372ed181f7bd416f8d0553b37a49159907650be44b7fad9de",
+  "reg_y_peak_r1.lgb": "9ec7bea47c416463c2817ae9afe0fed6343246fd4ebada11b5c2618780ef236f",
+  "reg_y_peak_r2.lgb": "751d26e8f6809e3f43a04ab97045d520db15dd8f1f74ec34914a1661eda87f14"
+ },
+ "hyperparameters": {
+  "lgb_base": {
+   "bagging_seed": 42,
+   "data_random_seed": 42,
+   "deterministic": true,
+   "feature_fraction_seed": 42,
+   "force_row_wise": true,
+   "num_threads": 4,
+   "objective": "l1",
+   "seed": 42,
+   "verbosity": -1
+  },
+  "n_estimators": 800,
+  "regime_uses_optuna": false
+ },
+ "intervals": {
+  "quantile": {
+   "calibrated": false,
+   "fit_last": "2021-07-26 19:00:00",
+   "measured_test_coverage_q10_q90": null,
+   "note": "분위회귀는 미보정이다. 실제 테스트 피복률은 기록된 값으로 확인하며 운영 피복을 보장하지 않음"
+  },
+  "residual": {
+   "alpha": 0.9,
+   "center": "y_avg_pred",
+   "fit_on": "2단계 레짐(3분류) OOF 절대잔차 (fold2~5)",
+   "inherited_from": "eval-full-236dd9888c33",
+   "measured_test_coverage": 0.9881,
+   "operating": {
+    "n": 930,
+    "qhat": 21.803197419911214
+   },
+   "shutdown": {
+    "n": 349,
+    "qhat": 82.58986932517217
+   }
+  }
+ },
+ "is_final_model": true,
+ "manifest_sha256": "6efaf40b387517c052408ba2a9f5b70eaefdbaef01b94261061f1addd4e65247",
+ "model_name": "2단계 레짐(3분류)",
+ "report_final_model": "2단계 레짐(3분류)",
+ "role": "deploy",
+ "runtime": {
+  "lightgbm": "4.5.0",
+  "machine": "AMD64",
+  "numpy": "1.26.4",
+  "pandas": "2.1.4",
+  "python": "3.11.9",
+  "scikit_learn": "1.4.2",
+  "system": "Windows"
+ },
+ "schema_version": 1,
+ "submission": null,
+ "thresholds": {
+  "inherited_from": "eval-full-236dd9888c33",
+  "tau": {
+   "fold_taus": [
+    170.9,
+    171.15,
+    176.51,
+    181.36
+   ],
+   "method": "fold2~5 검증구간 tune_tau(F1 최대) 의 중앙값",
+   "rule": "y_peak_pred >= tau",
+   "unit": "kW",
+   "value": 173.82999999999998
+  },
+  "tau_cls": {
+   "method": "피크 직접분류 OOF 확률에 tune_tau",
+   "rule": "peak_prob >= tau_cls",
+   "value": 0.01
+  }
+ },
+ "training": {
+  "cond": "D1",
+  "cutoff_exclusive": "2021-09-15 00:00:00",
+  "data_file": "data/okm_augumented_2021.csv",
+  "data_sha256": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+  "excluded_masks": [
+   "is_warmup",
+   "is_outage",
+   "is_erp_missing"
+  ],
+  "first": "2021-01-08 00:00:00",
+  "last": "2021-09-14 23:00:00",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "n_rows": 5935,
+  "used_in_report": false
+ }
+}

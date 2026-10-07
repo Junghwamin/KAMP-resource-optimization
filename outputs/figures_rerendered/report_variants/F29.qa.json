@@ -1,0 +1,32 @@
+{
+  "fid": "F29",
+  "text_count": 19,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.6,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F29.png",
+  "sha256": "a903458dc6006bff30242fb345e64887d32d75393de865499fb03eebe98d048a",
+  "pixel_size": [
+    1770,
+    754
+  ],
+  "saved_size_pt": [
+    424.8,
+    180.95999999999998
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    424.931,
+    181.12
+  ],
+  "minimum_effective_font_pt": 8.602652071563087,
+  "aspect_fit_scale": 1.0003083804143125,
+  "layout_notes": [],
+  "readability_pass": true
+}

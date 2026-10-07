@@ -1,0 +1,26 @@
+{
+  "fid": "F11",
+  "text_count": 109,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 7.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F11.png",
+  "sha256": "88e89943b9dfbe0cd796537e9d6ac6e8c78261577df03fba561d709ca2f93bd3",
+  "pixel_size": [
+    1670,
+    1527
+  ],
+  "saved_size_pt": [
+    400.79999999999995,
+    366.48
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "상관행렬",
+  "section": "1.5",
+  "source": "s01_diagnose.py"
+}

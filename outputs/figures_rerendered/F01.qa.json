@@ -1,0 +1,26 @@
+{
+  "fid": "F01",
+  "text_count": 20,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F01.png",
+  "sha256": "b5fd74a1307b8df52876da0b901da4cbf9e06150f18cb7f2c9e3eb743ca9cede",
+  "pixel_size": [
+    3269,
+    1351
+  ],
+  "saved_size_pt": [
+    784.56,
+    324.23999999999995
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "전체기간 전력 시계열",
+  "section": "1.5",
+  "source": "s01_diagnose.py"
+}

@@ -1,0 +1,13 @@
+── 모델 번들 저장 (FULL) ──
+  평가 번들 eval-full-236dd9888c33  (학습 5,599행, ~08-31)
+  배포 번들 deploy-full-6efaf40b3875  (학습 5,935행, ~09-14)
+  τ = 173.82999999999998 kW (반올림 없음) · τ_cls = 0.01
+  예측구간 반폭 운영일 ±21.80 / 휴무일 ±82.59 kW → 테스트 피복률 0.988 (목표 0.9)
+  번들 순수 추론 336시간 = 23.8 ms (10회 중앙값, 보고서 INFER_SEC 와 별개)
+               점검  통과
+0      eval_bitwise  True
+1  submission_match  True
+2         refit_sha  True
+3     deploy_reload  True
+4         integrity  True
+5    manifest_clean  True

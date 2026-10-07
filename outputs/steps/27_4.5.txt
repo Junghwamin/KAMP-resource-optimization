@@ -1,0 +1,7 @@
+── 보정 조건 결과 (Day-ahead, 테스트 336h) ──
+                   모델   예측지평        MAE       RMSE      sMAPE  Peak-MAE  Peak15-MAE  Peak-n  High-load-MAE  High-load-n Peak-mask-source  실질 피처 수
+0        Seasonal Naive  Day-ahead   6.401786  10.015613   7.399313  8.964286   10.964286      28       9.500000            2           y_peak           NaN
+1  Random Forest (보정)  Day-ahead   6.329310   9.826924   8.282732  8.203651         NaN      28      14.672656            2           y_peak          44.0
+2     Simple RNN (보정)  Day-ahead  10.279382  13.576701  22.946715  9.606178         NaN      28       5.020508            2           y_peak           NaN
+
+  원본 RF 실질 피처 1개 → 보정 RF 실질 피처 44개

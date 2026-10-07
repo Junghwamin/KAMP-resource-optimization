@@ -1,0 +1,32 @@
+{
+  "fid": "E04",
+  "text_count": 19,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E04.png",
+  "sha256": "2581a1d66c3e69b2f3fc5ce613d1adc955405198a914723579f11db267f36d29",
+  "pixel_size": [
+    2969,
+    1135
+  ],
+  "saved_size_pt": [
+    712.56,
+    272.4
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "레짐 통제 비교",
+  "source_table": "controlled_regime_paired_ci.csv",
+  "source_sha256": "ccebf80de627143173f065ed49fa2efee18f5c14f19a7b97ccb37ddcc6df7758",
+  "report_variant": {
+    "path": "report_variants/E04.png",
+    "sha256": "c4b5e3165a61d0de07cb83db6f07d3446cec0096461318215079dc5e021daf19",
+    "minimum_effective_font_pt": 8.600673242523875,
+    "readability_pass": true
+  }
+}

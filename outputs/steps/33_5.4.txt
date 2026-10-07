@@ -1,0 +1,3 @@
+── Optuna 총 탐색 횟수 = 100회 (회귀 50 + 분류 50) ──
+  분류 최적 fold평균 PR-AUC = 0.5548
+Out: WindowsPath('outputs/figures/F26_Optuna_탐색_이력.png')

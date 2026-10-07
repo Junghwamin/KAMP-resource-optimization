@@ -1,0 +1,2 @@
+── Seasonal Naive (Day-ahead, 테스트 336h) ──
+  MAE 6.402 | RMSE 10.016 | sMAPE 7.399 | Peak-MAE 8.964 | Peak15-MAE 10.964 | Peak-n 28.000 | High-load-MAE 9.500 | High-load-n 2.000 | Peak-mask-source y_peak

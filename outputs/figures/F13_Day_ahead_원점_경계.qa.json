@@ -1,0 +1,26 @@
+{
+  "fid": "F13",
+  "text_count": 14,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F13_Day_ahead_원점_경계.png",
+  "sha256": "7e16f668fc93bad25d38978c4e94f1dd9c12d535d6d0019e715c2987dbe2534f",
+  "pixel_size": [
+    3270,
+    1167
+  ],
+  "saved_size_pt": [
+    784.8000000000001,
+    280.08
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "Day-ahead 원점 경계",
+  "section": "2.2",
+  "source": "s02_features.py"
+}

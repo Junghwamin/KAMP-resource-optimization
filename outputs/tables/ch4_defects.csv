@@ -1,0 +1,14 @@
+﻿셀,결함,영향,보정
+4,절대경로 `/mnt/datasets/21/data/...`,로컬에서 첫 셀부터 실행 불가,경로 상대화
+21,`freq='H'`,pandas 3.0.5에서 ValueError 하드 크래시,`freq='h'` 로 수정
+21,`date_range`를 무조건 인덱스로 덮어씀,손상 시간값·중복을 은폐,실제 시간값 복원 후 사용
+13,"`fillna(0, inplace=True)` 체인",무음 미반영 — NaN 1건 잔존,단일 대입으로 수정
+32,`df['Weekend'][mask] = 1`,무음 미반영 — Weekend 전부 0,`.loc` 단일 대입
+34,`df['Vacation'].loc[gun] = 1`,무음 미반영 — Vacation 전부 0,`.loc` 단일 대입
+39,`n_times_advance = 1`,1시간 앞 모델 — Day-ahead와 지평 불일치,Day-ahead 별도 산출
+48,`fit_transform(전체 데이터)`,테스트 분포가 스케일러에 유입,학습구간에서만 적합
+52,"`reshape((N,24,7))`",C-order로 접어 시간축이 역순,시간순 유지 reshape
+73,`temp = ...iloc[0]` (루프 변수 아님),치명적 — 전 행 외생변수가 1행 값 고정,`iloc[index]` 로 수정
+73,`cost_list.pop(len(x_train)-1)`,x_train.pop 직후라 off-by-one,명시적 인덱스 사용
+75,`train_test_split(shuffle=True)`,시계열 무작위 분할,시간순 분할
+80,LP 계수가 버그 피처에서 유도,결과 해석 불가,규칙기반 시뮬레이션으로 대체

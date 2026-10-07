@@ -1,0 +1,40 @@
+{
+  "experiment": "sensitivity",
+  "status": "complete",
+  "n_scenarios": 17,
+  "basic_scenarios": 15,
+  "supplementary_scenarios": 2,
+  "bundle_id": "eval-full-236dd9888c33",
+  "bundle_manifest_sha256": "2d06f4e79f541ae5fd87b7e0614a26283ed9359ca9254325b07abb75bca06457",
+  "c0_max_absolute_difference": {
+    "pred_avg": 0.0,
+    "pred_peak": 0.0
+  },
+  "truth_sha256": "cd611d27640b5c03614af36a95d8baf688f109a67f9352ea2933a9ea69a1d385",
+  "raw_sha256": "9a9141ead0325cc4db21eef17f5e3da7003665d3a0268ae09d1ec7de8a1e9064",
+  "evaluation_role": "frozen_reference_input_stress",
+  "scenario_ids": [
+    "C0",
+    "P80",
+    "P90",
+    "P110",
+    "P120",
+    "H90",
+    "H110",
+    "T-2",
+    "T-1",
+    "T+1",
+    "T+2",
+    "P80T-2",
+    "P80T+2",
+    "P120T-2",
+    "P120T+2",
+    "S-1",
+    "S+1"
+  ],
+  "limitations": [
+    "Assumed input-error ranges, not observed operational forecast errors",
+    "Historical observations reset daily; no causal production intervention",
+    "Existing no-plan ablation is separate; zeroing production here is not a no-plan model"
+  ]
+}

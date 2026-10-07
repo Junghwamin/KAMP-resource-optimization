@@ -1,0 +1,32 @@
+{
+  "fid": "F19",
+  "text_count": 19,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F19_PR_곡선.png",
+  "sha256": "f79d3aac215eb772cd2a32a4bf9f12bfd0ac90bb455883ca2e0ede3915be22d1",
+  "pixel_size": [
+    1769,
+    1378
+  ],
+  "saved_size_pt": [
+    424.56,
+    330.72
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F19.png",
+    "sha256": "db3d039afb28dc8f511db24ab06e6f71e3151a0f1f5d80f30d6ac44c618fd3dd",
+    "minimum_effective_font_pt": 8.600845018058209,
+    "readability_pass": true
+  },
+  "title": "PR 곡선",
+  "section": "6.2",
+  "source": "s06_eval.py"
+}

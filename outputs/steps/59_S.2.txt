@@ -1,0 +1,13 @@
+S.2 리플레이 — 메모리 비트 비교 · 번들 eval-full-236dd9888c33 · 336행 · MAE 5.3099
+  ✓ 행 336
+  ✓ ts
+  ✓ y_avg_pred
+  ✓ y_peak_pred
+  ✓ peak_prob
+  ✓ q10
+  ✓ q50
+  ✓ q90
+  ✓ peak_label = y_peak_pred ≥ τ
+  ✓ pi_lo
+  ✓ pi_hi
+  ✓ peak_label == 제출 파일 peak_pred_label

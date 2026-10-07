@@ -1,0 +1,32 @@
+{
+  "fid": "F14",
+  "text_count": 25,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F14_Rolling_origin_fold_배치도.png",
+  "sha256": "46b949315b4af12b413c5165e5bdabaca161d244d35e68295792c3b5b75a2010",
+  "pixel_size": [
+    3265,
+    1232
+  ],
+  "saved_size_pt": [
+    783.5999999999999,
+    295.68
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F14.png",
+    "sha256": "69adb6ca22e28ed604aacf3f8495e4715526b42d1512228ef27279786989e30f",
+    "minimum_effective_font_pt": 8.600019338010434,
+    "readability_pass": true
+  },
+  "title": "Rolling-origin fold 배치도",
+  "section": "3.2",
+  "source": "s03_split.py"
+}

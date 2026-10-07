@@ -1,0 +1,16 @@
+{
+  "experiment": "diagnostics",
+  "status": "complete",
+  "model": "2단계 레짐(3분류)",
+  "data_condition": "D1",
+  "n_oof": 1279,
+  "high_production_threshold": 665.5,
+  "production_q50": 55.0,
+  "temperature_q25": 23.7,
+  "temperature_q75": 27.9,
+  "threshold_scope": "all_selected_OOF_descriptive_only",
+  "overlapping_conditions": true,
+  "ci": "95% percentile bootstrap, sampling whole dates including dates with zero condition rows",
+  "undefined_rates": "NA when denominator is zero; finite replicate count and NA fraction reported",
+  "interpretation": "Descriptive conditional associations; hour-defined startup is not an independent causal effect."
+}

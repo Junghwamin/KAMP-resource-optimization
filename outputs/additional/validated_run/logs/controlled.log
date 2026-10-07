@@ -1,0 +1,9 @@
+[additional fit] lgb 3936 train / 624 predict 4ab4def8eb
+[additional fit] regime3 3936 train / 624 predict 86a0608e7d
+[additional fit] lgb 4272 train / 624 predict f3de9be334
+[additional fit] regime3 4272 train / 624 predict 9e14a0ae0f
+[additional fit] lgb 4560 train / 672 predict 0d64cc374c
+[additional fit] regime3 4560 train / 672 predict 46127878bd
+[additional fit] lgb 4896 train / 655 predict f718cd3d31
+[additional fit] regime3 4896 train / 655 predict dad4fc6fa3
+EXPERIMENT_COMPLETE controlled seconds=40.29

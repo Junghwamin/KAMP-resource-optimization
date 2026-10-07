@@ -1,0 +1,26 @@
+{
+  "fid": "F17",
+  "text_count": 19,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F17_모델별_MAE.png",
+  "sha256": "7462466203210047be0adcc0e6ec066f4cbc58f767eb6eb6883f0d78ab62b1b9",
+  "pixel_size": [
+    2368,
+    988
+  ],
+  "saved_size_pt": [
+    568.32,
+    237.12
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "모델별 MAE",
+  "section": "6.1",
+  "source": "s06_eval.py"
+}

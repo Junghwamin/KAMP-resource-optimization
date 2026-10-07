@@ -1,0 +1,5 @@
+── 확률 보정 (이전 OOF fold 적합 → 다음 fold 평가) ──
+      구분                 평가  평가 n    Brier      ECE
+0  보정 전  시간순 OOF 보정검증     991  0.08475  0.07290
+1  보정 후  시간순 OOF 보정검증     991  0.07745  0.05747
+Out: WindowsPath('outputs/figures/F21_확률보정_Reliability.png')

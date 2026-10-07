@@ -1,0 +1,11 @@
+{
+ "status": "ok",
+ "bundle_id": "deploy-full-6efaf40b3875",
+ "role": "deploy",
+ "model_name": "2단계 레짐(3분류)",
+ "train_last": "2021-09-14 23:00:00",
+ "n_train_rows": 5935,
+ "tau": 173.82999999999998,
+ "tau_cls": 0.01,
+ "selftest": "ok"
+}

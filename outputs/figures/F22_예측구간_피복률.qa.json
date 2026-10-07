@@ -1,0 +1,26 @@
+{
+  "fid": "F22",
+  "text_count": 18,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F22_예측구간_피복률.png",
+  "sha256": "29a3256200ff126856a0715cdf58d4fa04e8580b67dcd7c0d6782285d58508d7",
+  "pixel_size": [
+    3262,
+    896
+  ],
+  "saved_size_pt": [
+    782.88,
+    215.04000000000002
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "예측구간 피복률",
+  "section": "5.8",
+  "source": "s05_models.py"
+}

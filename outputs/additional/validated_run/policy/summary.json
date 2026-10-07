@@ -1,0 +1,150 @@
+{
+  "experiment": "policy",
+  "status": "complete",
+  "evaluation_role": "retrospective_outer_fixed_prediction_open_loop",
+  "temporal_dependency": {
+    "status": "complete",
+    "protocol_fingerprint": "c29f90ab7b6afdd3b82eb0bc5d9dcccb709aec9ecb90ad22592bf7f96c54253b",
+    "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+    "manifest_sha256": "938b0513b3b2b56e8597f13f440104a10437dd100177ff11b32e3eb3f711a77b",
+    "verified_outer": [
+      "O2",
+      "O3",
+      "O4",
+      "O5"
+    ],
+    "allow_partial_temporal": false
+  },
+  "source_sha256": "90d70f13c4d1ba436cb774321428841faeed09d6396fd64fffd8a283027434b9",
+  "source_file": "temporal_outer_predictions.csv",
+  "outer_count": 4,
+  "policies": [
+    "none",
+    "fixed_L1",
+    "alert_L1",
+    "alert_L2"
+  ],
+  "scenario_count": 17,
+  "prediction_feedback": false,
+  "constraint_audit_passed": true,
+  "observation_coverage": {
+    "O2": 0.8571428571428571,
+    "O3": 1.0,
+    "O4": 1.0,
+    "O5": 0.9494047619047619
+  },
+  "partial_observation": true,
+  "target_quality_by_outer": {
+    "O2": {
+      "n_hours": 336,
+      "n_eval": 288,
+      "n_excluded": 48,
+      "observation_coverage": 0.8571428571428571,
+      "partial_observation": true
+    },
+    "O3": {
+      "n_hours": 336,
+      "n_eval": 336,
+      "n_excluded": 0,
+      "observation_coverage": 1.0,
+      "partial_observation": false
+    },
+    "O4": {
+      "n_hours": 336,
+      "n_eval": 336,
+      "n_excluded": 0,
+      "observation_coverage": 1.0,
+      "partial_observation": false
+    },
+    "O5": {
+      "n_hours": 336,
+      "n_eval": 319,
+      "n_excluded": 17,
+      "observation_coverage": 0.9494047619047619,
+      "partial_observation": true
+    }
+  },
+  "response_fits": [
+    {
+      "core_train_end": "2021-06-20T23:00:00",
+      "fit_max_datetime": "2021-06-19T07:00:00",
+      "evaluation_start": "2021-07-07T00:00:00",
+      "n_fit": 2246,
+      "n_core_rows": 4104,
+      "n_core_quality_excluded": 168,
+      "beta_raw_kw_per_unit": 0.00033838352450397984,
+      "beta_kw_per_unit": 0.00033838352450397984,
+      "ols_r2": 0.5616185959409143,
+      "beta_status": "estimated",
+      "negative_slope_clipped": false,
+      "receiving_capacity_units": 3096.2999999999997,
+      "fit_rows_sha256": "b5402adc363077c3817024e533bf6773ee67c1c28f6f3b5721fe6c9d1fc8c6ae",
+      "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+      "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+      "outer": "O2"
+    },
+    {
+      "core_train_end": "2021-07-04T23:00:00",
+      "fit_max_datetime": "2021-07-03T07:00:00",
+      "evaluation_start": "2021-07-21T00:00:00",
+      "n_fit": 2472,
+      "n_core_rows": 4440,
+      "n_core_quality_excluded": 168,
+      "beta_raw_kw_per_unit": 0.0003653459873510444,
+      "beta_kw_per_unit": 0.0003653459873510444,
+      "ols_r2": 0.5761498090627588,
+      "beta_status": "estimated",
+      "negative_slope_clipped": false,
+      "receiving_capacity_units": 3060.959999999999,
+      "fit_rows_sha256": "d975cd5ce1924e17ad48577c43867731263c95b3eb6ffc353acb37572a4f444e",
+      "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+      "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+      "outer": "O3"
+    },
+    {
+      "core_train_end": "2021-07-18T23:00:00",
+      "fit_max_datetime": "2021-07-17T07:00:00",
+      "evaluation_start": "2021-08-04T00:00:00",
+      "n_fit": 2649,
+      "n_core_rows": 4776,
+      "n_core_quality_excluded": 216,
+      "beta_raw_kw_per_unit": 0.0004966349033838533,
+      "beta_kw_per_unit": 0.0004966349033838533,
+      "ols_r2": 0.5943597809472351,
+      "beta_status": "estimated",
+      "negative_slope_clipped": false,
+      "receiving_capacity_units": 3095.7599999999998,
+      "fit_rows_sha256": "ff940b1ab528937bdba9b3f8dc0a2b4d38c96cb29dab1e3982027cc924f54946",
+      "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+      "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+      "outer": "O4"
+    },
+    {
+      "core_train_end": "2021-08-01T23:00:00",
+      "fit_max_datetime": "2021-07-30T16:00:00",
+      "evaluation_start": "2021-08-18T00:00:00",
+      "n_fit": 2861,
+      "n_core_rows": 5112,
+      "n_core_quality_excluded": 216,
+      "beta_raw_kw_per_unit": 0.0009686690729784158,
+      "beta_kw_per_unit": 0.0009686690729784158,
+      "ols_r2": 0.6093958712682391,
+      "beta_status": "estimated",
+      "negative_slope_clipped": false,
+      "receiving_capacity_units": 3151.2,
+      "fit_rows_sha256": "af72fdc5924e0090d89338ca7fa05adf71a2c97590b7fa52f58778d9c5435be5",
+      "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+      "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+      "outer": "O5"
+    }
+  ],
+  "artifacts": {
+    "policy_actions.csv": 5376,
+    "policy_transfers.csv": 44,
+    "policy_constraint_audit.csv": 224,
+    "policy_assumed_outcomes.csv": 16128,
+    "policy_cost_sensitivity.csv": 272,
+    "policy_response_fits.csv": 4
+  },
+  "interpretation": "All scenarios retained. Hypothetical policy comparison, not measured operational or billing savings."
+}

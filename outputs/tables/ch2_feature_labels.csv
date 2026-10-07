@@ -1,0 +1,45 @@
+﻿피처명,한글라벨
+y_avg_lag24,평균전력 24시간 전
+y_avg_lag48,평균전력 48시간 전
+y_avg_lag168,평균전력 168시간 전
+y_peak_lag24,peak15 24시간 전
+y_peak_lag48,peak15 48시간 전
+y_peak_lag168,peak15 168시간 전
+roll24_avg_mean,직전24h 평균전력 평균
+roll24_avg_max,직전24h 평균전력 최대
+roll24_avg_std,직전24h 평균전력 표준편차
+roll24_peak_max,직전24h peak15 최대
+roll24_peak_cnt,직전24h 피크 발생건수
+roll168_avg_mean,직전168h 평균전력 평균
+roll168_avg_max,직전168h 평균전력 최대
+roll168_avg_std,직전168h 평균전력 표준편차
+roll168_peak_max,직전168h peak15 최대
+roll168_peak_cnt,직전168h 피크 발생건수
+hour,시간
+dow,요일
+month,월
+is_sat,토요일
+is_sun,일요일
+is_holiday,공휴일
+hour_sin,시간 sin
+hour_cos,시간 cos
+dow_sin,요일 sin
+dow_cos,요일 cos
+is_daytime,주간(9~17시)
+is_startup_08,08시 기동
+is_restart_13,13시 재가동
+is_shutdown,휴무일
+shutdown_nth,휴무 n일차
+is_first_day_back,휴무 직후 재가동일
+prev_day_shutdown,전일 휴무
+is_state_switch,가동 전환일
+prod,계획생산량
+headcount,공장인원(정규화 공수)
+prod_chg_ratio,생산량 전일대비 변화율
+prod_cum_day,일 누적생산량
+temp,기온
+humid,습도
+wind,풍속
+rain,강수량
+cdd,냉방도일 CDD
+hdd,난방도일 HDD

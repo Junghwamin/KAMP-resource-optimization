@@ -1,0 +1,32 @@
+{
+  "fid": "F21",
+  "text_count": 18,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F21_확률보정_Reliability.png",
+  "sha256": "78f29be7a0cf2426f48f0b2b0e7c5e7f6b962dd57daebee20a0a3b49dd8f20a1",
+  "pixel_size": [
+    1409,
+    1291
+  ],
+  "saved_size_pt": [
+    338.15999999999997,
+    309.84000000000003
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F21.png",
+    "sha256": "bc0c949e13f4b06f7bd50ac2803e69bc4c1f7e1c2a65edb2feb51f35425bce56",
+    "minimum_effective_font_pt": 8.600845790715972,
+    "readability_pass": true
+  },
+  "title": "확률보정 Reliability",
+  "section": "5.7",
+  "source": "s05_models.py"
+}

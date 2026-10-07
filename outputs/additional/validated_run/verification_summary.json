@@ -1,0 +1,604 @@
+{
+  "schema": "kamp.submission_verification.v1",
+  "status": "complete",
+  "scope": "local_code_results_and_figures",
+  "computation_complete": true,
+  "full_ok": true,
+  "gates": {
+    "core": {
+      "status": "passed",
+      "step_count": 62,
+      "S4": {
+        "status": "ok",
+        "summary": "304 passed in 30.97s"
+      },
+      "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+      "snapshot_metadata_sha256": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+      "core_index_sha256": "b34f918663b2100d9b5966ae42b5439e2b428fddb989126f1f32e1f015160628",
+      "source_provenance": {
+        "status": "passed",
+        "immutable_fit_file_count": 27,
+        "snapshot_cross_checked": [
+          "data/okm_augumented_2021.csv",
+          "src/s00_env.py",
+          "src/s01_diagnose.py",
+          "src/s02_features.py",
+          "src/s03_split.py",
+          "src/s04_baseline.py",
+          "src/s05_models.py",
+          "src/s06_eval.py",
+          "src/s07_analysis.py",
+          "src/s08_simulation.py",
+          "src/s09_creativity.py",
+          "src/s10_package.py"
+        ],
+        "other_code_policy": "Current helpers/tests/viewers/docs require separate current-code full-suite evidence"
+      },
+      "recorded_runtime": {
+        "python": "3.11.9",
+        "platform": "Windows",
+        "versions": {
+          "numpy": "1.26.4",
+          "pandas": "2.1.4",
+          "scipy": "1.11.4",
+          "scikit-learn": "1.4.2",
+          "lightgbm": "4.5.0",
+          "matplotlib": "3.9.2",
+          "shap": "0.49.1"
+        }
+      },
+      "current_platform_note": "Saved platform provenance does not establish a new KAMP execution"
+    },
+    "experiments": {
+      "status": "passed",
+      "experiments": {
+        "bootstrap": {
+          "status": "passed",
+          "fingerprint": "d607e7cc6b000ceb55b92053d38ce68a71c953096b24d17bced142cdaef8549f",
+          "executor_manifest_sha256": "c64e694bc58e616f6af04c626258a9411f6f6fdf60cccbc52ceb2ae76d30fca2",
+          "artifact_count": 3
+        },
+        "diagnostics": {
+          "status": "passed",
+          "fingerprint": "3df9872e6190348484558ee1a930dcec3bbb868f7aba5d690e9ee494e7aeebba",
+          "executor_manifest_sha256": "90db0fb7a6ef6c0b4c245302f97eb0142c2342d7b1f789e0c961c32cf2632419",
+          "artifact_count": 5
+        },
+        "sensitivity": {
+          "status": "passed",
+          "fingerprint": "468d9c7c9eab856d6d6f624ad791468e712e2b6e44fd52f522c33283e4f24335",
+          "executor_manifest_sha256": "e30b829e1433bcb3342b8aaed96448e33ede250b08f55e782f4ba21021150fd8",
+          "artifact_count": 5
+        },
+        "controlled": {
+          "status": "passed",
+          "fingerprint": "eeba7db30a090c5ce8487449b292a72bce19ce398058c01b949a18b3475a7be3",
+          "executor_manifest_sha256": "14aa911a60651b4a9d903cbca9ecac404d8cf0060cab2dc63d030a2d1fe38535",
+          "artifact_count": 21
+        },
+        "temporal": {
+          "status": "passed",
+          "fingerprint": "bf89fef14bc5caa4d9ce93349cd8436fe1c77fba41663f0f2aff2a32cb1e4b50",
+          "executor_manifest_sha256": "bdfcbf1806fee7a04f3e02a76d804aed15b47c2085faa21ac9ee852a9093c8f9",
+          "artifact_count": 51
+        },
+        "policy": {
+          "status": "passed",
+          "fingerprint": "0c5db11635e76afbe01bab5e083efeaf114897f0a089b9b7004c8e6167ea9ffc",
+          "executor_manifest_sha256": "af51c5b75dc8028b10efe6e650cb1747d4d8a1f2f85811d467feb4e7a32c95fb",
+          "artifact_count": 8
+        }
+      }
+    },
+    "scientific_quality": {
+      "status": "passed",
+      "condition_rows": 12,
+      "temporal_metric_rows": 20,
+      "policy_partial_observation": true,
+      "note": "Negative improvements, non-significance and incomplete-observation disclosures are valid outcomes"
+    },
+    "current_code_tests": {
+      "status": "passed",
+      "passed_count": 336,
+      "file_count": 78,
+      "manifest_sha256": "244d7cfb56d35b3dd6aac4c98806b31932460098f7fee583d1e0a9c441b5913c",
+      "scope": "all tests including supplemental experiments and delivery tools"
+    },
+    "figure_integrity": {
+      "status": "passed",
+      "figure_count": 45,
+      "figures": [
+        {
+          "fid": "F01",
+          "png_sha256": "b5fd74a1307b8df52876da0b901da4cbf9e06150f18cb7f2c9e3eb743ca9cede",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F02",
+          "png_sha256": "d5091409a44b90e9aa9da063df5106acb018928e8ce034c5bbe18febd04f7bbe",
+          "report_variant": {
+            "path": "report_variants/F02.png",
+            "sha256": "002bc413871ca98d223887edc34ce02c12c8f4f06e76cce56dee14d80ddb1865",
+            "minimum_effective_font_pt": 8.602490347490347,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 7.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F03",
+          "png_sha256": "f08cc08d82872404b2cb045815335755f88ee995644956e5a18dea3f3e1c1fd0",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F04",
+          "png_sha256": "850279cfa4efa2c43f9c7955e6cea1c8d45a705ca8efccf24fa55c7ed6fb81e4",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F05",
+          "png_sha256": "3afe319c46bf8a1d7d2609dd57b4c9541fa84f8908ea88db0755683f30fe38ab",
+          "report_variant": {
+            "path": "report_variants/F05.png",
+            "sha256": "707faf2f2f52e3ee26aa05687c12fbc65b8a71f36c493dc9e60dbf2bf20e63ce",
+            "minimum_effective_font_pt": 8.60028683056985,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F06",
+          "png_sha256": "6e944792a5b29b0ca515619138d0c644878191d8fd57618d589c2649642c921d",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F07",
+          "png_sha256": "81003bc7f64ff1503758985f21a20e8ca647a8303b951870ea250c7a6b72b18e",
+          "report_variant": {
+            "path": "report_variants/F07.png",
+            "sha256": "124a86b70fbbbe2659245ce72f6cef053824edc2163d8edf9b5b7657e9da4bec",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F08",
+          "png_sha256": "4e46b3c86baabe5e924df78ba95eb55c493a04031de40dc09910453901e2917c",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F09",
+          "png_sha256": "b6777a836fb48c4091b29c467e24531748b8b404529208269276b60fb82a9f46",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F10",
+          "png_sha256": "f844360cc2b4492bd6b690bec7b5748476f99c0ef4650b1165602d0b0f326b7e",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F11",
+          "png_sha256": "88e89943b9dfbe0cd796537e9d6ac6e8c78261577df03fba561d709ca2f93bd3",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 7.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F12",
+          "png_sha256": "317cb8182706c7f5f809fa249050456016322b27d66f8dabc3050adf09d20278",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F13",
+          "png_sha256": "7e16f668fc93bad25d38978c4e94f1dd9c12d535d6d0019e715c2987dbe2534f",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F14",
+          "png_sha256": "46b949315b4af12b413c5165e5bdabaca161d244d35e68295792c3b5b75a2010",
+          "report_variant": {
+            "path": "report_variants/F14.png",
+            "sha256": "69adb6ca22e28ed604aacf3f8495e4715526b42d1512228ef27279786989e30f",
+            "minimum_effective_font_pt": 8.600019338010434,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F15",
+          "png_sha256": "e856bb07d6af19b5ffd362b2167924067005ac86ee436bad0e967df67218f524",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F16",
+          "png_sha256": "e0390533aa8253619d97e02621d81301ed5bb77b1362632a1a63e6ea31761b8a",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F17",
+          "png_sha256": "7462466203210047be0adcc0e6ec066f4cbc58f767eb6eb6883f0d78ab62b1b9",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F18",
+          "png_sha256": "29b3f0ba634788e0af6b4d1ae68c135ea39cbb3b1282fd027f7c6c117c65c299",
+          "report_variant": {
+            "path": "report_variants/F18.png",
+            "sha256": "ebf99c13bce7ba8a890538a11d1c4a052290a69bc71669328d25cc61cc3bb10d",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F19",
+          "png_sha256": "f79d3aac215eb772cd2a32a4bf9f12bfd0ac90bb455883ca2e0ede3915be22d1",
+          "report_variant": {
+            "path": "report_variants/F19.png",
+            "sha256": "db3d039afb28dc8f511db24ab06e6f71e3151a0f1f5d80f30d6ac44c618fd3dd",
+            "minimum_effective_font_pt": 8.600845018058209,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F20",
+          "png_sha256": "8502e3e324a3266a1a4b642ba8605d36dccd8942f8ec4ef47c0477e05f0244ea",
+          "report_variant": {
+            "path": "report_variants/F20.png",
+            "sha256": "bb871f709bb69f9489d7b0edee5d19706fa1638a5593389b045be273a7a3e718",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F21",
+          "png_sha256": "78f29be7a0cf2426f48f0b2b0e7c5e7f6b962dd57daebee20a0a3b49dd8f20a1",
+          "report_variant": {
+            "path": "report_variants/F21.png",
+            "sha256": "bc0c949e13f4b06f7bd50ac2803e69bc4c1f7e1c2a65edb2feb51f35425bce56",
+            "minimum_effective_font_pt": 8.600845790715972,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F22",
+          "png_sha256": "29a3256200ff126856a0715cdf58d4fa04e8580b67dcd7c0d6782285d58508d7",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F23",
+          "png_sha256": "f33ed0e000c090457244e0c03e0bf86c288bf48cf1457e7a52c71a0802123538",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F24",
+          "png_sha256": "48c3ba13659b1ba747881d2dc3a6c142641fe56d623ed5e825115a50017dbc1d",
+          "report_variant": {
+            "path": "report_variants/F24.png",
+            "sha256": "eb90354ccf2a5db4f25c3cdf6dad60598ea0573ec44b39d6e741c79b5729b810",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 7.5,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F25",
+          "png_sha256": "726538d421f11deb19be5d1348735bf7d75d12f7981856885ed5d95e7c1ce1e3",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F26",
+          "png_sha256": "f02d5b5ae6016b51e1453c4fb970f215e5319745c6ef6a95befdaa6600ca8326",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F27",
+          "png_sha256": "93fc281e88d97aec4601e582dabb01f0b4b8b11ff73fabefc124000d3c68f10f",
+          "report_variant": {
+            "path": "report_variants/F27.png",
+            "sha256": "223ed1f4089cb7aad2ebdcff3db1e8b6959c0ae14a033b09ec2035fffcb3ef4f",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F28",
+          "png_sha256": "278b1db4c9e04d2c0fc17eb064375d24927be9110eabb3340381373478c26e08",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 10.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F29",
+          "png_sha256": "2438326dd91cc481bb54f2fea301207f2956e0893fa84f563b1d61810b5a1247",
+          "report_variant": {
+            "path": "report_variants/F29.png",
+            "sha256": "a903458dc6006bff30242fb345e64887d32d75393de865499fb03eebe98d048a",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F30",
+          "png_sha256": "7442a4c25b7d1be6c5b539f547f976a2a93e0d9c9ef324e5ccebd8c68ef5b9f5",
+          "report_variant": {
+            "path": "report_variants/F30.png",
+            "sha256": "8a062133c0f61f2204c19d29c9ec765261fd7842c90842a1d8c4c4278552edd6",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F31",
+          "png_sha256": "1f44c4267d77a35a456b66d1c01b2cc14600e85d6e1849f3cb26709121523a40",
+          "report_variant": {
+            "path": "report_variants/F31.png",
+            "sha256": "e6135f4d35bc5fb2a48fb1bd5de6deef4434000aef2cc731607fcaa215150891",
+            "minimum_effective_font_pt": 8.602457704618198,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F32",
+          "png_sha256": "86253fcd342dc0bc68cada41a755dcbb0ae7b0b2f97f4ba8c31f3936cd1f3051",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F33",
+          "png_sha256": "ade30290c594052711146d710b2f0c6c6ebfa431522422001084909bd9dd1851",
+          "report_variant": {
+            "path": "report_variants/F33.png",
+            "sha256": "29339b57dde9f47e74671f7d9f66eac667b6d0b3cb67d3b08ce3d2ed1f6ca5be",
+            "minimum_effective_font_pt": 8.6,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F34",
+          "png_sha256": "a7771258d3b4f80873fdc64a5c476c395915d51ea7ac5949b9bdfa6903caa53e",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F35",
+          "png_sha256": "868d9db5784db749a64c5de976af01d6cd8beaa54a504e2dcbed171414aed83f",
+          "report_variant": {
+            "path": "report_variants/F35.png",
+            "sha256": "34fa08019aa0a2631cf989bc7a7bb2c829eef1d72f3e2d83ebf8d9c2b617ec26",
+            "minimum_effective_font_pt": 8.602652071563087,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F36",
+          "png_sha256": "1d38391b1876eaa53540d5ca15fee2427075f31e740c55c039647b4850120575",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F37",
+          "png_sha256": "2ea80154a73fcaa62819d333fa675fe2912cf1fcdde1934677b3839e26b52447",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F38",
+          "png_sha256": "ffc67a7aaf265e3419283c0ab206d921bab4edf4d8b174f616c5f38c9e8e90d4",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "F39",
+          "png_sha256": "bc1a6613af102237c5b0ce73e9369296425c54eec741e9baf0560a8bbe97669e",
+          "report_variant": null,
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E01",
+          "png_sha256": "e334860ea69cf56ce8c4d03c1a770fd72f584bf44274be5a426cea53e102985c",
+          "report_variant": {
+            "path": "report_variants/E01.png",
+            "sha256": "3da80c93205fa2c20890ec24abfc199fa7e290c07790dee6b09423cc5af5c655",
+            "minimum_effective_font_pt": 8.6,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E02",
+          "png_sha256": "81fe3de3a055c74db9073e5e558d4f0a544bf9e5e3e13d9cb046874a01e7f0ef",
+          "report_variant": {
+            "path": "report_variants/E02.png",
+            "sha256": "fcb66547c906437d016fde0535515726a3bb22154be8c0c4b952167e87cf38ea",
+            "minimum_effective_font_pt": 8.600673242523875,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E03",
+          "png_sha256": "e0b663d6ed4646a92032f4084c662b1d72be4d7e2e9f889518bca3f48b6598f9",
+          "report_variant": {
+            "path": "report_variants/E03.png",
+            "sha256": "3ad7ba883fb76c6d0f1a95c8717662590c386c2efab8c4ea83ea1f3f53711468",
+            "minimum_effective_font_pt": 8.600673242523875,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E04",
+          "png_sha256": "2581a1d66c3e69b2f3fc5ce613d1adc955405198a914723579f11db267f36d29",
+          "report_variant": {
+            "path": "report_variants/E04.png",
+            "sha256": "c4b5e3165a61d0de07cb83db6f07d3446cec0096461318215079dc5e021daf19",
+            "minimum_effective_font_pt": 8.600673242523875,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 9.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E05",
+          "png_sha256": "e82198389679d670309ca9f5ce185a4b1e360c239641a32a74e3ac3a3763537c",
+          "report_variant": {
+            "path": "report_variants/E05.png",
+            "sha256": "e485fcbec25d1ff071e7a3b38da313419d2dd171610ad5683684d328f2e1b567",
+            "minimum_effective_font_pt": 8.600673242523875,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 8.0,
+          "visual_status": "pending"
+        },
+        {
+          "fid": "E06",
+          "png_sha256": "2d18f2701d3e6c7a63eb5ce76a698c189740d9628ba40dbb8835b56220e7e3fb",
+          "report_variant": {
+            "path": "report_variants/E06.png",
+            "sha256": "314fb71a30d237dd4bc4835e0150c0c8ed849229ee1b6e416d1b377e5e3bd110",
+            "minimum_effective_font_pt": 8.600673242523875,
+            "readability_pass": true
+          },
+          "overlap_candidate_count": 0,
+          "minimum_font_pt": 7.0,
+          "visual_status": "pending"
+        }
+      ],
+      "additional_inserted_variants": [
+        {
+          "path": "report_variants/F31_landscape.png",
+          "png_sha256": "8e8f7771b22e7fbb4fc09f516ba1b9267306a9d7d62d8a361570e8ecfdac2407"
+        }
+      ],
+      "note": "Overlap candidates and small type require direct inspection; this is not a visual pass"
+    },
+    "published_figures": {
+      "status": "passed",
+      "published_count": 39,
+      "publication_manifest_sha256": "359d9c144afd83b2372cad2ff47fd53e6c8d001acb32c72ae2737ad01183d11a",
+      "protected_files_unchanged": true,
+      "scope": "default viewer legacy filenames equal final native render"
+    },
+    "visual_review": {
+      "status": "passed",
+      "reviewer": "Codex direct inspection (2026-10-06: figures, PDF body preview) + Claude direct inspection in five independent review rounds on 2026-10-07 (round 1: 45 native figures, all 49 PDF pages and two-method numeric checks; rounds 2-5: every page changed after a review re-inspected on its final render; per-page sources in output/pdf/pdf_visual_qa.json)",
+      "review_sha256": "6aa31f5ecc4a96f6baf5b09b655599284fcca4b38517a678e680a271ee2bced7",
+      "reviewed_images": 45,
+      "note": "Recorded direct inspection checked; actual PDF pages are a separate review"
+    }
+  },
+  "external_validation": {
+    "final_pdf": "not_checked_by_this_tool",
+    "kamp_execution": "not_established_by_local_or_reused_artifacts"
+  }
+}

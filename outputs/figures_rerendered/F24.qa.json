@@ -1,0 +1,32 @@
+{
+  "fid": "F24",
+  "text_count": 41,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 7.5,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F24.png",
+  "sha256": "48c3ba13659b1ba747881d2dc3a6c142641fe56d623ed5e825115a50017dbc1d",
+  "pixel_size": [
+    1826,
+    989
+  ],
+  "saved_size_pt": [
+    438.24,
+    237.36
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F24.png",
+    "sha256": "eb90354ccf2a5db4f25c3cdf6dad60598ea0573ec44b39d6e741c79b5729b810",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "모델 fold 성능 매트릭스",
+  "section": "6.4",
+  "source": "s06_eval.py"
+}

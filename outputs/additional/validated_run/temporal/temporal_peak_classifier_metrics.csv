@@ -1,0 +1,9 @@
+outer,probability,n,threshold,threshold_source,TP,FP,FN,TN,Recall,Precision,F1,PR-AUC,Brier,probability_calibration
+O2,prob_raw,288,0.5,prespecified_not_tuned_on_outer,15,3,38,232,0.2830188679245283,0.8333333333333334,0.4225352112676056,0.8245468199915885,0.13115926764790797,isotonic_calibration_tail_fixed_theta
+O2,prob_cal,288,0.5,prespecified_not_tuned_on_outer,20,3,33,232,0.37735849056603776,0.8695652173913043,0.5263157894736842,0.7976991330195509,0.09338804052123047,isotonic_calibration_tail_fixed_theta
+O3,prob_raw,336,0.5,prespecified_not_tuned_on_outer,36,18,25,257,0.5901639344262295,0.6666666666666666,0.6260869565217392,0.6767874240344236,0.10762338670669755,isotonic_calibration_tail_fixed_theta
+O3,prob_cal,336,0.5,prespecified_not_tuned_on_outer,49,29,12,246,0.8032786885245902,0.6282051282051282,0.7050359712230215,0.6615781439400101,0.08719048974809808,isotonic_calibration_tail_fixed_theta
+O4,prob_raw,336,0.5,prespecified_not_tuned_on_outer,9,13,27,287,0.25,0.4090909090909091,0.3103448275862069,0.3860234927767527,0.10771730585596546,isotonic_calibration_tail_fixed_theta
+O4,prob_cal,336,0.5,prespecified_not_tuned_on_outer,18,23,18,277,0.5,0.43902439024390244,0.4675324675324675,0.3498735327584059,0.09123759772740221,isotonic_calibration_tail_fixed_theta
+O5,prob_raw,319,0.5,prespecified_not_tuned_on_outer,15,29,13,262,0.5357142857142857,0.3409090909090909,0.4166666666666667,0.33701272074055905,0.09438984650291293,isotonic_calibration_tail_fixed_theta
+O5,prob_cal,319,0.5,prespecified_not_tuned_on_outer,0,0,28,291,0.0,,0.0,0.28655800387724734,0.06777137853252316,isotonic_calibration_tail_fixed_theta

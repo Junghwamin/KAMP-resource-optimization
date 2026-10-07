@@ -1,0 +1,32 @@
+{
+  "fid": "E03",
+  "text_count": 34,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E03.png",
+  "sha256": "e0b663d6ed4646a92032f4084c662b1d72be4d7e2e9f889518bca3f48b6598f9",
+  "pixel_size": [
+    3265,
+    1610
+  ],
+  "saved_size_pt": [
+    783.5999999999999,
+    386.4
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "입력오차 민감도",
+  "source_table": "input_sensitivity_metrics.csv",
+  "source_sha256": "036c19f26c9e8ec7e68452f0f9315f56b0d3e8d51f3e3a14b995490dfb2dfb97",
+  "report_variant": {
+    "path": "report_variants/E03.png",
+    "sha256": "3ad7ba883fb76c6d0f1a95c8717662590c386c2efab8c4ea83ea1f3f53711468",
+    "minimum_effective_font_pt": 8.600673242523875,
+    "readability_pass": true
+  }
+}

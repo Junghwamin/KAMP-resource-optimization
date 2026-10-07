@@ -1,0 +1,7 @@
+﻿점검,통과
+최종모델이 사전 고정 RF보다 MAE 낮음,True
+5% 주분석: RF 대비 MAE 개선(95% CI 하한 > 0),True
+달력규칙 대비 FP 감소,True
+D2에서 순위 보존(Spearman > 0.7),True
+Ablation 5행 산출,True
+추론시간 측정 완료,True

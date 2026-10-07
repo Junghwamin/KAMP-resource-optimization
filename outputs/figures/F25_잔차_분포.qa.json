@@ -1,0 +1,26 @@
+{
+  "fid": "F25",
+  "text_count": 18,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F25_잔차_분포.png",
+  "sha256": "726538d421f11deb19be5d1348735bf7d75d12f7981856885ed5d95e7c1ce1e3",
+  "pixel_size": [
+    1889,
+    933
+  ],
+  "saved_size_pt": [
+    453.36,
+    223.92
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "잔차 분포",
+  "section": "6.1",
+  "source": "s06_eval.py"
+}

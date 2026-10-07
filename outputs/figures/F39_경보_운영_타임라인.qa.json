@@ -1,0 +1,26 @@
+{
+  "fid": "F39",
+  "text_count": 28,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F39_경보_운영_타임라인.png",
+  "sha256": "bc1a6613af102237c5b0ce73e9369296425c54eec741e9baf0560a8bbe97669e",
+  "pixel_size": [
+    3270,
+    1499
+  ],
+  "saved_size_pt": [
+    784.8000000000001,
+    359.76000000000005
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "경보 운영 타임라인",
+  "section": "8.4",
+  "source": "s08_simulation.py"
+}

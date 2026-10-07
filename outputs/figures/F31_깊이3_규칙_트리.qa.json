@@ -1,0 +1,32 @@
+{
+  "fid": "F31",
+  "text_count": 26,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F31_깊이3_규칙_트리.png",
+  "sha256": "1f44c4267d77a35a456b66d1c01b2cc14600e85d6e1849f3cb26709121523a40",
+  "pixel_size": [
+    3570,
+    1647
+  ],
+  "saved_size_pt": [
+    856.8000000000001,
+    395.28000000000003
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F31.png",
+    "sha256": "e6135f4d35bc5fb2a48fb1bd5de6deef4434000aef2cc731607fcaa215150891",
+    "minimum_effective_font_pt": 8.602457704618198,
+    "readability_pass": true
+  },
+  "title": "깊이3 규칙 트리",
+  "section": "7.6",
+  "source": "s07_analysis.py"
+}

@@ -1,0 +1,26 @@
+{
+  "fid": "F08",
+  "text_count": 34,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F08_가동_캘린더.png",
+  "sha256": "4e46b3c86baabe5e924df78ba95eb55c493a04031de40dc09910453901e2917c",
+  "pixel_size": [
+    2965,
+    882
+  ],
+  "saved_size_pt": [
+    711.5999999999999,
+    211.68
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "가동 캘린더",
+  "section": "1.4",
+  "source": "s01_diagnose.py"
+}

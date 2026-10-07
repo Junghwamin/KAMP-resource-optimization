@@ -1,0 +1,32 @@
+{
+  "fid": "F19",
+  "text_count": 18,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.6,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F19.png",
+  "sha256": "db3d039afb28dc8f511db24ab06e6f71e3151a0f1f5d80f30d6ac44c618fd3dd",
+  "pixel_size": [
+    1569,
+    1211
+  ],
+  "saved_size_pt": [
+    376.56000000000006,
+    290.64000000000004
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    376.597,
+    290.682
+  ],
+  "minimum_effective_font_pt": 8.600845018058209,
+  "aspect_fit_scale": 1.0000982579137452,
+  "layout_notes": [],
+  "readability_pass": true
+}

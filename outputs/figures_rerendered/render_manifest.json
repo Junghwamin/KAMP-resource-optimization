@@ -1,0 +1,1185 @@
+{
+  "schema": "kamp.figure_render.v1",
+  "status": "rendered_pending_visual_review",
+  "requested": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F09",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39"
+  ],
+  "rendered": 39,
+  "failures": [],
+  "snapshot_files_unchanged": true,
+  "raw_arrays_unchanged": true,
+  "source_sha256": {
+    "s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+    "s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+    "s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+    "s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+    "s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+    "s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+    "s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+    "s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+    "s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+    "s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8"
+  },
+  "snapshot_metadata_sha256": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+  "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+  "renderer_sha256": {
+    "tools/render_figures.py": "f037c8467f626e9ba3b8abffdca3a3d95587cfb7621f01fb821fbc7523b6ab10",
+    "tools/figure_layout.py": "fca331f183b17cb2ddacd7658d212de433665b34ac79704692f7e05357f77caa"
+  },
+  "figures": [
+    {
+      "fid": "F01",
+      "text_count": 20,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F01.png",
+      "sha256": "b5fd74a1307b8df52876da0b901da4cbf9e06150f18cb7f2c9e3eb743ca9cede",
+      "pixel_size": [
+        3269,
+        1351
+      ],
+      "saved_size_pt": [
+        784.56,
+        324.23999999999995
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "전체기간 전력 시계열",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F02",
+      "text_count": 40,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 7.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F02.png",
+      "sha256": "d5091409a44b90e9aa9da063df5106acb018928e8ce034c5bbe18febd04f7bbe",
+      "pixel_size": [
+        3269,
+        1053
+      ],
+      "saved_size_pt": [
+        784.56,
+        252.71999999999997
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F02.png",
+        "sha256": "002bc413871ca98d223887edc34ce02c12c8f4f06e76cce56dee14d80ddb1865",
+        "minimum_effective_font_pt": 8.602490347490347,
+        "readability_pass": true
+      },
+      "title": "복제일 구조",
+      "section": "1.2",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F03",
+      "text_count": 31,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F03.png",
+      "sha256": "f08cc08d82872404b2cb045815335755f88ee995644956e5a18dea3f3e1c1fd0",
+      "pixel_size": [
+        3270,
+        992
+      ],
+      "saved_size_pt": [
+        784.8000000000001,
+        238.07999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "행순서 복원 검증",
+      "section": "1.2",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F04",
+      "text_count": 15,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F04.png",
+      "sha256": "850279cfa4efa2c43f9c7955e6cea1c8d45a705ca8efccf24fa55c7ed6fb81e4",
+      "pixel_size": [
+        3269,
+        683
+      ],
+      "saved_size_pt": [
+        784.56,
+        163.92000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "양방향 결측 타임라인",
+      "section": "1.3",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F05",
+      "text_count": 25,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F05.png",
+      "sha256": "3afe319c46bf8a1d7d2609dd57b4c9541fa84f8908ea88db0755683f30fe38ab",
+      "pixel_size": [
+        2369,
+        963
+      ],
+      "saved_size_pt": [
+        568.56,
+        231.12
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F05.png",
+        "sha256": "707faf2f2f52e3ee26aa05687c12fbc65b8a71f36c493dc9e60dbf2bf20e63ce",
+        "minimum_effective_font_pt": 8.60028683056985,
+        "readability_pass": true
+      },
+      "title": "시간대별 부하 프로파일",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F06",
+      "text_count": 21,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F06.png",
+      "sha256": "6e944792a5b29b0ca515619138d0c644878191d8fd57618d589c2649642c921d",
+      "pixel_size": [
+        2368,
+        939
+      ],
+      "saved_size_pt": [
+        568.32,
+        225.35999999999999
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "peak15 분포와 임계값",
+      "section": "1.6",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F07",
+      "text_count": 29,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F07.png",
+      "sha256": "81003bc7f64ff1503758985f21a20e8ca647a8303b951870ea250c7a6b72b18e",
+      "pixel_size": [
+        2060,
+        1285
+      ],
+      "saved_size_pt": [
+        494.4,
+        308.4
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F07.png",
+        "sha256": "124a86b70fbbbe2659245ce72f6cef053824edc2163d8edf9b5b7657e9da4bec",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "시간대 월 피크율 히트맵",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F08",
+      "text_count": 34,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F08.png",
+      "sha256": "4e46b3c86baabe5e924df78ba95eb55c493a04031de40dc09910453901e2917c",
+      "pixel_size": [
+        2965,
+        882
+      ],
+      "saved_size_pt": [
+        711.5999999999999,
+        211.68
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "가동 캘린더",
+      "section": "1.4",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F09",
+      "text_count": 17,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F09.png",
+      "sha256": "b6777a836fb48c4091b29c467e24531748b8b404529208269276b60fb82a9f46",
+      "pixel_size": [
+        2188,
+        932
+      ],
+      "saved_size_pt": [
+        525.12,
+        223.67999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "일평균전력 3레짐",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F10",
+      "text_count": 20,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F10.png",
+      "sha256": "f844360cc2b4492bd6b690bec7b5748476f99c0ef4650b1165602d0b0f326b7e",
+      "pixel_size": [
+        1884,
+        1173
+      ],
+      "saved_size_pt": [
+        452.16,
+        281.52
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "생산량 전력 산점도",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F11",
+      "text_count": 109,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 7.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F11.png",
+      "sha256": "88e89943b9dfbe0cd796537e9d6ac6e8c78261577df03fba561d709ca2f93bd3",
+      "pixel_size": [
+        1670,
+        1527
+      ],
+      "saved_size_pt": [
+        400.79999999999995,
+        366.48
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "상관행렬",
+      "section": "1.5",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F12",
+      "text_count": 23,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F12.png",
+      "sha256": "317cb8182706c7f5f809fa249050456016322b27d66f8dabc3050adf09d20278",
+      "pixel_size": [
+        2189,
+        933
+      ],
+      "saved_size_pt": [
+        525.36,
+        223.92
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "품질 진단 요약",
+      "section": "1.2",
+      "source": "s01_diagnose.py"
+    },
+    {
+      "fid": "F13",
+      "text_count": 14,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F13.png",
+      "sha256": "7e16f668fc93bad25d38978c4e94f1dd9c12d535d6d0019e715c2987dbe2534f",
+      "pixel_size": [
+        3270,
+        1167
+      ],
+      "saved_size_pt": [
+        784.8000000000001,
+        280.08
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "Day-ahead 원점 경계",
+      "section": "2.2",
+      "source": "s02_features.py"
+    },
+    {
+      "fid": "F14",
+      "text_count": 25,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F14.png",
+      "sha256": "46b949315b4af12b413c5165e5bdabaca161d244d35e68295792c3b5b75a2010",
+      "pixel_size": [
+        3265,
+        1232
+      ],
+      "saved_size_pt": [
+        783.5999999999999,
+        295.68
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F14.png",
+        "sha256": "69adb6ca22e28ed604aacf3f8495e4715526b42d1512228ef27279786989e30f",
+        "minimum_effective_font_pt": 8.600019338010434,
+        "readability_pass": true
+      },
+      "title": "Rolling-origin fold 배치도",
+      "section": "3.2",
+      "source": "s03_split.py"
+    },
+    {
+      "fid": "F15",
+      "text_count": 15,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F15.png",
+      "sha256": "e856bb07d6af19b5ffd362b2167924067005ac86ee436bad0e967df67218f524",
+      "pixel_size": [
+        1829,
+        874
+      ],
+      "saved_size_pt": [
+        438.96,
+        209.76000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "fold별 양성률",
+      "section": "3.2",
+      "source": "s03_split.py"
+    },
+    {
+      "fid": "F16",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F16.png",
+      "sha256": "e0390533aa8253619d97e02621d81301ed5bb77b1362632a1a63e6ea31761b8a",
+      "pixel_size": [
+        2130,
+        1052
+      ],
+      "saved_size_pt": [
+        511.2,
+        252.48000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "베이스라인 RF 중요도 집중",
+      "section": "4.4",
+      "source": "s04_baseline.py"
+    },
+    {
+      "fid": "F17",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F17.png",
+      "sha256": "7462466203210047be0adcc0e6ec066f4cbc58f767eb6eb6883f0d78ab62b1b9",
+      "pixel_size": [
+        2368,
+        988
+      ],
+      "saved_size_pt": [
+        568.32,
+        237.12
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "모델별 MAE",
+      "section": "6.1",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F18",
+      "text_count": 21,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F18.png",
+      "sha256": "29b3f0ba634788e0af6b4d1ae68c135ea39cbb3b1282fd027f7c6c117c65c299",
+      "pixel_size": [
+        3269,
+        932
+      ],
+      "saved_size_pt": [
+        784.56,
+        223.67999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F18.png",
+        "sha256": "ebf99c13bce7ba8a890538a11d1c4a052290a69bc71669328d25cc61cc3bb10d",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "예측 vs 실측 시계열",
+      "section": "6.1",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F19",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F19.png",
+      "sha256": "f79d3aac215eb772cd2a32a4bf9f12bfd0ac90bb455883ca2e0ede3915be22d1",
+      "pixel_size": [
+        1769,
+        1378
+      ],
+      "saved_size_pt": [
+        424.56,
+        330.72
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F19.png",
+        "sha256": "db3d039afb28dc8f511db24ab06e6f71e3151a0f1f5d80f30d6ac44c618fd3dd",
+        "minimum_effective_font_pt": 8.600845018058209,
+        "readability_pass": true
+      },
+      "title": "PR 곡선",
+      "section": "6.2",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F20",
+      "text_count": 16,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F20.png",
+      "sha256": "8502e3e324a3266a1a4b642ba8605d36dccd8942f8ec4ef47c0477e05f0244ea",
+      "pixel_size": [
+        3090,
+        1047
+      ],
+      "saved_size_pt": [
+        741.6,
+        251.28000000000003
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F20.png",
+        "sha256": "bb871f709bb69f9489d7b0edee5d19706fa1638a5593389b045be273a7a3e718",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "Ablation 효과",
+      "section": "6.3",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F21",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F21.png",
+      "sha256": "78f29be7a0cf2426f48f0b2b0e7c5e7f6b962dd57daebee20a0a3b49dd8f20a1",
+      "pixel_size": [
+        1409,
+        1291
+      ],
+      "saved_size_pt": [
+        338.15999999999997,
+        309.84000000000003
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F21.png",
+        "sha256": "bc0c949e13f4b06f7bd50ac2803e69bc4c1f7e1c2a65edb2feb51f35425bce56",
+        "minimum_effective_font_pt": 8.600845790715972,
+        "readability_pass": true
+      },
+      "title": "확률보정 Reliability",
+      "section": "5.7",
+      "source": "s05_models.py"
+    },
+    {
+      "fid": "F22",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F22.png",
+      "sha256": "29a3256200ff126856a0715cdf58d4fa04e8580b67dcd7c0d6782285d58508d7",
+      "pixel_size": [
+        3262,
+        896
+      ],
+      "saved_size_pt": [
+        782.88,
+        215.04000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "예측구간 피복률",
+      "section": "5.8",
+      "source": "s05_models.py"
+    },
+    {
+      "fid": "F23",
+      "text_count": 9,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F23.png",
+      "sha256": "f33ed0e000c090457244e0c03e0bf86c288bf48cf1457e7a52c71a0802123538",
+      "pixel_size": [
+        1056,
+        988
+      ],
+      "saved_size_pt": [
+        253.44,
+        237.12
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "혼동행렬",
+      "section": "6.2",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F24",
+      "text_count": 41,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 7.5,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F24.png",
+      "sha256": "48c3ba13659b1ba747881d2dc3a6c142641fe56d623ed5e825115a50017dbc1d",
+      "pixel_size": [
+        1826,
+        989
+      ],
+      "saved_size_pt": [
+        438.24,
+        237.36
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F24.png",
+        "sha256": "eb90354ccf2a5db4f25c3cdf6dad60598ea0573ec44b39d6e741c79b5729b810",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "모델 fold 성능 매트릭스",
+      "section": "6.4",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F25",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F25.png",
+      "sha256": "726538d421f11deb19be5d1348735bf7d75d12f7981856885ed5d95e7c1ce1e3",
+      "pixel_size": [
+        1889,
+        933
+      ],
+      "saved_size_pt": [
+        453.36,
+        223.92
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "잔차 분포",
+      "section": "6.1",
+      "source": "s06_eval.py"
+    },
+    {
+      "fid": "F26",
+      "text_count": 31,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F26.png",
+      "sha256": "f02d5b5ae6016b51e1453c4fb970f215e5319745c6ef6a95befdaa6600ca8326",
+      "pixel_size": [
+        2849,
+        872
+      ],
+      "saved_size_pt": [
+        683.76,
+        209.28
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "Optuna 탐색 이력",
+      "section": "5.1",
+      "source": "s05_models.py"
+    },
+    {
+      "fid": "F27",
+      "text_count": 26,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F27.png",
+      "sha256": "93fc281e88d97aec4601e582dabb01f0b4b8b11ff73fabefc124000d3c68f10f",
+      "pixel_size": [
+        2190,
+        1285
+      ],
+      "saved_size_pt": [
+        525.6,
+        308.4
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F27.png",
+        "sha256": "223ed1f4089cb7aad2ebdcff3db1e8b6959c0ae14a033b09ec2035fffcb3ef4f",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "Permutation importance",
+      "section": "7.1",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F28",
+      "text_count": 26,
+      "overlap_candidates": [],
+      "outside_canvas_text": [
+        {
+          "text": "SHAP summary (대리모델 LightGBM)",
+          "bbox_px": [
+            253.375,
+            449.59999999999997,
+            486.625,
+            464.59999999999997
+          ]
+        }
+      ],
+      "minimum_font_pt": 10.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F28.png",
+      "sha256": "278b1db4c9e04d2c0fc17eb064375d24927be9110eabb3340381373478c26e08",
+      "pixel_size": [
+        2168,
+        1405
+      ],
+      "saved_size_pt": [
+        520.3199999999999,
+        337.20000000000005
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "SHAP summary",
+      "section": "7.1",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F29",
+      "text_count": 21,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F29.png",
+      "sha256": "2438326dd91cc481bb54f2fea301207f2956e0893fa84f563b1d61810b5a1247",
+      "pixel_size": [
+        2310,
+        937
+      ],
+      "saved_size_pt": [
+        554.4,
+        224.88000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F29.png",
+        "sha256": "a903458dc6006bff30242fb345e64887d32d75393de865499fb03eebe98d048a",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "조건별 MAE",
+      "section": "7.3",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F30",
+      "text_count": 22,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F30.png",
+      "sha256": "7442a4c25b7d1be6c5b539f547f976a2a93e0d9c9ef324e5ccebd8c68ef5b9f5",
+      "pixel_size": [
+        2488,
+        872
+      ],
+      "saved_size_pt": [
+        597.12,
+        209.28
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F30.png",
+        "sha256": "8a062133c0f61f2204c19d29c9ec765261fd7842c90842a1d8c4c4278552edd6",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "FN FP 시간대 분포",
+      "section": "7.4",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F31",
+      "text_count": 26,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F31.png",
+      "sha256": "1f44c4267d77a35a456b66d1c01b2cc14600e85d6e1849f3cb26709121523a40",
+      "pixel_size": [
+        3570,
+        1647
+      ],
+      "saved_size_pt": [
+        856.8000000000001,
+        395.28000000000003
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F31.png",
+        "sha256": "e6135f4d35bc5fb2a48fb1bd5de6deef4434000aef2cc731607fcaa215150891",
+        "minimum_effective_font_pt": 8.602457704618198,
+        "readability_pass": true
+      },
+      "title": "깊이3 규칙 트리",
+      "section": "7.6",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F32",
+      "text_count": 27,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F32.png",
+      "sha256": "86253fcd342dc0bc68cada41a755dcbb0ae7b0b2f97f4ba8c31f3936cd1f3051",
+      "pixel_size": [
+        2520,
+        806
+      ],
+      "saved_size_pt": [
+        604.8000000000001,
+        193.44
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "상호작용 히트맵",
+      "section": "7.2",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F33",
+      "text_count": 27,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F33.png",
+      "sha256": "ade30290c594052711146d710b2f0c6c6ebfa431522422001084909bd9dd1851",
+      "pixel_size": [
+        3269,
+        843
+      ],
+      "saved_size_pt": [
+        784.56,
+        202.32
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F33.png",
+        "sha256": "29339b57dde9f47e74671f7d9f66eac667b6d0b3cb67d3b08ce3d2ed1f6ca5be",
+        "minimum_effective_font_pt": 8.6,
+        "readability_pass": true
+      },
+      "title": "대표 실패사례",
+      "section": "7.5",
+      "source": "s07_analysis.py"
+    },
+    {
+      "fid": "F34",
+      "text_count": 23,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F34.png",
+      "sha256": "a7771258d3b4f80873fdc64a5c476c395915d51ea7ac5949b9bdfa6903caa53e",
+      "pixel_size": [
+        2728,
+        927
+      ],
+      "saved_size_pt": [
+        654.72,
+        222.48
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "월별 최대수요와 청구기준",
+      "section": "8.1",
+      "source": "s08_simulation.py"
+    },
+    {
+      "fid": "F35",
+      "text_count": 24,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F35.png",
+      "sha256": "868d9db5784db749a64c5de976af01d6cd8beaa54a504e2dcbed171414aed83f",
+      "pixel_size": [
+        2458,
+        924
+      ],
+      "saved_size_pt": [
+        589.92,
+        221.76
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "report_variant": {
+        "path": "report_variants/F35.png",
+        "sha256": "34fa08019aa0a2631cf989bc7a7bb2c829eef1d72f3e2d83ebf8d9c2b617ec26",
+        "minimum_effective_font_pt": 8.602652071563087,
+        "readability_pass": true
+      },
+      "title": "레버별 최대수요 저감",
+      "section": "8.3",
+      "source": "s08_simulation.py"
+    },
+    {
+      "fid": "F36",
+      "text_count": 20,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F36.png",
+      "sha256": "1d38391b1876eaa53540d5ca15fee2427075f31e740c55c039647b4850120575",
+      "pixel_size": [
+        2490,
+        923
+      ],
+      "saved_size_pt": [
+        597.6,
+        221.52
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "시나리오별 순절감액",
+      "section": "8.3",
+      "source": "s08_simulation.py"
+    },
+    {
+      "fid": "F37",
+      "text_count": 22,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F37.png",
+      "sha256": "2ea80154a73fcaa62819d333fa675fe2912cf1fcdde1934677b3839e26b52447",
+      "pixel_size": [
+        2367,
+        932
+      ],
+      "saved_size_pt": [
+        568.0799999999999,
+        223.67999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "L1 기동분산 전후 부하곡선",
+      "section": "8.2",
+      "source": "s08_simulation.py"
+    },
+    {
+      "fid": "F38",
+      "text_count": 17,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F38.png",
+      "sha256": "ffc67a7aaf265e3419283c0ab206d921bab4edf4d8b174f616c5f38c9e8e90d4",
+      "pixel_size": [
+        1469,
+        867
+      ],
+      "saved_size_pt": [
+        352.56,
+        208.08
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "민감도 히트맵",
+      "section": "8.3",
+      "source": "s08_simulation.py"
+    },
+    {
+      "fid": "F39",
+      "text_count": 28,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F39.png",
+      "sha256": "bc1a6613af102237c5b0ce73e9369296425c54eec741e9baf0560a8bbe97669e",
+      "pixel_size": [
+        3270,
+        1499
+      ],
+      "saved_size_pt": [
+        784.8000000000001,
+        359.76000000000005
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "경보 운영 타임라인",
+      "section": "8.4",
+      "source": "s08_simulation.py"
+    }
+  ],
+  "f19_change": "calendar reference recomputed on common OOF rows; test reference no longer mixed",
+  "f38_unit": "10,000 KRW (만원); original currency values unchanged"
+}

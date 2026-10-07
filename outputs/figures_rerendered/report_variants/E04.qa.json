@@ -1,0 +1,32 @@
+{
+  "fid": "E04",
+  "text_count": 18,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.6,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E04.png",
+  "sha256": "c4b5e3165a61d0de07cb83db6f07d3446cec0096461318215079dc5e021daf19",
+  "pixel_size": [
+    2129,
+    1208
+  ],
+  "saved_size_pt": [
+    510.96,
+    289.91999999999996
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    511,
+    290
+  ],
+  "minimum_effective_font_pt": 8.600673242523875,
+  "aspect_fit_scale": 1.0000782840144042,
+  "layout_notes": [],
+  "readability_pass": true
+}

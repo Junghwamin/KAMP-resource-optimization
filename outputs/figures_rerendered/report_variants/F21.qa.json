@@ -1,0 +1,32 @@
+{
+  "fid": "F21",
+  "text_count": 17,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.6,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F21.png",
+  "sha256": "bc0c949e13f4b06f7bd50ac2803e69bc4c1f7e1c2a65edb2feb51f35425bce56",
+  "pixel_size": [
+    1386,
+    1271
+  ],
+  "saved_size_pt": [
+    332.64,
+    305.03999999999996
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    332.82,
+    305.07
+  ],
+  "minimum_effective_font_pt": 8.600845790715972,
+  "aspect_fit_scale": 1.0000983477576713,
+  "layout_notes": [],
+  "readability_pass": true
+}

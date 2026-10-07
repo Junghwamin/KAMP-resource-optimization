@@ -1,0 +1,36 @@
+{
+  "fid": "F28",
+  "text_count": 26,
+  "overlap_candidates": [],
+  "outside_canvas_text": [
+    {
+      "text": "SHAP summary (대리모델 LightGBM)",
+      "bbox_px": [
+        253.375,
+        449.59999999999997,
+        486.625,
+        464.59999999999997
+      ]
+    }
+  ],
+  "minimum_font_pt": 10.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F28.png",
+  "sha256": "278b1db4c9e04d2c0fc17eb064375d24927be9110eabb3340381373478c26e08",
+  "pixel_size": [
+    2168,
+    1405
+  ],
+  "saved_size_pt": [
+    520.3199999999999,
+    337.20000000000005
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "SHAP summary",
+  "section": "7.1",
+  "source": "s07_analysis.py"
+}

@@ -1,0 +1,452 @@
+{
+  "status": "complete",
+  "experiment": "policy",
+  "fingerprint": "0c5db11635e76afbe01bab5e083efeaf114897f0a089b9b7004c8e6167ea9ffc",
+  "elapsed_seconds": 5.677312850952148,
+  "inputs": {
+    "experiment": "policy",
+    "config": {
+      "schema_version": 1,
+      "protocol": "additional-experiments-2026-10-06",
+      "seed": 42,
+      "evaluation_note": "Retrospective analyses on already observed data; no new independent test claim.",
+      "bootstrap": {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "n_boot": 2000,
+        "sampling": "noncircular consecutive calendar-day blocks; truncate to 14 days"
+      },
+      "diagnostics": {
+        "n_boot": 2000,
+        "high_production_quantile": 0.75,
+        "sparse_hours": 20,
+        "sparse_days": 5,
+        "threshold_scope": "all_selected_OOF_descriptive_only"
+      },
+      "sensitivity": {
+        "atol": 1e-08,
+        "scenarios": [
+          {
+            "id": "C0",
+            "kind": "baseline"
+          },
+          {
+            "id": "P80",
+            "kind": "production_scale",
+            "production_factor": 0.8
+          },
+          {
+            "id": "P90",
+            "kind": "production_scale",
+            "production_factor": 0.9
+          },
+          {
+            "id": "P110",
+            "kind": "production_scale",
+            "production_factor": 1.1
+          },
+          {
+            "id": "P120",
+            "kind": "production_scale",
+            "production_factor": 1.2
+          },
+          {
+            "id": "H90",
+            "kind": "headcount_scale",
+            "headcount_factor": 0.9
+          },
+          {
+            "id": "H110",
+            "kind": "headcount_scale",
+            "headcount_factor": 1.1
+          },
+          {
+            "id": "T-2",
+            "kind": "temperature_shift",
+            "temperature_delta": -2
+          },
+          {
+            "id": "T-1",
+            "kind": "temperature_shift",
+            "temperature_delta": -1
+          },
+          {
+            "id": "T+1",
+            "kind": "temperature_shift",
+            "temperature_delta": 1
+          },
+          {
+            "id": "T+2",
+            "kind": "temperature_shift",
+            "temperature_delta": 2
+          },
+          {
+            "id": "P80T-2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P80T+2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": 2
+          },
+          {
+            "id": "P120T-2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P120T+2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": 2
+          },
+          {
+            "id": "S-1",
+            "kind": "production_time_shift",
+            "shift_hours": -1,
+            "supplementary": true
+          },
+          {
+            "id": "S+1",
+            "kind": "production_time_shift",
+            "shift_hours": 1,
+            "supplementary": true
+          }
+        ]
+      },
+      "controlled_regime": {
+        "profile": "full",
+        "seed": 42,
+        "n_estimators": 800,
+        "threads": 4,
+        "isolation": "serial_subprocess",
+        "candidate_models": [
+          "lgb",
+          "regime3"
+        ],
+        "same_regression_params": true,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "calibration_days": 14,
+        "gap_hours": 24,
+        "n_boot": 2000,
+        "regression_objective": "l1",
+        "design_note": "Identical core-calibration-outer partitions for both models; different from original full-development OOF; total model capacity not equalized"
+      },
+      "temporal_selection": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "trials_reg": 50,
+        "trials_clf": 50,
+        "gap_hours": 24,
+        "calibration_days": 14,
+        "inner_days": 14,
+        "max_inner_folds": 3,
+        "min_core_days": 14,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "candidates": [
+          "naive",
+          "rf",
+          "lgb",
+          "regime2",
+          "regime3"
+        ],
+        "weights": {
+          "mae": 0.3,
+          "peak_mae": 0.15,
+          "recall": 0.25,
+          "fold_std": 0.2,
+          "feasible": 0.1
+        },
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "calibration_fallback": "tau=theta; isotonic disabled",
+        "feasibility": "prespecified_all_candidates_eligible_resource_time_not_scored",
+        "resource_warning_seconds": 60,
+        "tie_break": "prespecified_candidate_order",
+        "undefined_metric_score": 0.0,
+        "search_space": {
+          "num_leaves": [
+            15,
+            127
+          ],
+          "learning_rate": [
+            0.01,
+            0.2
+          ],
+          "max_depth": [
+            3,
+            12
+          ],
+          "min_child_samples": [
+            5,
+            50
+          ],
+          "feature_fraction": [
+            0.6,
+            1.0
+          ],
+          "bagging_fraction": [
+            0.6,
+            1.0
+          ]
+        },
+        "isolation": "serial_subprocess"
+      },
+      "policy": {
+        "alpha": 0.2,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "shift_fraction": 0.2,
+        "receiving_hours": [
+          10,
+          11,
+          15,
+          16
+        ],
+        "start_hours": [
+          8,
+          13
+        ],
+        "receiving_capacity_quantile": 0.95,
+        "receiving_capacity_multiplier": 1.2,
+        "demand_rate_krw_per_kw_month": 8320,
+        "demand_rate_multipliers": [
+          0.7,
+          1,
+          1.3
+        ],
+        "action_cost_krw": [
+          0,
+          1000,
+          5000
+        ],
+        "shift_unit_cost_krw": [
+          0,
+          0.01,
+          0.1
+        ],
+        "interpretation": "Assumed operational constraints, effect and costs; retrospective policy simulation, not measured savings."
+      }
+    },
+    "source": {
+      "experiments\\bootstrap.py": "c24df1da377c7e74f2e5b89998f109be62775dcbbe22ed13c8faf072dd86af30",
+      "experiments\\common.py": "554d8aff9bc38398141992eb7d8b81812c2e92e7be9ed7b47a593377a0e4222a",
+      "experiments\\controlled_regime.py": "814c2c0ac82b0667679365191aeb4e5995a6871354f177bd195ec0a542813677",
+      "experiments\\diagnostics.py": "ac67da1322b4de02d79ba6a467b0209e8a44b57099483fba17b9efc7cab1a90c",
+      "experiments\\model_adapter.py": "72fdf0ecccb68afca5cef672f19917e6a9b96140756f50b649a31b33f0e91502",
+      "experiments\\policy.py": "e41f8f6ea9657f5cfe8410d562d47b7ca39c30f667dc6a1622bba4723f431c2f",
+      "experiments\\sensitivity.py": "220541922257a68bf6ece91c9247c4ccae53f6624a15f5a13132e4ffa58d4857",
+      "experiments\\temporal_selection.py": "b8891cf92bb033806158a1a4cfb13742d45cba6e30549992b937710112207f43",
+      "experiments\\__init__.py": "5687950aed86be87f915a6509d70d42159901c3ca0d904bd106b47facf9b25c6",
+      "run_experiments.py": "cf14c361d5c9cf39a4b7455b234ca014cef4aed3c711e73087acd3a569b001d9",
+      "data\\okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+      "outputs\\tables\\F18_src.csv": "ed8a0561195b91ff75ec793043bdbf92b3a827435c884c114b65a09a597fa12e",
+      "outputs\\analysis_snapshot\\metadata.json": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+      "src\\s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+      "src\\s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+      "src\\s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+      "src\\s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+      "src\\s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+      "src\\s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+      "src\\s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+      "src\\s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+      "src\\s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+      "src\\s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8",
+      "src\\s10_package.py": "277037b1b2b155d7ff84e135eb87a472a32662f3597bcf23f5d8ceb4597d259e",
+      "tools\\analysis_snapshot.py": "05fed35d8faa87bb9fa6cf5bfab3be82dbc32d8a9ec5d32b7f2d20c5cbd5e8a8"
+    },
+    "runtime": {
+      "python": "3.11.9",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.4.2",
+      "lightgbm": "4.5.0",
+      "optuna": "5.0.0"
+    }
+  },
+  "summary": {
+    "experiment": "policy",
+    "status": "complete",
+    "evaluation_role": "retrospective_outer_fixed_prediction_open_loop",
+    "temporal_dependency": {
+      "status": "complete",
+      "protocol_fingerprint": "c29f90ab7b6afdd3b82eb0bc5d9dcccb709aec9ecb90ad22592bf7f96c54253b",
+      "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+      "manifest_sha256": "938b0513b3b2b56e8597f13f440104a10437dd100177ff11b32e3eb3f711a77b",
+      "verified_outer": [
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "allow_partial_temporal": false
+    },
+    "source_sha256": "90d70f13c4d1ba436cb774321428841faeed09d6396fd64fffd8a283027434b9",
+    "source_file": "temporal_outer_predictions.csv",
+    "outer_count": 4,
+    "policies": [
+      "none",
+      "fixed_L1",
+      "alert_L1",
+      "alert_L2"
+    ],
+    "scenario_count": 17,
+    "prediction_feedback": false,
+    "constraint_audit_passed": true,
+    "observation_coverage": {
+      "O2": 0.8571428571428571,
+      "O3": 1.0,
+      "O4": 1.0,
+      "O5": 0.9494047619047619
+    },
+    "partial_observation": true,
+    "target_quality_by_outer": {
+      "O2": {
+        "n_hours": 336,
+        "n_eval": 288,
+        "n_excluded": 48,
+        "observation_coverage": 0.8571428571428571,
+        "partial_observation": true
+      },
+      "O3": {
+        "n_hours": 336,
+        "n_eval": 336,
+        "n_excluded": 0,
+        "observation_coverage": 1.0,
+        "partial_observation": false
+      },
+      "O4": {
+        "n_hours": 336,
+        "n_eval": 336,
+        "n_excluded": 0,
+        "observation_coverage": 1.0,
+        "partial_observation": false
+      },
+      "O5": {
+        "n_hours": 336,
+        "n_eval": 319,
+        "n_excluded": 17,
+        "observation_coverage": 0.9494047619047619,
+        "partial_observation": true
+      }
+    },
+    "response_fits": [
+      {
+        "core_train_end": "2021-06-20T23:00:00",
+        "fit_max_datetime": "2021-06-19T07:00:00",
+        "evaluation_start": "2021-07-07T00:00:00",
+        "n_fit": 2246,
+        "n_core_rows": 4104,
+        "n_core_quality_excluded": 168,
+        "beta_raw_kw_per_unit": 0.00033838352450397984,
+        "beta_kw_per_unit": 0.00033838352450397984,
+        "ols_r2": 0.5616185959409143,
+        "beta_status": "estimated",
+        "negative_slope_clipped": false,
+        "receiving_capacity_units": 3096.2999999999997,
+        "fit_rows_sha256": "b5402adc363077c3817024e533bf6773ee67c1c28f6f3b5721fe6c9d1fc8c6ae",
+        "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+        "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+        "outer": "O2"
+      },
+      {
+        "core_train_end": "2021-07-04T23:00:00",
+        "fit_max_datetime": "2021-07-03T07:00:00",
+        "evaluation_start": "2021-07-21T00:00:00",
+        "n_fit": 2472,
+        "n_core_rows": 4440,
+        "n_core_quality_excluded": 168,
+        "beta_raw_kw_per_unit": 0.0003653459873510444,
+        "beta_kw_per_unit": 0.0003653459873510444,
+        "ols_r2": 0.5761498090627588,
+        "beta_status": "estimated",
+        "negative_slope_clipped": false,
+        "receiving_capacity_units": 3060.959999999999,
+        "fit_rows_sha256": "d975cd5ce1924e17ad48577c43867731263c95b3eb6ffc353acb37572a4f444e",
+        "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+        "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+        "outer": "O3"
+      },
+      {
+        "core_train_end": "2021-07-18T23:00:00",
+        "fit_max_datetime": "2021-07-17T07:00:00",
+        "evaluation_start": "2021-08-04T00:00:00",
+        "n_fit": 2649,
+        "n_core_rows": 4776,
+        "n_core_quality_excluded": 216,
+        "beta_raw_kw_per_unit": 0.0004966349033838533,
+        "beta_kw_per_unit": 0.0004966349033838533,
+        "ols_r2": 0.5943597809472351,
+        "beta_status": "estimated",
+        "negative_slope_clipped": false,
+        "receiving_capacity_units": 3095.7599999999998,
+        "fit_rows_sha256": "ff940b1ab528937bdba9b3f8dc0a2b4d38c96cb29dab1e3982027cc924f54946",
+        "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+        "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+        "outer": "O4"
+      },
+      {
+        "core_train_end": "2021-08-01T23:00:00",
+        "fit_max_datetime": "2021-07-30T16:00:00",
+        "evaluation_start": "2021-08-18T00:00:00",
+        "n_fit": 2861,
+        "n_core_rows": 5112,
+        "n_core_quality_excluded": 216,
+        "beta_raw_kw_per_unit": 0.0009686690729784158,
+        "beta_kw_per_unit": 0.0009686690729784158,
+        "ols_r2": 0.6093958712682391,
+        "beta_status": "estimated",
+        "negative_slope_clipped": false,
+        "receiving_capacity_units": 3151.2,
+        "fit_rows_sha256": "af72fdc5924e0090d89338ca7fa05adf71a2c97590b7fa52f58778d9c5435be5",
+        "response_interpretation": "Past-core observational hour-adjusted association; causal response unverified",
+        "capacity_interpretation": "Assumed core production quantile times fixed multiplier, not verified equipment capacity",
+        "outer": "O5"
+      }
+    ],
+    "artifacts": {
+      "policy_actions.csv": 5376,
+      "policy_transfers.csv": 44,
+      "policy_constraint_audit.csv": 224,
+      "policy_assumed_outcomes.csv": 16128,
+      "policy_cost_sensitivity.csv": 272,
+      "policy_response_fits.csv": 4
+    },
+    "interpretation": "All scenarios retained. Hypothetical policy comparison, not measured operational or billing savings."
+  },
+  "files_sha256": {
+    "policy_actions.csv": "cc8927dc9158afe1b32269875636640e185220d63e21923832d3bdac553b3845",
+    "policy_assumed_outcomes.csv": "753adeda7d38eefdd216f95fa7cef5abba39a6632ac83f39be25dee00b44c26d",
+    "policy_constraint_audit.csv": "359caa86e9fdf19bcc2b918f330c5d1affcfddbd9cd1ad65196e74728ed378f8",
+    "policy_contract.json": "e8d5319fbfe2d0ec4608d1ce673ed6752212f3367befc705c6bc386eb5a74699",
+    "policy_cost_sensitivity.csv": "ffc1f11588f9d80bec4d98730a8a0e909e313da092e29dbd9214acf34ccadf5d",
+    "policy_response_fits.csv": "671ccc16688f5f6236513c7be8d0daa2831c1aeacba341a0fcecee88fc3f0b89",
+    "policy_transfers.csv": "ff43c9c5a2a75b0ab8ac840b876b350f45400d9b93559a71b6b43a50a1a0c400",
+    "summary.json": "af93128ebf9d84804f7c0898637e9a1c8237f0591893201d01cc88165345c81f"
+  }
+}

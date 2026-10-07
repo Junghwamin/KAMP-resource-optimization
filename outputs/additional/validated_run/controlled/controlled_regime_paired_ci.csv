@@ -1,0 +1,9 @@
+outer,target,n,days,MAE_single_minus_regime,ci_low,ci_high,n_boot,method
+O2,y_avg,288,12,4.65291505854926,2.2895239618772156,6.872393070910865,2000,paired calendar-day cluster percentile bootstrap
+O2,y_peak,288,12,8.07863367766589,4.892232498151829,11.533847216903148,2000,paired calendar-day cluster percentile bootstrap
+O3,y_avg,336,14,-4.115375769857591,-18.492490376966817,7.544609063199259,2000,paired calendar-day cluster percentile bootstrap
+O3,y_peak,336,14,-5.187396852965518,-19.240854456616486,6.048570976569061,2000,paired calendar-day cluster percentile bootstrap
+O4,y_avg,336,14,-7.775352558762587,-35.81011420392544,16.180723467444697,2000,paired calendar-day cluster percentile bootstrap
+O4,y_peak,336,14,-1.4585167860770683,-25.37230418876657,20.115599687485112,2000,paired calendar-day cluster percentile bootstrap
+O5,y_avg,319,14,1.219357880946657,-0.20619956520028415,3.3796778065698003,2000,paired calendar-day cluster percentile bootstrap
+O5,y_peak,319,14,1.688952139003939,-0.1993557010520755,4.512447321667984,2000,paired calendar-day cluster percentile bootstrap

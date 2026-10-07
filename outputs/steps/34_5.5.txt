@@ -1,0 +1,39 @@
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+<python>\Lib\site-packages\numpy\core\fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<python>\Lib\site-packages\numpy\core\_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+── 모델 × fold MAE (D1) ──
+                       fold2   fold3   fold4   fold5
+Seasonal Naive         7.483  24.417  69.292   8.298
+Random Forest (보정)  17.381  20.857  30.920   7.653
+LightGBM               8.437  20.855  18.748   6.878
+2단계 레짐(2분류)      7.032  23.659   9.021   5.998
+2단계 레짐(3분류)      6.982  23.414   7.315   5.610
+피크 직접분류            NaN     NaN     NaN     NaN
+DNN (MLP)             18.811  38.797  67.031  14.065
+
+  ⚠️ fold3·fold4 는 하계휴가(07-31~08-08)와 재가동을 포함한다.
+     Seasonal Naive fold4 MAE = 69.3 — lag168 참조값이 휴무일이라 완전히 붕괴한다.
+     2단계 레짐(2분류) fold4 MAE = 9.0 — 레짐을 먼저 분류해 붕괴를 막는다.
+     → 제안모델의 이점은 평균이 아니라 **달력이 깨지는 구간**에 집중된다(2.9절·7장 근거).
+
+── 모델별 fold 평균 성능 (D1) ──
+                   모델  fold평균 MAE  fold MAE 표준편차  τ(중앙값)  학습시간(초)
+4     2단계 레짐(3분류)       10.8302             8.4214      173.8          4.05
+3     2단계 레짐(2분류)       11.4277             8.2502      174.1          3.51
+2              LightGBM       13.7298             7.0925      174.3          1.12
+1  Random Forest (보정)       19.2030             9.6045      172.1         29.15
+0        Seasonal Naive       27.3722            29.0138      158.9          0.23
+5             DNN (MLP)       34.6760            24.0855      154.6         23.54

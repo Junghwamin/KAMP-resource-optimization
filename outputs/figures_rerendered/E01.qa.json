@@ -1,0 +1,32 @@
+{
+  "fid": "E01",
+  "text_count": 29,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "E01.png",
+  "sha256": "e334860ea69cf56ce8c4d03c1a770fd72f584bf44274be5a426cea53e102985c",
+  "pixel_size": [
+    3265,
+    1485
+  ],
+  "saved_size_pt": [
+    783.5999999999999,
+    356.40000000000003
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "조건별 미탐률·오경보율",
+  "source_table": "condition_confusion_rates.csv",
+  "source_sha256": "02e62666eb7ee37727f0c4a112f0f69b2a6d346ea2154ef4c607c752834e9fe5",
+  "report_variant": {
+    "path": "report_variants/E01.png",
+    "sha256": "3da80c93205fa2c20890ec24abfc199fa7e290c07790dee6b09423cc5af5c655",
+    "minimum_effective_font_pt": 8.6,
+    "readability_pass": true
+  }
+}

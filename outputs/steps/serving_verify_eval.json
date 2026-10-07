@@ -1,0 +1,11 @@
+{
+ "status": "ok",
+ "bundle_id": "eval-full-236dd9888c33",
+ "role": "eval",
+ "model_name": "2단계 레짐(3분류)",
+ "train_last": "2021-08-31 23:00:00",
+ "n_train_rows": 5599,
+ "tau": 173.82999999999998,
+ "tau_cls": 0.01,
+ "selftest": "ok"
+}

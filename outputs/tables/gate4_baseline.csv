@@ -1,0 +1,7 @@
+﻿점검,통과
+보정 Weekend 합계 > 0,True
+보정 Vacation 합계 == 공휴일 시간수,True
+원본 패턴이 무음 미반영 또는 오류로 잡힘,True
+RF 중요도가 1개 변수에 집중,True
+버그 서명: 학습 MSE > 테스트 MSE,True
+결함 13건 표 작성,True

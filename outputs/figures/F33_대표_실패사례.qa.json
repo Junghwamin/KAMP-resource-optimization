@@ -1,0 +1,32 @@
+{
+  "fid": "F33",
+  "text_count": 27,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F33_대표_실패사례.png",
+  "sha256": "ade30290c594052711146d710b2f0c6c6ebfa431522422001084909bd9dd1851",
+  "pixel_size": [
+    3269,
+    843
+  ],
+  "saved_size_pt": [
+    784.56,
+    202.32
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F33.png",
+    "sha256": "29339b57dde9f47e74671f7d9f66eac667b6d0b3cb67d3b08ce3d2ed1f6ca5be",
+    "minimum_effective_font_pt": 8.6,
+    "readability_pass": true
+  },
+  "title": "대표 실패사례",
+  "section": "7.5",
+  "source": "s07_analysis.py"
+}

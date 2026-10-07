@@ -1,0 +1,32 @@
+{
+  "fid": "F27",
+  "text_count": 26,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F27.png",
+  "sha256": "93fc281e88d97aec4601e582dabb01f0b4b8b11ff73fabefc124000d3c68f10f",
+  "pixel_size": [
+    2190,
+    1285
+  ],
+  "saved_size_pt": [
+    525.6,
+    308.4
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F27.png",
+    "sha256": "223ed1f4089cb7aad2ebdcff3db1e8b6959c0ae14a033b09ec2035fffcb3ef4f",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "Permutation importance",
+  "section": "7.1",
+  "source": "s07_analysis.py"
+}

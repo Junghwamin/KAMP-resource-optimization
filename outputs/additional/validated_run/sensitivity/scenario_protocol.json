@@ -1,0 +1,97 @@
+{
+  "scenarios": [
+    {
+      "id": "C0",
+      "kind": "baseline"
+    },
+    {
+      "id": "P80",
+      "kind": "production_scale",
+      "production_factor": 0.8
+    },
+    {
+      "id": "P90",
+      "kind": "production_scale",
+      "production_factor": 0.9
+    },
+    {
+      "id": "P110",
+      "kind": "production_scale",
+      "production_factor": 1.1
+    },
+    {
+      "id": "P120",
+      "kind": "production_scale",
+      "production_factor": 1.2
+    },
+    {
+      "id": "H90",
+      "kind": "headcount_scale",
+      "headcount_factor": 0.9
+    },
+    {
+      "id": "H110",
+      "kind": "headcount_scale",
+      "headcount_factor": 1.1
+    },
+    {
+      "id": "T-2",
+      "kind": "temperature_shift",
+      "temperature_delta": -2
+    },
+    {
+      "id": "T-1",
+      "kind": "temperature_shift",
+      "temperature_delta": -1
+    },
+    {
+      "id": "T+1",
+      "kind": "temperature_shift",
+      "temperature_delta": 1
+    },
+    {
+      "id": "T+2",
+      "kind": "temperature_shift",
+      "temperature_delta": 2
+    },
+    {
+      "id": "P80T-2",
+      "kind": "combined",
+      "production_factor": 0.8,
+      "temperature_delta": -2
+    },
+    {
+      "id": "P80T+2",
+      "kind": "combined",
+      "production_factor": 0.8,
+      "temperature_delta": 2
+    },
+    {
+      "id": "P120T-2",
+      "kind": "combined",
+      "production_factor": 1.2,
+      "temperature_delta": -2
+    },
+    {
+      "id": "P120T+2",
+      "kind": "combined",
+      "production_factor": 1.2,
+      "temperature_delta": 2
+    },
+    {
+      "id": "S-1",
+      "kind": "production_time_shift",
+      "shift_hours": -1,
+      "supplementary": true
+    },
+    {
+      "id": "S+1",
+      "kind": "production_time_shift",
+      "shift_hours": 1,
+      "supplementary": true
+    }
+  ],
+  "interpretation": "assumed input-error stress; not measured forecast-error distribution or causal production intervention",
+  "shift_boundary": "clamp within same day and sum colliding production volumes; no circular wrap",
+  "history": "actual pre-origin history reset for each day; immutable across scenarios"
+}

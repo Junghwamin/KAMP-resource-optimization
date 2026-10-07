@@ -1,0 +1,32 @@
+{
+  "fid": "F02",
+  "text_count": 40,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 7.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F02.png",
+  "sha256": "d5091409a44b90e9aa9da063df5106acb018928e8ce034c5bbe18febd04f7bbe",
+  "pixel_size": [
+    3269,
+    1053
+  ],
+  "saved_size_pt": [
+    784.56,
+    252.71999999999997
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F02.png",
+    "sha256": "002bc413871ca98d223887edc34ce02c12c8f4f06e76cce56dee14d80ddb1865",
+    "minimum_effective_font_pt": 8.602490347490347,
+    "readability_pass": true
+  },
+  "title": "복제일 구조",
+  "section": "1.2",
+  "source": "s01_diagnose.py"
+}

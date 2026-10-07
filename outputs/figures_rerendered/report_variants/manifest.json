@@ -1,0 +1,747 @@
+{
+  "schema": "kamp.report_variants.v1",
+  "figures": [
+    {
+      "fid": "E01",
+      "text_count": 29,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E01.png",
+      "sha256": "3da80c93205fa2c20890ec24abfc199fa7e290c07790dee6b09423cc5af5c655",
+      "pixel_size": [
+        2129,
+        1125
+      ],
+      "saved_size_pt": [
+        510.96,
+        270.0
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        270
+      ],
+      "minimum_effective_font_pt": 8.6,
+      "aspect_fit_scale": 1.0,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "E02",
+      "text_count": 10,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E02.png",
+      "sha256": "fcb66547c906437d016fde0535515726a3bb22154be8c0c4b952167e87cf38ea",
+      "pixel_size": [
+        2129,
+        1291
+      ],
+      "saved_size_pt": [
+        510.96,
+        309.84000000000003
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        310
+      ],
+      "minimum_effective_font_pt": 8.600673242523875,
+      "aspect_fit_scale": 1.0000782840144042,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "E03",
+      "text_count": 25,
+      "overlap_candidates": [
+        {
+          "a": "P90",
+          "b": "P120T-2",
+          "overlap_px": [
+            3.98,
+            22.54
+          ]
+        },
+        {
+          "a": "P80T+2",
+          "b": "P120T+2",
+          "overlap_px": [
+            6.37,
+            37.39
+          ]
+        }
+      ],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E03.png",
+      "sha256": "3ad7ba883fb76c6d0f1a95c8717662590c386c2efab8c4ea83ea1f3f53711468",
+      "pixel_size": [
+        2129,
+        812
+      ],
+      "saved_size_pt": [
+        510.96,
+        194.88
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        195
+      ],
+      "minimum_effective_font_pt": 8.600673242523875,
+      "aspect_fit_scale": 1.0000782840144042,
+      "layout_notes": [
+        "모든 시나리오 MAE 변화 요약; Recall/F1 등은 바로 아래 수치표"
+      ],
+      "readability_pass": true
+    },
+    {
+      "fid": "E04",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E04.png",
+      "sha256": "c4b5e3165a61d0de07cb83db6f07d3446cec0096461318215079dc5e021daf19",
+      "pixel_size": [
+        2129,
+        1208
+      ],
+      "saved_size_pt": [
+        510.96,
+        289.91999999999996
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        290
+      ],
+      "minimum_effective_font_pt": 8.600673242523875,
+      "aspect_fit_scale": 1.0000782840144042,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "E05",
+      "text_count": 25,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E05.png",
+      "sha256": "e485fcbec25d1ff071e7a3b38da313419d2dd171610ad5683684d328f2e1b567",
+      "pixel_size": [
+        2129,
+        1270
+      ],
+      "saved_size_pt": [
+        510.96,
+        304.8
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        305
+      ],
+      "minimum_effective_font_pt": 8.600673242523875,
+      "aspect_fit_scale": 1.0000782840144042,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "E06",
+      "text_count": 20,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E06.png",
+      "sha256": "314fb71a30d237dd4bc4835e0150c0c8ed849229ee1b6e416d1b377e5e3bd110",
+      "pixel_size": [
+        2129,
+        895
+      ],
+      "saved_size_pt": [
+        510.96,
+        214.8
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        511,
+        215
+      ],
+      "minimum_effective_font_pt": 8.600673242523875,
+      "aspect_fit_scale": 1.0000782840144042,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F02",
+      "text_count": 33,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F02.png",
+      "sha256": "002bc413871ca98d223887edc34ce02c12c8f4f06e76cce56dee14d80ddb1865",
+      "pixel_size": [
+        1813,
+        618
+      ],
+      "saved_size_pt": [
+        435.12,
+        148.32
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        435.246,
+        148.398
+      ],
+      "minimum_effective_font_pt": 8.602490347490347,
+      "aspect_fit_scale": 1.0002895752895753,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F05",
+      "text_count": 23,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F05.png",
+      "sha256": "707faf2f2f52e3ee26aa05687c12fbc65b8a71f36c493dc9e60dbf2bf20e63ce",
+      "pixel_size": [
+        1749,
+        705
+      ],
+      "saved_size_pt": [
+        419.76,
+        169.20000000000002
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        419.774,
+        169.375
+      ],
+      "minimum_effective_font_pt": 8.60028683056985,
+      "aspect_fit_scale": 1.000033352391843,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F07",
+      "text_count": 28,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F07.png",
+      "sha256": "124a86b70fbbbe2659245ce72f6cef053824edc2163d8edf9b5b7657e9da4bec",
+      "pixel_size": [
+        1770,
+        1109
+      ],
+      "saved_size_pt": [
+        424.8,
+        266.16
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        266.349
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F14",
+      "text_count": 16,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F14.png",
+      "sha256": "69adb6ca22e28ed604aacf3f8495e4715526b42d1512228ef27279786989e30f",
+      "pixel_size": [
+        1853,
+        564
+      ],
+      "saved_size_pt": [
+        444.72,
+        135.35999999999999
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        444.721,
+        135.572
+      ],
+      "minimum_effective_font_pt": 8.600019338010434,
+      "aspect_fit_scale": 1.0000022486058644,
+      "layout_notes": [
+        "본문 fold 도식은 상태·피크건수만 병기; 휴무 비중은 전체 F14 원그림에 보존"
+      ],
+      "readability_pass": true
+    },
+    {
+      "fid": "F18",
+      "text_count": 11,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F18.png",
+      "sha256": "ebf99c13bce7ba8a890538a11d1c4a052290a69bc71669328d25cc61cc3bb10d",
+      "pixel_size": [
+        1770,
+        497
+      ],
+      "saved_size_pt": [
+        424.8,
+        119.28
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        119.389
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F19",
+      "text_count": 18,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F19.png",
+      "sha256": "db3d039afb28dc8f511db24ab06e6f71e3151a0f1f5d80f30d6ac44c618fd3dd",
+      "pixel_size": [
+        1569,
+        1211
+      ],
+      "saved_size_pt": [
+        376.56000000000006,
+        290.64000000000004
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        376.597,
+        290.682
+      ],
+      "minimum_effective_font_pt": 8.600845018058209,
+      "aspect_fit_scale": 1.0000982579137452,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F20",
+      "text_count": 13,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F20.png",
+      "sha256": "bb871f709bb69f9489d7b0edee5d19706fa1638a5593389b045be273a7a3e718",
+      "pixel_size": [
+        1770,
+        523
+      ],
+      "saved_size_pt": [
+        424.8,
+        125.52000000000001
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        125.623
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F21",
+      "text_count": 17,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F21.png",
+      "sha256": "bc0c949e13f4b06f7bd50ac2803e69bc4c1f7e1c2a65edb2feb51f35425bce56",
+      "pixel_size": [
+        1386,
+        1271
+      ],
+      "saved_size_pt": [
+        332.64,
+        305.03999999999996
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        332.82,
+        305.07
+      ],
+      "minimum_effective_font_pt": 8.600845790715972,
+      "aspect_fit_scale": 1.0000983477576713,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F24",
+      "text_count": 40,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F24.png",
+      "sha256": "eb90354ccf2a5db4f25c3cdf6dad60598ea0573ec44b39d6e741c79b5729b810",
+      "pixel_size": [
+        1770,
+        932
+      ],
+      "saved_size_pt": [
+        424.8,
+        223.67999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        223.915
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F27",
+      "text_count": 25,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F27.png",
+      "sha256": "223ed1f4089cb7aad2ebdcff3db1e8b6959c0ae14a033b09ec2035fffcb3ef4f",
+      "pixel_size": [
+        1770,
+        1015
+      ],
+      "saved_size_pt": [
+        424.8,
+        243.6
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        243.81
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F29",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F29.png",
+      "sha256": "a903458dc6006bff30242fb345e64887d32d75393de865499fb03eebe98d048a",
+      "pixel_size": [
+        1770,
+        754
+      ],
+      "saved_size_pt": [
+        424.8,
+        180.95999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        181.12
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F30",
+      "text_count": 21,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F30.png",
+      "sha256": "8a062133c0f61f2204c19d29c9ec765261fd7842c90842a1d8c4c4278552edd6",
+      "pixel_size": [
+        1770,
+        610
+      ],
+      "saved_size_pt": [
+        424.8,
+        146.39999999999998
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        146.6
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F31",
+      "text_count": 16,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F31.png",
+      "sha256": "e6135f4d35bc5fb2a48fb1bd5de6deef4434000aef2cc731607fcaa215150891",
+      "pixel_size": [
+        1770,
+        729
+      ],
+      "saved_size_pt": [
+        424.8,
+        174.96
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        175.01
+      ],
+      "minimum_effective_font_pt": 8.602457704618198,
+      "aspect_fit_scale": 1.0002857796067672,
+      "layout_notes": [
+        "본문은 R1~R3 실제 비율·n 요약; 전체 트리는 F31_landscape.png",
+        "원시 OOF의 실제 피크 수 / 실제 n으로 표시하여 4자리 비율의 이중 반올림 방지",
+        "landscape_min_effective_font_pt=9.200"
+      ],
+      "readability_pass": true,
+      "source_table": "F31_src.csv",
+      "source_sha256": "311cea97d66d4e8d16a4a2fd70367fd5de3631c0211cd59b932dd39a22011fe5"
+    },
+    {
+      "fid": "F31_landscape",
+      "text_count": 26,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.2,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F31_landscape.png",
+      "sha256": "8e8f7771b22e7fbb4fc09f516ba1b9267306a9d7d62d8a361570e8ecfdac2407",
+      "pixel_size": [
+        3254,
+        1600
+      ],
+      "saved_size_pt": [
+        780.9599999999999,
+        384.0
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        781,
+        384
+      ],
+      "minimum_effective_font_pt": 9.2,
+      "aspect_fit_scale": 1.0,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F33",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F33.png",
+      "sha256": "29339b57dde9f47e74671f7d9f66eac667b6d0b3cb67d3b08ce3d2ed1f6ca5be",
+      "pixel_size": [
+        1770,
+        450
+      ],
+      "saved_size_pt": [
+        424.8,
+        108.0
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        108.0
+      ],
+      "minimum_effective_font_pt": 8.6,
+      "aspect_fit_scale": 1.0,
+      "layout_notes": [],
+      "readability_pass": true
+    },
+    {
+      "fid": "F35",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.6,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "F35.png",
+      "sha256": "34fa08019aa0a2631cf989bc7a7bb2c829eef1d72f3e2d83ebf8d9c2b617ec26",
+      "pixel_size": [
+        1770,
+        660
+      ],
+      "saved_size_pt": [
+        424.8,
+        158.4
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "variant": "report_physical_box",
+      "target_pdf_box_pt": [
+        424.931,
+        158.47
+      ],
+      "minimum_effective_font_pt": 8.602652071563087,
+      "aspect_fit_scale": 1.0003083804143125,
+      "layout_notes": [
+        "레버 이름은 본문 정의와 대응하는 코드로 축약"
+      ],
+      "readability_pass": true
+    }
+  ],
+  "parent_manifest_sha256": {
+    "render_manifest.json": "c42cb0aa3ec1cd520465f675d18cb433e180b044b0b84c7f1be461c6bff062f5",
+    "experiment_render_manifest.json": "131a67b5f53676e4a078cbb95c34bdc4e1fd22a057c5a3c36f8d7347b2d5632d"
+  },
+  "renderer_sha256": {
+    "tools/render_figures.py": "f037c8467f626e9ba3b8abffdca3a3d95587cfb7621f01fb821fbc7523b6ab10",
+    "tools/figure_layout.py": "fca331f183b17cb2ddacd7658d212de433665b34ac79704692f7e05357f77caa"
+  },
+  "visual_status": "requires_direct_image_and_final_pdf_inspection"
+}

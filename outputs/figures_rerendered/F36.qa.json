@@ -1,0 +1,26 @@
+{
+  "fid": "F36",
+  "text_count": 20,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F36.png",
+  "sha256": "1d38391b1876eaa53540d5ca15fee2427075f31e740c55c039647b4850120575",
+  "pixel_size": [
+    2490,
+    923
+  ],
+  "saved_size_pt": [
+    597.6,
+    221.52
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "시나리오별 순절감액",
+  "section": "8.3",
+  "source": "s08_simulation.py"
+}

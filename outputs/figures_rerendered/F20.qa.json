@@ -1,0 +1,32 @@
+{
+  "fid": "F20",
+  "text_count": 16,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F20.png",
+  "sha256": "8502e3e324a3266a1a4b642ba8605d36dccd8942f8ec4ef47c0477e05f0244ea",
+  "pixel_size": [
+    3090,
+    1047
+  ],
+  "saved_size_pt": [
+    741.6,
+    251.28000000000003
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F20.png",
+    "sha256": "bb871f709bb69f9489d7b0edee5d19706fa1638a5593389b045be273a7a3e718",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "Ablation 효과",
+  "section": "6.3",
+  "source": "s06_eval.py"
+}

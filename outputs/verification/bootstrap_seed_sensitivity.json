@@ -1,0 +1,144 @@
+{
+  "schema": "kamp.bootstrap_seed_sensitivity.v1",
+  "source": "outputs/tables/F18_src.csv",
+  "statistic": "MAE(RF) - MAE(final) on the same 336 hours; positive means the final model is better",
+  "sampling": "noncircular moving calendar-day blocks, as in E2",
+  "rows": [
+    {
+      "block_days": 1,
+      "n_boot_per_seed": 2000,
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ci_includes_zero_count": 17,
+      "seed_count": 20,
+      "ci_low_range": [
+        -0.05245164609699266,
+        0.016665224016748262
+      ],
+      "p_value_range": [
+        0.041,
+        0.076
+      ],
+      "large_n_boot": 100000,
+      "large_seed": 42,
+      "large_ci": [
+        -0.02214863167732457,
+        2.5378528658112884
+      ],
+      "large_p_value_approx": 0.05912,
+      "large_ci_includes_zero": true,
+      "diff": 1.019440242628483
+    },
+    {
+      "block_days": 2,
+      "n_boot_per_seed": 2000,
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ci_includes_zero_count": 17,
+      "seed_count": 20,
+      "ci_low_range": [
+        -0.07553104964885922,
+        0.02275026340742761
+      ],
+      "p_value_range": [
+        0.044,
+        0.08
+      ],
+      "large_n_boot": 100000,
+      "large_seed": 42,
+      "large_ci": [
+        -0.03332790442929926,
+        2.4923022118073916
+      ],
+      "large_p_value_approx": 0.06294,
+      "large_ci_includes_zero": true,
+      "diff": 1.019440242628483
+    },
+    {
+      "block_days": 3,
+      "n_boot_per_seed": 2000,
+      "seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "ci_includes_zero_count": 20,
+      "seed_count": 20,
+      "ci_low_range": [
+        -0.08150340010364966,
+        -0.010561722836097708
+      ],
+      "p_value_range": [
+        0.053,
+        0.093
+      ],
+      "large_n_boot": 100000,
+      "large_seed": 42,
+      "large_ci": [
+        -0.04487821362359412,
+        2.3429521730803513
+      ],
+      "large_p_value_approx": 0.07034,
+      "large_ci_includes_zero": true,
+      "diff": 1.019440242628483
+    }
+  ],
+  "interpretation": "The preregistered E2 result (2,000 resamples, seed 42) is kept; this file shows how much the interval moves with the seed and with Monte Carlo error removed."
+}

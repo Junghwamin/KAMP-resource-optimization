@@ -1,0 +1,29 @@
+── Permutation importance 상위 10 (파이프라인 전체) ──
+               변수                한글라벨  중요도(MAE 증가)  표준편차
+0              prod              계획생산량           11.7282    5.1829
+1      y_avg_lag168     평균전력 168시간 전            9.0867    6.4456
+2          hour_cos                시간 cos            2.2610    0.5550
+3      prod_cum_day           일 누적생산량            2.2113    3.9852
+4   roll168_avg_max  직전168h 평균전력 최대            1.6412    2.8516
+5       y_avg_lag24      평균전력 24시간 전            1.3025    0.3887
+6       is_shutdown                  휴무일            1.2533    2.1264
+7  roll168_avg_mean  직전168h 평균전력 평균            1.2271    1.9889
+8              hour                    시간            0.9474    0.3616
+9          hour_sin                시간 sin            0.8941    0.2979
+<python>\Lib\site-packages\numpy\lib\function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+<python>\Lib\site-packages\numpy\lib\function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+
+── 3.1절 상위 5 영향변수 ──
+   순위                    변수   중요도 전력예측에 미친 방향                          현장 의미
+0     1              계획생산량  11.7282                 증가    생산부하의 직접 효과를 반영한다
+1     2     평균전력 168시간 전   9.0867                 증가  주 단위 교대·요일 패턴을 반영한다
+2     3                시간 cos   2.2610                 감소      해당 피처군의 정보를 반영한다
+3     4           일 누적생산량   2.2113                 증가   당일 누적 생산 진행도를 반영한다
+4     5  직전168h 평균전력 최대   1.6412                 감소      해당 피처군의 정보를 반영한다
+
+  ⚠️ SHAP 은 대리모델(LightGBM)로 산출했다. 대리 충실도 corr(최종, 대리) = 0.9651
+     전역 변수 순위는 파이프라인 전체 permutation importance 를 따른다.
+src/s07_analysis.py:243: FutureWarning: The NumPy global RNG was seeded by calling `np.random.seed`. In a future version this function will no longer use the global RNG. Pass `rng` explicitly to opt-in to the new behaviour and silence this warning.
+  shap.summary_plot(

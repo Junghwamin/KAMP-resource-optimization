@@ -1,0 +1,40 @@
+﻿fid,파일명,보고서절,제목,캡션,소스표
+F02,F02_복제일_구조.png,1.2,복제일 구조,최대 복제그룹 15일의 전력 프로파일은 완전 일치하나 기온은 -3.4~19.2°C로 상이,F02_src.csv
+F03,F03_행순서_복원_검증.png,1.2,행순서 복원 검증,손상일의 기온이 정상 일주기(최저 새벽·최고 오후)를 보여 행 순서 보존을 입증,F03_src.csv
+F12,F12_품질_진단_요약.png,1.2,품질 진단 요약,품질 진단 요약,F12_src.csv
+F04,F04_양방향_결측_타임라인.png,1.3,양방향 결측 타임라인,양방향 결측 타임라인,F04_src.csv
+F08,F08_가동_캘린더.png,1.4,가동 캘린더,가동 캘린더,F08_src.csv
+F01,F01_전체기간_전력_시계열.png,1.5,전체기간 전력 시계열,전체기간 전력 시계열,F01_src.csv
+F05,F05_시간대별_부하_프로파일.png,1.5,시간대별 부하 프로파일,시간대별 부하 프로파일,F05_src.csv
+F07,F07_시간대_월_피크율_히트맵.png,1.5,시간대 월 피크율 히트맵,시간대 월 피크율 히트맵,F07_src.csv
+F09,F09_일평균전력_3레짐.png,1.5,일평균전력 3레짐,일평균전력 3레짐,F09_src.csv
+F10,F10_생산량_전력_산점도.png,1.5,생산량 전력 산점도,생산량 전력 산점도,F10_src.csv
+F11,F11_상관행렬.png,1.5,상관행렬,상관행렬,F11_src.csv
+F06,F06_peak15_분포와_임계값.png,1.6,peak15 분포와 임계값,peak15 분포와 임계값,F06_src.csv
+F13,F13_Day_ahead_원점_경계.png,2.2,Day-ahead 원점 경계,Day-ahead 원점 경계,F13_src.csv
+F14,F14_Rolling_origin_fold_배치도.png,3.2,Rolling-origin fold 배치도,Rolling-origin fold 배치도,F14_src.csv
+F15,F15_fold별_양성률.png,3.2,fold별 양성률,fold별 양성률,F15_src.csv
+F16,F16_베이스라인_RF_중요도_집중.png,4.4,베이스라인 RF 중요도 집중,iloc[0] 버그로 외생변수가 전부 상수가 되어 중요도가 1개 변수에 집중된다,F16_src.csv
+F26,F26_Optuna_탐색_이력.png,5.1,Optuna 탐색 이력,Optuna 탐색 이력,F26_src.csv
+F21,F21_확률보정_Reliability.png,5.7,확률보정 Reliability,확률보정 Reliability,F21_src.csv
+F22,F22_예측구간_피복률.png,5.8,예측구간 피복률,예측구간 피복률,F22_src.csv
+F17,F17_모델별_MAE.png,6.1,모델별 MAE,모델별 MAE,F17_src.csv
+F19,F19_PR_곡선.png,6.2,PR 곡선,PR 곡선,F19_src.csv
+F23,F23_혼동행렬.png,6.2,혼동행렬,혼동행렬,F23_src.csv
+F20,F20_Ablation_효과.png,6.3,Ablation 효과,Ablation 효과,F20_src.csv
+F18,F18_예측_vs_실측_시계열.png,6.1,예측 vs 실측 시계열,예측 vs 실측 시계열,F18_src.csv
+F25,F25_잔차_분포.png,6.1,잔차 분포,잔차 분포,F25_src.csv
+F24,F24_모델_fold_성능_매트릭스.png,6.4,모델 fold 성능 매트릭스,모델 fold 성능 매트릭스,F24_src.csv
+F27,F27_Permutation_importance.png,7.1,Permutation importance,Permutation importance,F27_src.csv
+F28,F28_SHAP_summary.png,7.1,SHAP summary,SHAP summary,F28_src.csv
+F32,F32_상호작용_히트맵.png,7.2,상호작용 히트맵,상호작용 히트맵,F32_src.csv
+F29,F29_조건별_MAE.png,7.3,조건별 MAE,조건별 MAE,F29_src.csv
+F30,F30_FN_FP_시간대_분포.png,7.4,FN FP 시간대 분포,FN FP 시간대 분포,F30_src.csv
+F33,F33_대표_실패사례.png,7.5,대표 실패사례,대표 실패사례,F33_src.csv
+F31,F31_깊이3_규칙_트리.png,7.6,깊이3 규칙 트리,깊이3 규칙 트리,F31_src.csv
+F34,F34_월별_최대수요와_청구기준.png,8.1,월별 최대수요와 청구기준,월별 최대수요와 청구기준,F34_src.csv
+F37,F37_L1_기동분산_전후_부하곡선.png,8.2,L1 기동분산 전후 부하곡선,L1 기동분산 전후 부하곡선,F37_src.csv
+F35,F35_레버별_최대수요_저감.png,8.3,레버별 최대수요 저감,레버별 최대수요 저감,F35_src.csv
+F36,F36_시나리오별_순절감액.png,8.3,시나리오별 순절감액,시나리오별 순절감액,F36_src.csv
+F38,F38_민감도_히트맵.png,8.3,민감도 히트맵,민감도 히트맵,F38_src.csv
+F39,F39_경보_운영_타임라인.png,8.4,경보 운영 타임라인,경보 운영 타임라인,F39_src.csv

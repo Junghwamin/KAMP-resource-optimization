@@ -1,0 +1,38 @@
+{
+  "fid": "F31",
+  "text_count": 16,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.6,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F31.png",
+  "sha256": "e6135f4d35bc5fb2a48fb1bd5de6deef4434000aef2cc731607fcaa215150891",
+  "pixel_size": [
+    1770,
+    729
+  ],
+  "saved_size_pt": [
+    424.8,
+    174.96
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "variant": "report_physical_box",
+  "target_pdf_box_pt": [
+    424.931,
+    175.01
+  ],
+  "minimum_effective_font_pt": 8.602457704618198,
+  "aspect_fit_scale": 1.0002857796067672,
+  "layout_notes": [
+    "본문은 R1~R3 실제 비율·n 요약; 전체 트리는 F31_landscape.png",
+    "원시 OOF의 실제 피크 수 / 실제 n으로 표시하여 4자리 비율의 이중 반올림 방지",
+    "landscape_min_effective_font_pt=9.200"
+  ],
+  "readability_pass": true,
+  "source_table": "F31_src.csv",
+  "source_sha256": "311cea97d66d4e8d16a4a2fd70367fd5de3631c0211cd59b932dd39a22011fe5"
+}

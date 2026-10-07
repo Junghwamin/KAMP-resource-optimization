@@ -1,0 +1,94 @@
+{
+  "schema": "kamp.figure_semantics.v1",
+  "F14": {
+    "scope": "D1 fold diagram counts before quality masks, versus regression table counts after masks",
+    "sources": [
+      "src/s03_split.py:191 fold_summary",
+      "src/s03_split.py:136 fold_slices",
+      "src/s03_split.py:580 usable_mask",
+      "src/s03_split.py:589 get_fold_data"
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "before_quality_mask_n": 336,
+        "before_quality_mask_peaks": 20,
+        "after_quality_mask_n": 336,
+        "after_quality_mask_peaks": 20,
+        "excluded_peak_dates": {}
+      },
+      {
+        "fold": 2,
+        "before_quality_mask_n": 336,
+        "before_quality_mask_peaks": 48,
+        "after_quality_mask_n": 288,
+        "after_quality_mask_peaks": 39,
+        "excluded_peak_dates": {
+          "2021-07-13": 4,
+          "2021-07-15": 5
+        }
+      },
+      {
+        "fold": 3,
+        "before_quality_mask_n": 336,
+        "before_quality_mask_peaks": 58,
+        "after_quality_mask_n": 336,
+        "after_quality_mask_peaks": 58,
+        "excluded_peak_dates": {}
+      },
+      {
+        "fold": 4,
+        "before_quality_mask_n": 336,
+        "before_quality_mask_peaks": 34,
+        "after_quality_mask_n": 336,
+        "after_quality_mask_peaks": 34,
+        "excluded_peak_dates": {}
+      },
+      {
+        "fold": 5,
+        "before_quality_mask_n": 336,
+        "before_quality_mask_peaks": 25,
+        "after_quality_mask_n": 319,
+        "after_quality_mask_peaks": 25,
+        "excluded_peak_dates": {}
+      }
+    ]
+  },
+  "F31": {
+    "source": "raw OOF rows traversed through snapshot tree, original rules selection/n/rounded-rate validated",
+    "rules": [
+      {
+        "규칙": "R1",
+        "피크 발생조건": "생산량 > 381.5 ∧ 시간 > 7.5 ∧ 시간 <= 16.5",
+        "피크 확률": 0.556,
+        "적용되는 시간 비율": 20.25,
+        "n": 259,
+        "실제 피크 수": 144,
+        "원시 피크 비율": 0.555984555984556
+      },
+      {
+        "규칙": "R2",
+        "피크 발생조건": "생산량 <= 381.5 ∧ 생산량 > 262.5 ∧ 기온 > 24.9",
+        "피크 확률": 0.1905,
+        "적용되는 시간 비율": 1.64,
+        "n": 21,
+        "실제 피크 수": 4,
+        "원시 피크 비율": 0.19047619047619047
+      },
+      {
+        "규칙": "R3",
+        "피크 발생조건": "생산량 > 381.5 ∧ 시간 > 7.5 ∧ 시간 > 16.5",
+        "피크 확률": 0.0575,
+        "적용되는 시간 비율": 6.8,
+        "n": 87,
+        "실제 피크 수": 5,
+        "원시 피크 비율": 0.05747126436781609
+      }
+    ],
+    "percent_labels": [
+      "55.6%",
+      "19.0%",
+      "5.7%"
+    ]
+  }
+}

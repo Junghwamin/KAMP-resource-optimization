@@ -1,0 +1,26 @@
+{
+  "fid": "F38",
+  "text_count": 17,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 9.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F38_민감도_히트맵.png",
+  "sha256": "ffc67a7aaf265e3419283c0ab206d921bab4edf4d8b174f616c5f38c9e8e90d4",
+  "pixel_size": [
+    1469,
+    867
+  ],
+  "saved_size_pt": [
+    352.56,
+    208.08
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "민감도 히트맵",
+  "section": "8.3",
+  "source": "s08_simulation.py"
+}

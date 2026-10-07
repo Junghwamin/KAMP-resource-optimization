@@ -1,0 +1,129 @@
+{
+  "schema": "kamp.submission_pipeline.v1",
+  "status": "complete",
+  "profile": "full",
+  "scope": "local_code_results_and_figures",
+  "full_ok": true,
+  "attempts": [
+    {
+      "schema": "kamp.submission_pipeline.v1",
+      "status": "failed",
+      "profile": "full",
+      "started_utc": "2026-10-06T15:17:41.769668+00:00",
+      "reused_core": true,
+      "scope": "local_code_results_and_figures",
+      "steps": [
+        {
+          "step": "core",
+          "status": "verified_reused",
+          "returncode": 0
+        },
+        {
+          "step": "experiments",
+          "returncode": 0,
+          "seconds": 2897.0,
+          "log": "pipeline_logs/experiments.log"
+        },
+        {
+          "step": "figures",
+          "returncode": 0,
+          "seconds": 22.67200000002049,
+          "log": "pipeline_logs/figures.log"
+        },
+        {
+          "step": "current_code_tests",
+          "returncode": 0,
+          "seconds": 50.07799999997951,
+          "log": "pipeline_logs/current_code_tests.log"
+        },
+        {
+          "step": "verification",
+          "returncode": 1,
+          "seconds": 13.187999999965541,
+          "log": "pipeline_logs/verification.log"
+        }
+      ],
+      "full_ok": false,
+      "core_reuse_validation": {
+        "status": "passed",
+        "step_count": 62,
+        "S4": {
+          "status": "ok",
+          "summary": "304 passed in 30.97s"
+        },
+        "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+        "snapshot_metadata_sha256": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+        "core_index_sha256": "b34f918663b2100d9b5966ae42b5439e2b428fddb989126f1f32e1f015160628",
+        "source_provenance": {
+          "status": "passed",
+          "immutable_fit_file_count": 27,
+          "snapshot_cross_checked": [
+            "data/okm_augumented_2021.csv",
+            "src/s00_env.py",
+            "src/s01_diagnose.py",
+            "src/s02_features.py",
+            "src/s03_split.py",
+            "src/s04_baseline.py",
+            "src/s05_models.py",
+            "src/s06_eval.py",
+            "src/s07_analysis.py",
+            "src/s08_simulation.py",
+            "src/s09_creativity.py",
+            "src/s10_package.py"
+          ],
+          "other_code_policy": "Current helpers/tests/viewers/docs require separate current-code full-suite evidence"
+        },
+        "recorded_runtime": {
+          "python": "3.11.9",
+          "platform": "Windows",
+          "versions": {
+            "numpy": "1.26.4",
+            "pandas": "2.1.4",
+            "scipy": "1.11.4",
+            "scikit-learn": "1.4.2",
+            "lightgbm": "4.5.0",
+            "matplotlib": "3.9.2",
+            "shap": "0.49.1"
+          }
+        },
+        "current_platform_note": "Saved platform provenance does not establish a new KAMP execution"
+      },
+      "error": {
+        "type": "RuntimeError",
+        "message": "verification failed with exit 1"
+      }
+    },
+    {
+      "mode": "resumed_tail_after_failed_verification",
+      "status": "complete",
+      "started_utc": "2026-10-06T20:55:54.318328+00:00",
+      "reused_without_rerun": [
+        "core (verified reuse in attempt 1)",
+        "experiments E1-E6 (attempt 1)",
+        "figure rendering (attempt 1; hash-bound to the reviewed images and final PDF)"
+      ],
+      "steps": [
+        {
+          "step": "publish_figures",
+          "returncode": 0,
+          "seconds": 3.343999999924563,
+          "log": "pipeline_logs/publish_figures_resume.log"
+        },
+        {
+          "step": "current_code_tests",
+          "returncode": 0,
+          "seconds": 55.03200000000652,
+          "log": "pipeline_logs/current_code_tests_resume.log"
+        },
+        {
+          "step": "verification",
+          "returncode": 0,
+          "seconds": 16.280999999959022,
+          "log": "pipeline_logs/verification_resume.log"
+        }
+      ],
+      "finished_utc": "2026-10-06T20:57:09.010412+00:00"
+    }
+  ],
+  "completion_note": "Attempt 1 failed only at strict verification (no publish step in the loaded runner, visual review pending). Its record is kept verbatim in attempts[0]; the tail steps in attempts[1] were executed afterwards with the same runner."
+}

@@ -1,0 +1,508 @@
+{
+  "status": "complete",
+  "experiment": "temporal",
+  "fingerprint": "bf89fef14bc5caa4d9ce93349cd8436fe1c77fba41663f0f2aff2a32cb1e4b50",
+  "elapsed_seconds": 2814.997760772705,
+  "inputs": {
+    "experiment": "temporal",
+    "config": {
+      "schema_version": 1,
+      "protocol": "additional-experiments-2026-10-06",
+      "seed": 42,
+      "evaluation_note": "Retrospective analyses on already observed data; no new independent test claim.",
+      "bootstrap": {
+        "lengths": [
+          1,
+          2,
+          3
+        ],
+        "n_boot": 2000,
+        "sampling": "noncircular consecutive calendar-day blocks; truncate to 14 days"
+      },
+      "diagnostics": {
+        "n_boot": 2000,
+        "high_production_quantile": 0.75,
+        "sparse_hours": 20,
+        "sparse_days": 5,
+        "threshold_scope": "all_selected_OOF_descriptive_only"
+      },
+      "sensitivity": {
+        "atol": 1e-08,
+        "scenarios": [
+          {
+            "id": "C0",
+            "kind": "baseline"
+          },
+          {
+            "id": "P80",
+            "kind": "production_scale",
+            "production_factor": 0.8
+          },
+          {
+            "id": "P90",
+            "kind": "production_scale",
+            "production_factor": 0.9
+          },
+          {
+            "id": "P110",
+            "kind": "production_scale",
+            "production_factor": 1.1
+          },
+          {
+            "id": "P120",
+            "kind": "production_scale",
+            "production_factor": 1.2
+          },
+          {
+            "id": "H90",
+            "kind": "headcount_scale",
+            "headcount_factor": 0.9
+          },
+          {
+            "id": "H110",
+            "kind": "headcount_scale",
+            "headcount_factor": 1.1
+          },
+          {
+            "id": "T-2",
+            "kind": "temperature_shift",
+            "temperature_delta": -2
+          },
+          {
+            "id": "T-1",
+            "kind": "temperature_shift",
+            "temperature_delta": -1
+          },
+          {
+            "id": "T+1",
+            "kind": "temperature_shift",
+            "temperature_delta": 1
+          },
+          {
+            "id": "T+2",
+            "kind": "temperature_shift",
+            "temperature_delta": 2
+          },
+          {
+            "id": "P80T-2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P80T+2",
+            "kind": "combined",
+            "production_factor": 0.8,
+            "temperature_delta": 2
+          },
+          {
+            "id": "P120T-2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": -2
+          },
+          {
+            "id": "P120T+2",
+            "kind": "combined",
+            "production_factor": 1.2,
+            "temperature_delta": 2
+          },
+          {
+            "id": "S-1",
+            "kind": "production_time_shift",
+            "shift_hours": -1,
+            "supplementary": true
+          },
+          {
+            "id": "S+1",
+            "kind": "production_time_shift",
+            "shift_hours": 1,
+            "supplementary": true
+          }
+        ]
+      },
+      "controlled_regime": {
+        "profile": "full",
+        "seed": 42,
+        "n_estimators": 800,
+        "threads": 4,
+        "isolation": "serial_subprocess",
+        "candidate_models": [
+          "lgb",
+          "regime3"
+        ],
+        "same_regression_params": true,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "calibration_days": 14,
+        "gap_hours": 24,
+        "n_boot": 2000,
+        "regression_objective": "l1",
+        "design_note": "Identical core-calibration-outer partitions for both models; different from original full-development OOF; total model capacity not equalized"
+      },
+      "temporal_selection": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "trials_reg": 50,
+        "trials_clf": 50,
+        "gap_hours": 24,
+        "calibration_days": 14,
+        "inner_days": 14,
+        "max_inner_folds": 3,
+        "min_core_days": 14,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "candidates": [
+          "naive",
+          "rf",
+          "lgb",
+          "regime2",
+          "regime3"
+        ],
+        "weights": {
+          "mae": 0.3,
+          "peak_mae": 0.15,
+          "recall": 0.25,
+          "fold_std": 0.2,
+          "feasible": 0.1
+        },
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "calibration_fallback": "tau=theta; isotonic disabled",
+        "feasibility": "prespecified_all_candidates_eligible_resource_time_not_scored",
+        "resource_warning_seconds": 60,
+        "tie_break": "prespecified_candidate_order",
+        "undefined_metric_score": 0.0,
+        "search_space": {
+          "num_leaves": [
+            15,
+            127
+          ],
+          "learning_rate": [
+            0.01,
+            0.2
+          ],
+          "max_depth": [
+            3,
+            12
+          ],
+          "min_child_samples": [
+            5,
+            50
+          ],
+          "feature_fraction": [
+            0.6,
+            1.0
+          ],
+          "bagging_fraction": [
+            0.6,
+            1.0
+          ]
+        },
+        "isolation": "serial_subprocess"
+      },
+      "policy": {
+        "alpha": 0.2,
+        "alpha_grid": [
+          0.1,
+          0.2,
+          0.3
+        ],
+        "shift_fraction": 0.2,
+        "receiving_hours": [
+          10,
+          11,
+          15,
+          16
+        ],
+        "start_hours": [
+          8,
+          13
+        ],
+        "receiving_capacity_quantile": 0.95,
+        "receiving_capacity_multiplier": 1.2,
+        "demand_rate_krw_per_kw_month": 8320,
+        "demand_rate_multipliers": [
+          0.7,
+          1,
+          1.3
+        ],
+        "action_cost_krw": [
+          0,
+          1000,
+          5000
+        ],
+        "shift_unit_cost_krw": [
+          0,
+          0.01,
+          0.1
+        ],
+        "interpretation": "Assumed operational constraints, effect and costs; retrospective policy simulation, not measured savings."
+      }
+    },
+    "source": {
+      "experiments\\bootstrap.py": "c24df1da377c7e74f2e5b89998f109be62775dcbbe22ed13c8faf072dd86af30",
+      "experiments\\common.py": "554d8aff9bc38398141992eb7d8b81812c2e92e7be9ed7b47a593377a0e4222a",
+      "experiments\\controlled_regime.py": "814c2c0ac82b0667679365191aeb4e5995a6871354f177bd195ec0a542813677",
+      "experiments\\diagnostics.py": "ac67da1322b4de02d79ba6a467b0209e8a44b57099483fba17b9efc7cab1a90c",
+      "experiments\\model_adapter.py": "72fdf0ecccb68afca5cef672f19917e6a9b96140756f50b649a31b33f0e91502",
+      "experiments\\policy.py": "e41f8f6ea9657f5cfe8410d562d47b7ca39c30f667dc6a1622bba4723f431c2f",
+      "experiments\\sensitivity.py": "220541922257a68bf6ece91c9247c4ccae53f6624a15f5a13132e4ffa58d4857",
+      "experiments\\temporal_selection.py": "b8891cf92bb033806158a1a4cfb13742d45cba6e30549992b937710112207f43",
+      "experiments\\__init__.py": "5687950aed86be87f915a6509d70d42159901c3ca0d904bd106b47facf9b25c6",
+      "run_experiments.py": "cf14c361d5c9cf39a4b7455b234ca014cef4aed3c711e73087acd3a569b001d9",
+      "data\\okm_augumented_2021.csv": "8f7af2e49366c93e1d6f5fdef4b5e350066c1792ac463c2c2886e370f4674830",
+      "outputs\\tables\\F18_src.csv": "ed8a0561195b91ff75ec793043bdbf92b3a827435c884c114b65a09a597fa12e",
+      "outputs\\analysis_snapshot\\metadata.json": "3b87c34e8997b0f8816c6fba3fd4af8627ce81f2a6cd4637f08ced5903b0337e",
+      "src\\s00_env.py": "f291d8c34f73fffbab427f7c65eb97cce9a7893cf8ed2cf85be66738d942a094",
+      "src\\s01_diagnose.py": "0fc817c3dc5d8bcc8df746815b6837e7791bdf759d27e1580b8caf6f0a916e4d",
+      "src\\s02_features.py": "73c264efa02750ef0d55d6b3f94a481827471183be349aa64b0917523a62b09c",
+      "src\\s03_split.py": "0e8eed9078172aeab1caaf683ae4ffe594f969c004db490ff53c3d6fe2732f86",
+      "src\\s04_baseline.py": "cee7ccd8f1e179b7e5bfdd10da965c2904ddb7ba2e4bb21c591d3256b450647a",
+      "src\\s05_models.py": "5b1addf9c66bd95bf376085b5b3dff0c5f8ed2938639bd50596afe93788fd579",
+      "src\\s06_eval.py": "4f85de00710f9b34d3534c4da33824b1933344522d5ead3bb6e23f6693bd428d",
+      "src\\s07_analysis.py": "956158a8a8a74c0ecb42387446af1bdd21350f343dd404f2c64b20102510c08f",
+      "src\\s08_simulation.py": "59690cd142f1dc1e893f0fc65caf7d81558a920dee4dc5cea0ba7eca074fd406",
+      "src\\s09_creativity.py": "cf382fb4f69abf372e21ecc202f77b6323060890a6e163edcf73199828fd71f8",
+      "src\\s10_package.py": "277037b1b2b155d7ff84e135eb87a472a32662f3597bcf23f5d8ceb4597d259e",
+      "tools\\analysis_snapshot.py": "05fed35d8faa87bb9fa6cf5bfab3be82dbc32d8a9ec5d32b7f2d20c5cbd5e8a8"
+    },
+    "runtime": {
+      "python": "3.11.9",
+      "numpy": "1.26.4",
+      "pandas": "2.1.4",
+      "scipy": "1.11.4",
+      "scikit-learn": "1.4.2",
+      "lightgbm": "4.5.0",
+      "optuna": "5.0.0"
+    }
+  },
+  "summary": {
+    "status": "complete",
+    "experiment": "temporal_selection",
+    "failures": [],
+    "completed_outer_count": 4,
+    "expected_outer_count": 4,
+    "seconds": 2813.054642300005,
+    "protocol": {
+      "experiment": "temporal_selection",
+      "config": {
+        "profile": "full",
+        "seed": 42,
+        "threads": 4,
+        "n_estimators": 800,
+        "trials_reg": 50,
+        "trials_clf": 50,
+        "gap_hours": 24,
+        "calibration_days": 14,
+        "inner_days": 14,
+        "max_inner_folds": 3,
+        "min_core_days": 14,
+        "outer_starts": [
+          "2021-07-07",
+          "2021-07-21",
+          "2021-08-04",
+          "2021-08-18"
+        ],
+        "outer_days": 14,
+        "candidates": [
+          "naive",
+          "rf",
+          "lgb",
+          "regime2",
+          "regime3"
+        ],
+        "weights": {
+          "mae": 0.3,
+          "peak_mae": 0.15,
+          "recall": 0.25,
+          "fold_std": 0.2,
+          "feasible": 0.1
+        },
+        "calibration_min_positive": 5,
+        "calibration_min_negative": 20,
+        "calibration_fallback": "tau=theta; isotonic disabled",
+        "isolation": "serial_subprocess",
+        "feasibility": "prespecified_all_candidates_eligible_resource_time_not_scored",
+        "resource_warning_seconds": 60,
+        "tie_break": "prespecified_candidate_order",
+        "undefined_metric_score": 0.0,
+        "lgb_base": {
+          "objective": "l1",
+          "verbosity": -1,
+          "deterministic": true,
+          "force_row_wise": true,
+          "num_threads": 4,
+          "seed": 42,
+          "bagging_seed": 42,
+          "feature_fraction_seed": 42,
+          "data_random_seed": 42
+        },
+        "search_space": {
+          "num_leaves": [
+            15,
+            127
+          ],
+          "learning_rate": [
+            0.01,
+            0.2
+          ],
+          "max_depth": [
+            3,
+            12
+          ],
+          "min_child_samples": [
+            5,
+            50
+          ],
+          "feature_fraction": [
+            0.6,
+            1.0
+          ],
+          "bagging_fraction": [
+            0.6,
+            1.0
+          ]
+        }
+      },
+      "features": [
+        "y_avg_lag24",
+        "y_avg_lag48",
+        "y_avg_lag168",
+        "y_peak_lag24",
+        "y_peak_lag48",
+        "y_peak_lag168",
+        "roll24_avg_mean",
+        "roll24_avg_max",
+        "roll24_avg_std",
+        "roll24_peak_max",
+        "roll24_peak_cnt",
+        "roll168_avg_mean",
+        "roll168_avg_max",
+        "roll168_avg_std",
+        "roll168_peak_max",
+        "roll168_peak_cnt",
+        "hour",
+        "dow",
+        "month",
+        "is_sat",
+        "is_sun",
+        "is_holiday",
+        "hour_sin",
+        "hour_cos",
+        "dow_sin",
+        "dow_cos",
+        "is_daytime",
+        "is_startup_08",
+        "is_restart_13",
+        "is_shutdown",
+        "shutdown_nth",
+        "is_first_day_back",
+        "prev_day_shutdown",
+        "is_state_switch",
+        "prod",
+        "headcount",
+        "prod_chg_ratio",
+        "prod_cum_day",
+        "temp",
+        "humid",
+        "wind",
+        "rain",
+        "cdd",
+        "hdd"
+      ],
+      "evaluation_role": "retrospective_temporal_candidate_selection_not_fresh_independent_test",
+      "scope": "44 fixed features and five candidates; original 62 transformations/LOFO search not replayed",
+      "selection_feasibility": "All registered candidates eligible a priori; measured timing reported only as resources",
+      "calibration_rule": "Core-only model and q95; tail-only tau/isotonic; no refit including calibration",
+      "snapshot_fingerprint": "9352cf45663e780f1cdd69f7ba6342596fd4da28b1b80a933349417cfc69465b",
+      "full_protocol_guard": {
+        "matches_registered_full": true,
+        "deviations": [],
+        "registered_scientific_sha256": "143bbfeb5ff03b01570f7e9028db1bc4fb2efb980c7f69ff45a4dd98fb098d09"
+      },
+      "no_inner_theta_label_pooling": true,
+      "data_condition": "D1_repeated_profiles_retained",
+      "quality_rule": "exclude warmup, outage, ERP missing, nonfinite features/targets equally from fit/cal/score",
+      "novelty_audit_role": "post_scoring_only_no_target_profiles_in_selection",
+      "plan_availability_assumption": "plan_known/calendar derive from retrospective ERP missingness diagnosis, including realized daily power; treated as a prior-plan-confirmation proxy, not verified prospective information",
+      "future_history": "Observed power through previous day 23h available at daily origin 00h; gap data may supply lags, never fit rows",
+      "fingerprint": "c29f90ab7b6afdd3b82eb0bc5d9dcccb709aec9ecb90ad22592bf7f96c54253b"
+    },
+    "files": {
+      "temporal_outer_predictions.csv": "90d70f13c4d1ba436cb774321428841faeed09d6396fd64fffd8a283027434b9",
+      "temporal_peak_classifier_metrics.csv": "fa363e36a9d7db953bf4b0117143254c34fe78c13ac42256115cf1eb9a2daabe",
+      "temporal_outer_metrics.csv": "1f0cfc1129af092703b0ea3ae7e2dc6a809bf0a1487f2601e03a6baa7cb94374",
+      "temporal_resources.csv": "9ec6f69c49bcc39f8d7a3b2d9355ccaff330ae41455cd657b4657856e9835aa7",
+      "temporal_split_audit.csv": "5a1de5b411182549a0e5d225fb66cb247530a7644015ddc0c74e7e56919d1ed9",
+      "temporal_profile_novelty.csv": "8b026dee80f957f16b143233dc4ec075cb3653d3de83a2ee929599a7b3539db8",
+      "temporal_calibration.json": "cbf9ebfd4499a18c313c81e5ee18744f5f2744877b8bccb5f2bc292985e75635",
+      "temporal_selection_log.json": "c3897cbc85691d4ab22298f12a6dc88c3e8fd51abc0c3f2235746ba435887e63"
+    }
+  },
+  "files_sha256": {
+    "manifest.json": "938b0513b3b2b56e8597f13f440104a10437dd100177ff11b32e3eb3f711a77b",
+    "O2/calibration_manifest.json": "6d559770bc8932f304525a8ec49478a1de67de2506ee29c0fb287c9cd3521c36",
+    "O2/checkpoint.json": "e1e35575f163a9f2d7810d9c48a9a30529865cba3a875132aa23888b51b0e2d8",
+    "O2/inner_candidate_metrics.csv": "c0d7ab245fd2fe762dfb6fa3c7a6dc562838be74a4212adec3d5430cd2378628",
+    "O2/inner_resources.csv": "e3ee1db4cb2e55bb24c101897c3c18a56754b20bbe2bd1e9865997da59e7fe3d",
+    "O2/inner_split_audit.csv": "621f535dcdfda5672f8e9911eb2dce9dae6ac327ad08fffd5c4c22e155291c8d",
+    "O2/outer_predictions.csv": "0a850642c27b799998675c99a9078b6c7ee191f88797d978cdd9a85eb883ace0",
+    "O2/selection_manifest.json": "50de661b54c7a4b919b445df04bf97ac35cb679ca1dc18817cb109480362a731",
+    "O2/selection_scorecard.csv": "72b52e963bc6847a71ba29829b84f5fa224b566a6640d7d75967e4d99d501d9f",
+    "O2/trials_clf.csv": "a5212f9280a5d231c35ebc97ed9d8089cfd2050ad49472054ecc8f3e48556f4f",
+    "O2/trials_reg.csv": "75b34b53a425f3e9d1db43d9a2bdb8476539c82c7ad02ffc05384463fc3aa015",
+    "O3/calibration_manifest.json": "d28859ff3821793688a2788db0541d084a8fd18f836e020bcd9cf0a4602ff348",
+    "O3/checkpoint.json": "0d0c1a2a67081400183d8b022248c458ebb467e78c028c2d5cd65d1ca1379ff3",
+    "O3/inner_candidate_metrics.csv": "dfc1da37dff66b1bd9230f933c2d7e829968fd02b1bd6eb2b1316acc8830c9f5",
+    "O3/inner_resources.csv": "79d4306dd0f68a62ffb8cd4d223132486bdc92aceb84bbefa7fbaa8de7ff908c",
+    "O3/inner_split_audit.csv": "0d72d2f557d3dc3ce7569d56fcc2ced74634ae8dd4a7bf176834c9b4739d6a57",
+    "O3/outer_predictions.csv": "52bbc621c19f60e227f245c67df56debda471069fa44fdbb7e250674712a2d30",
+    "O3/selection_manifest.json": "4abb9fd87761836e58f8ef4e9bd132e0726e4f11d30e2a46ad9e14a7accf8c29",
+    "O3/selection_scorecard.csv": "1b6ed7572661becbd7720f97818b22362c7e91c9beb1df1a183e48e704e24381",
+    "O3/trials_clf.csv": "c0b40fe1a11f1976b26116ae00a01d244eb9d2197cd91331f73744c6906776f1",
+    "O3/trials_reg.csv": "90294e0b4627c604c7dec02cb023aced117012a5f319dcf739a23c3b9a6e5077",
+    "O4/calibration_manifest.json": "2c57aace2d305c99391c7c80a37640e7ecab9af7cae59881fe6e55fa15a18e35",
+    "O4/checkpoint.json": "56fa9ed4144a1f4b8bb19f7c97ff118877fce6a0e75fbbb2677d2f21ee25aa14",
+    "O4/inner_candidate_metrics.csv": "951758abf138fc5bd2dd7d325884b98c7dc3eac2acabb5d9dcde0b31ae62ff9d",
+    "O4/inner_resources.csv": "62cabb8c252d30b7ab248b9ffbf386e404a481ae5235805173669631c9ac92bc",
+    "O4/inner_split_audit.csv": "3b6a0b193aab7405b7b1a8cea879aafded50cbf92eae7ced1aa04afff1585437",
+    "O4/outer_predictions.csv": "3f39e8f6805a65fb8a56a3e3d230ed7f6c4388d484e00e70bcd95d8aaaf77ea5",
+    "O4/selection_manifest.json": "ef0e0e89f0a94e5d91868df7fc28496f2de9fa8e19bda4b2e10ced4ca3c0a167",
+    "O4/selection_scorecard.csv": "947e3088d1ddb8acb59da998dc0c824c5d1352265a5dd604f86c534fe40a09f5",
+    "O4/trials_clf.csv": "ef4ec1921f84a318752f201e7ef963cb2411703bf1e1dcd553166de38e3ecdc9",
+    "O4/trials_reg.csv": "50eedeea3eb1778e8681d8de731b398f2ee1913f76afdb4678634f9c1476140f",
+    "O5/calibration_manifest.json": "31727d94138f44bda72b841a284dc7f11d24d2ac6a7f821f8c53760041d0437e",
+    "O5/checkpoint.json": "bcc9f2c476e495fa877cad67a299e511288738c32d636c80e68d4a0ec42769dd",
+    "O5/inner_candidate_metrics.csv": "b134d29630b2d5a2c5dccb770842a7aae4d09635d287e612b7dc7bc259f0c599",
+    "O5/inner_resources.csv": "f7356239e1720e976085646cec5b9557fd2a3cb69af1f9aa4b3eb1b03a6e7d11",
+    "O5/inner_split_audit.csv": "c807eba5f3bb716145977ba3d27cf7d130efd93ae2c0bddd9fe624da265086d5",
+    "O5/outer_predictions.csv": "ba6192380acc6365a6d3550888ebee1fdbc4960bc890cf71c8df1807419cc8bd",
+    "O5/selection_manifest.json": "49a15e42e5844f704a1fd120ac40a14979b5e82c06b24d14a489aefc4f4724b3",
+    "O5/selection_scorecard.csv": "5da80c4014cbf3cf66706cd431b0dd9cfce41562534129a1dfa6b0f141a0c34a",
+    "O5/trials_clf.csv": "09e87723f525f822a326704a44af7409dfece50ff9f61289edfd1596bc9bd840",
+    "O5/trials_reg.csv": "2a9cb67045386503f9fb9e1df293e6e17254dd6975b8806f93cb9f17fd7292f4",
+    "summary.json": "938b0513b3b2b56e8597f13f440104a10437dd100177ff11b32e3eb3f711a77b",
+    "temporal_calibration.json": "cbf9ebfd4499a18c313c81e5ee18744f5f2744877b8bccb5f2bc292985e75635",
+    "temporal_outer_metrics.csv": "1f0cfc1129af092703b0ea3ae7e2dc6a809bf0a1487f2601e03a6baa7cb94374",
+    "temporal_outer_predictions.csv": "90d70f13c4d1ba436cb774321428841faeed09d6396fd64fffd8a283027434b9",
+    "temporal_peak_classifier_metrics.csv": "fa363e36a9d7db953bf4b0117143254c34fe78c13ac42256115cf1eb9a2daabe",
+    "temporal_profile_novelty.csv": "8b026dee80f957f16b143233dc4ec075cb3653d3de83a2ee929599a7b3539db8",
+    "temporal_protocol.json": "e0a9e1c98b2341c1214dd98be07a80be38be6caa039b0d94c8a96fe1666c6cb6",
+    "temporal_resources.csv": "9ec6f69c49bcc39f8d7a3b2d9355ccaff330ae41455cd657b4657856e9835aa7",
+    "temporal_selection_log.json": "c3897cbc85691d4ab22298f12a6dc88c3e8fd51abc0c3f2235746ba435887e63",
+    "temporal_split_audit.csv": "5a1de5b411182549a0e5d225fb66cb247530a7644015ddc0c74e7e56919d1ed9"
+  }
+}

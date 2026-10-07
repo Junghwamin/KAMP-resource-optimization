@@ -1,0 +1,204 @@
+{
+  "schema": "kamp.experiment_figures.v1",
+  "status": "rendered_pending_visual_review",
+  "figures": [
+    {
+      "fid": "E01",
+      "text_count": 29,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E01.png",
+      "sha256": "e334860ea69cf56ce8c4d03c1a770fd72f584bf44274be5a426cea53e102985c",
+      "pixel_size": [
+        3265,
+        1485
+      ],
+      "saved_size_pt": [
+        783.5999999999999,
+        356.40000000000003
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "조건별 미탐률·오경보율",
+      "source_table": "condition_confusion_rates.csv",
+      "source_sha256": "02e62666eb7ee37727f0c4a112f0f69b2a6d346ea2154ef4c607c752834e9fe5",
+      "report_variant": {
+        "path": "report_variants/E01.png",
+        "sha256": "3da80c93205fa2c20890ec24abfc199fa7e290c07790dee6b09423cc5af5c655",
+        "minimum_effective_font_pt": 8.6,
+        "readability_pass": true
+      }
+    },
+    {
+      "fid": "E02",
+      "text_count": 11,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E02.png",
+      "sha256": "81fe3de3a055c74db9073e5e558d4f0a544bf9e5e3e13d9cb046874a01e7f0ef",
+      "pixel_size": [
+        2129,
+        991
+      ],
+      "saved_size_pt": [
+        510.96,
+        237.84
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "블록 부트스트랩 민감도",
+      "source_table": "bootstrap_block_sensitivity.csv",
+      "source_sha256": "2d68649b6713591a7643b788708a1580e2eda37dd3c4538c7d90fe4aacf758ef",
+      "report_variant": {
+        "path": "report_variants/E02.png",
+        "sha256": "fcb66547c906437d016fde0535515726a3bb22154be8c0c4b952167e87cf38ea",
+        "minimum_effective_font_pt": 8.600673242523875,
+        "readability_pass": true
+      }
+    },
+    {
+      "fid": "E03",
+      "text_count": 34,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E03.png",
+      "sha256": "e0b663d6ed4646a92032f4084c662b1d72be4d7e2e9f889518bca3f48b6598f9",
+      "pixel_size": [
+        3265,
+        1610
+      ],
+      "saved_size_pt": [
+        783.5999999999999,
+        386.4
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "입력오차 민감도",
+      "source_table": "input_sensitivity_metrics.csv",
+      "source_sha256": "036c19f26c9e8ec7e68452f0f9315f56b0d3e8d51f3e3a14b995490dfb2dfb97",
+      "report_variant": {
+        "path": "report_variants/E03.png",
+        "sha256": "3ad7ba883fb76c6d0f1a95c8717662590c386c2efab8c4ea83ea1f3f53711468",
+        "minimum_effective_font_pt": 8.600673242523875,
+        "readability_pass": true
+      }
+    },
+    {
+      "fid": "E04",
+      "text_count": 19,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 9.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E04.png",
+      "sha256": "2581a1d66c3e69b2f3fc5ce613d1adc955405198a914723579f11db267f36d29",
+      "pixel_size": [
+        2969,
+        1135
+      ],
+      "saved_size_pt": [
+        712.56,
+        272.4
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "레짐 통제 비교",
+      "source_table": "controlled_regime_paired_ci.csv",
+      "source_sha256": "ccebf80de627143173f065ed49fa2efee18f5c14f19a7b97ccb37ddcc6df7758",
+      "report_variant": {
+        "path": "report_variants/E04.png",
+        "sha256": "c4b5e3165a61d0de07cb83db6f07d3446cec0096461318215079dc5e021daf19",
+        "minimum_effective_font_pt": 8.600673242523875,
+        "readability_pass": true
+      }
+    },
+    {
+      "fid": "E05",
+      "text_count": 26,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 8.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E05.png",
+      "sha256": "e82198389679d670309ca9f5ce185a4b1e360c239641a32a74e3ac3a3763537c",
+      "pixel_size": [
+        2969,
+        1123
+      ],
+      "saved_size_pt": [
+        712.56,
+        269.52
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "시간순 후보선정 평가",
+      "source_table": "temporal_outer_metrics.csv",
+      "source_sha256": "1f0cfc1129af092703b0ea3ae7e2dc6a809bf0a1487f2601e03a6baa7cb94374",
+      "report_variant": {
+        "path": "report_variants/E05.png",
+        "sha256": "e485fcbec25d1ff071e7a3b38da313419d2dd171610ad5683684d328f2e1b567",
+        "minimum_effective_font_pt": 8.600673242523875,
+        "readability_pass": true
+      }
+    },
+    {
+      "fid": "E06",
+      "text_count": 24,
+      "overlap_candidates": [],
+      "outside_canvas_text": [],
+      "minimum_font_pt": 7.0,
+      "visual_status": "pending",
+      "qa_scope": "candidate detection; visual review required",
+      "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+      "dpi": 300,
+      "png": "E06.png",
+      "sha256": "2d18f2701d3e6c7a63eb5ce76a698c189740d9628ba40dbb8835b56220e7e3fb",
+      "pixel_size": [
+        2670,
+        1139
+      ],
+      "saved_size_pt": [
+        640.8000000000001,
+        273.36
+      ],
+      "glyph_warnings": [],
+      "other_warnings": [],
+      "title": "경보 기반 정책 가정 모의",
+      "source_table": "policy_cost_sensitivity.csv",
+      "source_sha256": "ffc1f11588f9d80bec4d98730a8a0e909e313da092e29dbd9214acf34ccadf5d",
+      "report_variant": {
+        "path": "report_variants/E06.png",
+        "sha256": "314fb71a30d237dd4bc4835e0150c0c8ed849229ee1b6e416d1b377e5e3bd110",
+        "minimum_effective_font_pt": 8.600673242523875,
+        "readability_pass": true
+      }
+    }
+  ],
+  "failures": [],
+  "rendered": 6,
+  "renderer_sha256": {
+    "tools/render_figures.py": "f037c8467f626e9ba3b8abffdca3a3d95587cfb7621f01fb821fbc7523b6ab10",
+    "tools/figure_layout.py": "fca331f183b17cb2ddacd7658d212de433665b34ac79704692f7e05357f77caa"
+  }
+}

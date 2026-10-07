@@ -1,0 +1,32 @@
+{
+  "fid": "F29",
+  "text_count": 21,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F29_조건별_MAE.png",
+  "sha256": "2438326dd91cc481bb54f2fea301207f2956e0893fa84f563b1d61810b5a1247",
+  "pixel_size": [
+    2310,
+    937
+  ],
+  "saved_size_pt": [
+    554.4,
+    224.88000000000002
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F29.png",
+    "sha256": "a903458dc6006bff30242fb345e64887d32d75393de865499fb03eebe98d048a",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "조건별 MAE",
+  "section": "7.3",
+  "source": "s07_analysis.py"
+}

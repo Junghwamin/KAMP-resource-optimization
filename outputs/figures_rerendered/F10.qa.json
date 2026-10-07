@@ -1,0 +1,26 @@
+{
+  "fid": "F10",
+  "text_count": 20,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F10.png",
+  "sha256": "f844360cc2b4492bd6b690bec7b5748476f99c0ef4650b1165602d0b0f326b7e",
+  "pixel_size": [
+    1884,
+    1173
+  ],
+  "saved_size_pt": [
+    452.16,
+    281.52
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "생산량 전력 산점도",
+  "section": "1.5",
+  "source": "s01_diagnose.py"
+}

@@ -1,0 +1,26 @@
+{
+  "fid": "F32",
+  "text_count": 27,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F32.png",
+  "sha256": "86253fcd342dc0bc68cada41a755dcbb0ae7b0b2f97f4ba8c31f3936cd1f3051",
+  "pixel_size": [
+    2520,
+    806
+  ],
+  "saved_size_pt": [
+    604.8000000000001,
+    193.44
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "title": "상호작용 히트맵",
+  "section": "7.2",
+  "source": "s07_analysis.py"
+}

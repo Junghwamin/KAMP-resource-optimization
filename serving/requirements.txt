@@ -1,0 +1,30 @@
+# KAMP 서빙(추론 전용) 의존성 — 루트 requirements.txt 와 분리한다.
+#
+# ⚠️ KAMP(공유 conda 환경)에서는  pip install -r serving/requirements.txt  를 하지 말 것.
+#    이미 있는 numpy·pandas 를 바꾸려다 권한 오류(Permission denied: 'METADATA')로 막힌다.
+#    배치 명령(python -m serving verify·replay·predict)은 이미 있는 numpy·pandas·lightgbm 만 쓴다.
+#    REST API 가 필요하면:  bash setup_pod.sh --with-api   (fastapi·uvicorn·httpx 만 constraints 로 설치)
+#    이 파일로 -r 설치는 새로 만든 빈 가상환경에서만 한다.
+#
+# - 번들 로더는 lightgbm·numpy·pandas 버전이 **학습 때와 정확히 같아야** 기동한다
+#   (pandas rolling 의 부동소수 경로·LightGBM 모델 형식이 버전에 따라 달라질 수 있다).
+#   그래서 이 세 개는 루트 requirements.txt 와 같은 버전(KAMP 환경)으로 고정한다.
+# - scikit-learn·tensorflow·optuna 는 필요 없다(Isotonic 보정은 np.interp 로 동일하게 계산).
+# - 새 가상환경에 설치했다면 `pip check` 가 깨끗해야 한다.
+#
+#   pip install -r serving/requirements.txt && pip check
+
+numpy==1.26.4
+pandas==2.1.4
+lightgbm==4.5.0
+
+# ── REST API ──────────────────────────────────────────────────────────
+fastapi==0.141.1
+starlette==0.52.1
+annotated-doc==0.0.5
+pydantic==2.12.5
+pydantic-core==2.41.5
+uvicorn==0.40.0
+
+# ── API 테스트(TestClient) ────────────────────────────────────────────
+httpx==0.28.1

@@ -1,0 +1,3 @@
+<project>\experiments\policy.py:471: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  "policy_transfers.csv": pd.concat(all_transfers, ignore_index=True),
+EXPERIMENT_COMPLETE policy seconds=5.68

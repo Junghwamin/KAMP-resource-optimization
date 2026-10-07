@@ -1,0 +1,114 @@
+  [6.6 G-과거전력/D1] isolated fit 1/2
+  [6.6 G-이동통계/D1] isolated fit 1/2
+  [6.6 G-시간정보/D1] isolated fit 1/2
+  [6.6 G-공정상태/D1] isolated fit 1/2
+  [6.6 G-생산정보/D1] isolated fit 1/2
+  [6.6 G-기상정보/D1] isolated fit 1/2
+  [6.6 L24/D1] isolated fit 1/2
+  [6.6 L48/D1] isolated fit 1/2
+  [6.6 L168/D1] isolated fit 1/2
+  [6.6 B+W/D1] isolated fit 1/2
+  [6.6 SA-all/D1] isolated fit 1/2
+  [6.6 SA-168/D1] isolated fit 1/2
+  [6.6 NULL-0/D1] isolated fit 1/2
+  [6.6 NULL-1/D1] isolated fit 1/2
+  [6.6 NULL-2/D1] isolated fit 1/2
+  [6.6 NULL-3/D1] isolated fit 1/2
+  [6.6 NULL-4/D1] isolated fit 1/2
+  [6.6 LOFO-y_avg_lag24/D1] isolated fit 1/2
+  [6.6 LOFO-y_avg_lag48/D1] isolated fit 1/2
+  [6.6 LOFO-y_avg_lag168/D1] isolated fit 1/2
+  [6.6 LOFO-y_peak_lag24/D1] isolated fit 1/2
+  [6.6 LOFO-y_peak_lag48/D1] isolated fit 1/2
+  [6.6 LOFO-y_peak_lag168/D1] isolated fit 1/2
+  [6.6 LOFO-roll24_avg_mean/D1] isolated fit 1/2
+  [6.6 LOFO-roll24_avg_max/D1] isolated fit 1/2
+  [6.6 LOFO-roll24_avg_std/D1] isolated fit 1/2
+  [6.6 LOFO-roll24_peak_max/D1] isolated fit 1/2
+  [6.6 LOFO-roll24_peak_cnt/D1] isolated fit 1/2
+  [6.6 LOFO-roll168_avg_mean/D1] isolated fit 1/2
+  [6.6 LOFO-roll168_avg_max/D1] isolated fit 1/2
+  [6.6 LOFO-roll168_avg_std/D1] isolated fit 1/2
+  [6.6 LOFO-roll168_peak_max/D1] isolated fit 1/2
+  [6.6 LOFO-roll168_peak_cnt/D1] isolated fit 1/2
+  [6.6 LOFO-hour/D1] isolated fit 1/2
+  [6.6 LOFO-dow/D1] isolated fit 1/2
+  [6.6 LOFO-month/D1] isolated fit 1/2
+  [6.6 LOFO-is_sat/D1] isolated fit 1/2
+  [6.6 LOFO-is_sun/D1] isolated fit 1/2
+  [6.6 LOFO-is_holiday/D1] isolated fit 1/2
+  [6.6 LOFO-hour_sin/D1] isolated fit 1/2
+  [6.6 LOFO-hour_cos/D1] isolated fit 1/2
+  [6.6 LOFO-dow_sin/D1] isolated fit 1/2
+  [6.6 LOFO-dow_cos/D1] isolated fit 1/2
+  [6.6 LOFO-is_daytime/D1] isolated fit 1/2
+  [6.6 LOFO-is_startup_08/D1] isolated fit 1/2
+  [6.6 LOFO-is_restart_13/D1] isolated fit 1/2
+  [6.6 LOFO-is_shutdown/D1] isolated fit 1/2
+  [6.6 LOFO-shutdown_nth/D1] isolated fit 1/2
+  [6.6 LOFO-is_first_day_back/D1] isolated fit 1/2
+  [6.6 LOFO-prev_day_shutdown/D1] isolated fit 1/2
+  [6.6 LOFO-is_state_switch/D1] isolated fit 1/2
+  [6.6 LOFO-prod/D1] isolated fit 1/2
+  [6.6 LOFO-headcount/D1] isolated fit 1/2
+  [6.6 LOFO-prod_chg_ratio/D1] isolated fit 1/2
+  [6.6 LOFO-prod_cum_day/D1] isolated fit 1/2
+  [6.6 LOFO-temp/D1] isolated fit 1/2
+  [6.6 LOFO-humid/D1] isolated fit 1/2
+  [6.6 LOFO-wind/D1] isolated fit 1/2
+  [6.6 LOFO-rain/D1] isolated fit 1/2
+  [6.6 LOFO-cdd/D1] isolated fit 1/2
+  [6.6 LOFO-hdd/D1] isolated fit 1/2
+  [6.6 A/D2] isolated fit 1/2
+  [6.6 G-과거전력/D2] isolated fit 1/2
+  [6.6 L168/D2] isolated fit 1/2
+  [6.6 B+W/D2] isolated fit 1/2
+  [6.6 SA-all/D2] isolated fit 1/2
+  [6.6 SA-168/D2] isolated fit 1/2
+  [6.6 LOFO-y_avg_lag48/D2] isolated fit 1/2
+  [6.6 LOFO-roll168_avg_std/D2] isolated fit 1/2
+  [6.6 LOFO-dow/D2] isolated fit 1/2
+  [6.6 LOFO-is_state_switch/D2] isolated fit 1/2
+  [6.6 LOFO-temp/D2] isolated fit 1/2
+  [6.6 LOFO-wind/D2] isolated fit 1/2
+── 6.6절 지연변수 제거 효과 분해 (변형 62개 + D2 12개, 1318초) ──
+  최종모델 오차 상위 2일 = 08-03, 08-02 (OOF 절대오차의 34.1%)
+  잡음 폭: MAE 0.223 kW / Peak-MAE 0.512 kW
+  ①~④ 를 통과한 피처군 제거 변형: 0개
+                              변형  OOF MAE  상위2일 제외 MAE  Δ상위2일 제외  토요일 MAE  Δ토요일  ΔRecall ①~④ 통과
+0                  최종모델 (44개)   11.044             7.566          0.000       7.600    0.000    0.000     None
+1                과거전력 6개 제거    8.679             8.977          1.411      24.424   16.824    0.038    False
+2               48시간 전 2개 제거    7.588             7.787          0.221       7.593   -0.007   -0.019    False
+3              168시간 전 2개 제거   10.354             8.389          0.823      18.448   10.848   -0.045    False
+4               24시간 전 2개 제거   10.498             7.043         -0.523       7.047   -0.553   -0.058    False
+5  휴무 인지형 지연변수 (6개 교체)   10.004             8.491          0.925      17.347    9.747    0.026    False
+
+── 개별 변수 제거 — 개선 폭 상위 5 ──
+                               변형  ΔOOF MAE  ΔMAE CI 하한  ΔMAE CI 상한  개선 fold 수  ①~④ 통과
+21            peak15 24시간 전 제거    -0.331        -0.557        -0.129           4.0     False
+26   직전24h 평균전력 표준편차 제거    -0.315        -0.948         0.121           2.0     False
+19          평균전력 48시간 전 제거    -0.312        -0.541        -0.081           4.0      True
+31  직전168h 평균전력 표준편차 제거    -0.278        -0.486        -0.087           4.0      True
+58                        풍속 제거    -0.264        -0.504        -0.052           4.0      True
+
+── D2 강건성 ──
+                      ID  OOF MAE  ΔOOF MAE  ΔMAE CI 하한  ΔMAE CI 상한
+0                      A   12.828       NaN           NaN           NaN
+1             G-과거전력    9.874    -2.954        -8.145         1.292
+2                   L168   12.780    -0.048        -1.933         2.110
+3                    B+W   12.458    -0.370        -2.817         2.019
+4                 SA-all   11.450    -1.378        -5.950         2.077
+5                 SA-168   13.116     0.288        -1.357         2.429
+6       LOFO-y_avg_lag48   12.968     0.140        -0.183         0.526
+7   LOFO-roll168_avg_std   10.635    -2.193        -5.489         0.005
+8               LOFO-dow   12.369    -0.459        -1.330         0.187
+9   LOFO-is_state_switch   12.784    -0.044        -0.509         0.611
+10             LOFO-temp   12.938     0.110        -0.515         0.763
+11             LOFO-wind   12.822    -0.006        -0.476         0.491
+
+── 오차 상위 날짜의 1단계 분류(게이트) 배정 ──
+         날짜 요일  fold  휴무일  실측 일평균  예측 일평균 08~17시 배정 레짐  게이트 휴무일 변수 분기 수
+0  2021-08-03   화     3    True    21.625000   136.068273          2:10시간                         179
+1  2021-08-02   월     3    True    21.458333   107.330500          2:10시간                         179
+2  2021-07-31   토     3    True    21.541667    45.895024          0:10시간                         179
+3  2021-08-09   월     4   False   107.666667    87.723305          2:10시간                         243

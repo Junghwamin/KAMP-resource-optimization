@@ -1,0 +1,32 @@
+{
+  "fid": "F18",
+  "text_count": 21,
+  "overlap_candidates": [],
+  "outside_canvas_text": [],
+  "minimum_font_pt": 8.0,
+  "visual_status": "pending",
+  "qa_scope": "candidate detection; visual review required",
+  "intentional_data_overlap": "line intersections, error bars and SHAP dots are not text defects",
+  "dpi": 300,
+  "png": "F18_예측_vs_실측_시계열.png",
+  "sha256": "29b3f0ba634788e0af6b4d1ae68c135ea39cbb3b1282fd027f7c6c117c65c299",
+  "pixel_size": [
+    3269,
+    932
+  ],
+  "saved_size_pt": [
+    784.56,
+    223.67999999999998
+  ],
+  "glyph_warnings": [],
+  "other_warnings": [],
+  "report_variant": {
+    "path": "report_variants/F18.png",
+    "sha256": "ebf99c13bce7ba8a890538a11d1c4a052290a69bc71669328d25cc61cc3bb10d",
+    "minimum_effective_font_pt": 8.602652071563087,
+    "readability_pass": true
+  },
+  "title": "예측 vs 실측 시계열",
+  "section": "6.1",
+  "source": "s06_eval.py"
+}
